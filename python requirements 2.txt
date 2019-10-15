@@ -1,0 +1,38 @@
+storing pic of first page of pdf
+
+pip3 install pdf2image
+pip3 install pillow
+pip3 install Image
+
+Recognizing text from image
+pip3 install pyocr
+pip3 install pytesseract
+sudo apt install tesseract-ocr (for ubuntu)
+install tesseract from the url in the original document
+
+Drawing boxes and getting abstract
+pip3 install opencv-python ( it will automatically isntall numpy. else pip3 install numpy)
+
+Recognizing speech
+pip3 install SpeechRecognition
+
+Slicing audio file
+pip3 install pydub
+pip3 install audioread
+
+Removing stopwords and tagging
+pip3 install nltk
+[In cmd]:
+>python
+>import nltk
+>nltk.download()
+// this will open download manager and press download all. 
+//or else one by one u have to dowload like nltk.download('stopwords') , nltk.download('punkt') etc
+//downloading all will take some time. If you want, u can do one by one by running the file and
+//getting the module name and then installing it. this will save a lot of time. These are:
+>nltk.download('stopwords')
+>nltk.download('punkt')
+>nltk.download('averaged_perceptron_tagger')
+
+problem_statement
+pip3 install rake_nltk

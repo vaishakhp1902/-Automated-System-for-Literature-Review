@@ -1,0 +1,520 @@
+<?xml version='1.0' encoding='utf-8'?>
+<rdf:RDF xmlns='http://knowledgeweb.semanticweb.org/heterogeneity/alignment'
+         xmlns:align='http://knowledgeweb.semanticweb.org/heterogeneity/alignment'
+         xmlns:rdf='http://www.w3.org/1999/02/22-rdf-syntax-ns#'
+         xmlns:xsd='http://www.w3.org/2001/XMLSchema#'>
+<Alignment>
+  <xml>yes</xml>
+  <level>0</level>
+  <type>11</type>
+  <onto1>http://edas</onto1>
+  <onto2>http://sigkdd</onto2>
+  <uri1>http://edas</uri1>
+  <uri2>http://sigkdd</uri2>
+  <method>alignment.CSA</method>
+  <map>
+    <Cell>
+      <entity1 rdf:resource='http://edas#ConferenceChair'/>
+      <entity2 rdf:resource='http://sigkdd#Program_Chair'/>
+      <relation>=</relation>
+      <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>0.46905314575480905</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource='http://edas#Presenter'/>
+      <entity2 rdf:resource='http://sigkdd#Author_of_paper'/>
+      <relation>=</relation>
+      <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>0.4185101086831422</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource='http://edas#AccpetIfRoomRating'/>
+      <entity2 rdf:resource='http://sigkdd#Registration_SIGMOD_Member'/>
+      <relation>=</relation>
+      <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>0.24053840010350097</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource='http://edas#TPCMember'/>
+      <entity2 rdf:resource='http://sigkdd#Registration_Non-Member'/>
+      <relation>=</relation>
+      <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>0.2471430334584937</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource='http://edas#ConferenceEvent'/>
+      <entity2 rdf:resource='http://sigkdd#Fee'/>
+      <relation>=</relation>
+      <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>0.20202683735267013</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource='http://edas#AcceptedPaper'/>
+      <entity2 rdf:resource='http://sigkdd#Best_Student_Paper_Award'/>
+      <relation>=</relation>
+      <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>0.23787513574847965</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource='http://edas#MealMenu'/>
+      <entity2 rdf:resource='http://sigkdd#Exhibitor'/>
+      <relation>=</relation>
+      <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>0.19146289575420253</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource='http://edas#AccommodationPlace'/>
+      <entity2 rdf:resource='http://sigkdd#Hotel'/>
+      <relation>=</relation>
+      <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>0.426102317594124</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource='http://edas#Document'/>
+      <entity2 rdf:resource='http://sigkdd#Document'/>
+      <relation>=</relation>
+      <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>0.46876315089427495</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource='http://edas#RejectRating'/>
+      <entity2 rdf:resource='http://sigkdd#Registration_Student'/>
+      <relation>=</relation>
+      <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>0.25819093928259</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource='http://edas#hasCountry'/>
+      <entity2 rdf:resource='http://sigkdd#notification_until'/>
+      <relation>=</relation>
+      <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>0.3146343894444581</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource='http://edas#SessionChair'/>
+      <entity2 rdf:resource='http://sigkdd#General_Chair'/>
+      <relation>=</relation>
+      <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>0.4108806176460401</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource='http://edas#TextualReviewQuestion'/>
+      <entity2 rdf:resource='http://sigkdd#Sponzor_fee'/>
+      <relation>=</relation>
+      <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>0.21735689230936228</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource='http://edas#WeekRejectRating'/>
+      <entity2 rdf:resource='http://sigkdd#Registration_SIGKDD_Member'/>
+      <relation>=</relation>
+      <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>0.24187137508410017</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource='http://edas#Author'/>
+      <entity2 rdf:resource='http://sigkdd#Author'/>
+      <relation>=</relation>
+      <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>0.5010091002057094</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource='http://edas#AcademicEvent'/>
+      <entity2 rdf:resource='http://sigkdd#Committee'/>
+      <relation>=</relation>
+      <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>0.20421658616192323</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource='http://edas#ComputerNetworksTopic'/>
+      <entity2 rdf:resource='http://sigkdd#Sponzor'/>
+      <relation>=</relation>
+      <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>0.1809944314615701</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource='http://edas#hasStartDateTime'/>
+      <entity2 rdf:resource='http://sigkdd#Date'/>
+      <relation>=</relation>
+      <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>0.36461450506584037</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource='http://edas#providedBy'/>
+      <entity2 rdf:resource='http://sigkdd#holded_by'/>
+      <relation>=</relation>
+      <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>0.3307096906584707</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource='http://edas#MeetingRoomPlace'/>
+      <entity2 rdf:resource='http://sigkdd#Best_Paper_Awards_Committee'/>
+      <relation>=</relation>
+      <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>0.2152159120973215</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource='http://edas#Person'/>
+      <entity2 rdf:resource='http://sigkdd#Person'/>
+      <relation>=</relation>
+      <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>0.35672441839186414</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource='http://edas#Review'/>
+      <entity2 rdf:resource='http://sigkdd#Review'/>
+      <relation>=</relation>
+      <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>0.7626048914563345</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource='http://edas#PersonalHistory'/>
+      <entity2 rdf:resource='http://sigkdd#Speaker'/>
+      <relation>=</relation>
+      <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>0.2532689864389741</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource='http://edas#WithdrawnPaper'/>
+      <entity2 rdf:resource='http://sigkdd#Silver_Supporter'/>
+      <relation>=</relation>
+      <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>0.25496447321812793</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource='http://edas#isInitiatedBy'/>
+      <entity2 rdf:resource='http://sigkdd#presentationed_by'/>
+      <relation>=</relation>
+      <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>0.25021460023063813</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource='http://edas#Paper'/>
+      <entity2 rdf:resource='http://sigkdd#Paper'/>
+      <relation>=</relation>
+      <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>0.5111609651474633</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource='http://edas#ActivePaper'/>
+      <entity2 rdf:resource='http://sigkdd#Author_of_paper_student'/>
+      <relation>=</relation>
+      <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>0.21131925496527937</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource='http://edas#Programme'/>
+      <entity2 rdf:resource='http://sigkdd#Abstract'/>
+      <relation>=</relation>
+      <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>0.3679173407251938</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource='http://edas#PaperPresentation'/>
+      <entity2 rdf:resource='http://sigkdd#Best_Research_Paper_Award'/>
+      <relation>=</relation>
+      <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>0.28406458536201995</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource='http://edas#Place'/>
+      <entity2 rdf:resource='http://sigkdd#Place'/>
+      <relation>=</relation>
+      <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>0.48913730141107215</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource='http://edas#OrganizationalMeeting'/>
+      <entity2 rdf:resource='http://sigkdd#Program_Committee'/>
+      <relation>=</relation>
+      <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>0.20398986446073053</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource='http://edas#DiningPlace'/>
+      <entity2 rdf:resource='http://sigkdd#Main_office'/>
+      <relation>=</relation>
+      <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>0.40655437971811903</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource='http://edas#Call'/>
+      <entity2 rdf:resource='http://sigkdd#Deadline'/>
+      <relation>=</relation>
+      <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>0.24862511476540694</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource='http://edas#hasEmail'/>
+      <entity2 rdf:resource='http://sigkdd#E-mail'/>
+      <relation>=</relation>
+      <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>0.2766176506483421</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource='http://edas#hasName'/>
+      <entity2 rdf:resource='http://sigkdd#Name'/>
+      <relation>=</relation>
+      <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>0.552292952029166</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource='http://edas#PublishedPaper'/>
+      <entity2 rdf:resource='http://sigkdd#Bronze_Supporter'/>
+      <relation>=</relation>
+      <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>0.2481790887085171</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource='http://edas#ConferenceSession'/>
+      <entity2 rdf:resource='http://sigkdd#Conference'/>
+      <relation>=</relation>
+      <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>0.45492740400138815</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource='http://edas#ConferenceVenuePlace'/>
+      <entity2 rdf:resource='http://sigkdd#Conference_hall'/>
+      <relation>=</relation>
+      <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>0.5235856806842331</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource='http://edas#NGO'/>
+      <entity2 rdf:resource='http://sigkdd#Program_Committee_member'/>
+      <relation>=</relation>
+      <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>0.2987684027930142</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource='http://edas#AcademiaOrganization'/>
+      <entity2 rdf:resource='http://sigkdd#Organizing_Committee'/>
+      <relation>=</relation>
+      <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>0.3472124253043201</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource='http://edas#ReviewRating'/>
+      <entity2 rdf:resource='http://sigkdd#Registration_fee'/>
+      <relation>=</relation>
+      <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>0.2602656491589905</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource='http://edas#CallForManuscripts'/>
+      <entity2 rdf:resource='http://sigkdd#Deadline_Abstract_Submission'/>
+      <relation>=</relation>
+      <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>0.23371357216724145</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource='http://edas#hasCity'/>
+      <entity2 rdf:resource='http://sigkdd#City_of_conference'/>
+      <relation>=</relation>
+      <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>0.4895328638825369</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource='http://edas#GovernmentOrganization'/>
+      <entity2 rdf:resource='http://sigkdd#Organizing_Committee_member'/>
+      <relation>=</relation>
+      <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>0.4432438030571342</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource='http://edas#isReviewedBy'/>
+      <entity2 rdf:resource='http://sigkdd#designed_by'/>
+      <relation>=</relation>
+      <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>0.2725252781603069</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource='http://edas#PersonalReviewHistory'/>
+      <entity2 rdf:resource='http://sigkdd#Invited_Speaker'/>
+      <relation>=</relation>
+      <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>0.23750293763082814</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource='http://edas#isWrittenBy'/>
+      <entity2 rdf:resource='http://sigkdd#awarded_by'/>
+      <relation>=</relation>
+      <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>0.21574858438681205</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource='http://edas#hasTopic'/>
+      <entity2 rdf:resource='http://sigkdd#can_stay_in'/>
+      <relation>=</relation>
+      <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>0.3036119083980959</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource='http://edas#RejectedPaper'/>
+      <entity2 rdf:resource='http://sigkdd#Best_Student_Paper_Supporter'/>
+      <relation>=</relation>
+      <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>0.309207317911082</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource='http://edas#PendingPaper'/>
+      <entity2 rdf:resource='http://sigkdd#Platinum_Supporter'/>
+      <relation>=</relation>
+      <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>0.25784824894292724</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource='http://edas#startDate'/>
+      <entity2 rdf:resource='http://sigkdd#Start_of_conference'/>
+      <relation>=</relation>
+      <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>0.5078784160972257</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource='http://edas#hasCostCurrency'/>
+      <entity2 rdf:resource='http://sigkdd#Currency'/>
+      <relation>=</relation>
+      <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>0.4870872834313135</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource='http://edas#AcceptRating'/>
+      <entity2 rdf:resource='http://sigkdd#Best_Applications_Paper_Award'/>
+      <relation>=</relation>
+      <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>0.19791343977860193</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource='http://edas#Attendee'/>
+      <entity2 rdf:resource='http://sigkdd#Listener'/>
+      <relation>=</relation>
+      <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>0.3848843795716673</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource='http://edas#CallForPapers'/>
+      <entity2 rdf:resource='http://sigkdd#Deadline_Paper_Submission'/>
+      <relation>=</relation>
+      <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>0.28842533866869</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource='http://edas#IndustryOrganization'/>
+      <entity2 rdf:resource='http://sigkdd#Webmaster'/>
+      <relation>=</relation>
+      <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>0.35235165755406417</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource='http://edas#SlideSet'/>
+      <entity2 rdf:resource='http://sigkdd#Gold_Supporter'/>
+      <relation>=</relation>
+      <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>0.22205752637718612</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource='http://edas#hasFirstName'/>
+      <entity2 rdf:resource='http://sigkdd#Name_of_conference'/>
+      <relation>=</relation>
+      <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>0.34709899140931255</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource='http://edas#endDate'/>
+      <entity2 rdf:resource='http://sigkdd#End_of_conference'/>
+      <relation>=</relation>
+      <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>0.5078784160972257</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource='http://edas#CallForReviews'/>
+      <entity2 rdf:resource='http://sigkdd#Deadline_Author_notification'/>
+      <relation>=</relation>
+      <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>0.23531838966655125</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource='http://edas#BreakEvent'/>
+      <entity2 rdf:resource='http://sigkdd#Award'/>
+      <relation>=</relation>
+      <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>0.2336904521304358</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource='http://edas#Organization'/>
+      <entity2 rdf:resource='http://sigkdd#Organizator'/>
+      <relation>=</relation>
+      <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>0.3619975997976556</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource='http://edas#hasLastName'/>
+      <entity2 rdf:resource='http://sigkdd#Name_of_sponsor'/>
+      <relation>=</relation>
+      <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>0.26981471845836436</measure>
+    </Cell>
+  </map>
+</Alignment>
+</rdf:RDF>

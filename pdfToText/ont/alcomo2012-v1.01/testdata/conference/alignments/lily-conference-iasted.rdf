@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<rdf:RDF xmlns="http://knowledgeweb.semanticweb.org/heterogeneity/alignment" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:xsd="http://www.w3.org/2001/XMLSchema#">
+  <Alignment>
+    <xml>yes</xml>
+    <level>0</level>
+    <type>11</type>
+    <onto1>http://conference</onto1>
+    <onto2>http://iasted</onto2>
+    <uri1>http://conference</uri1>
+    <uri2>http://iasted</uri2>
+    <map>
+      <Cell>
+        <entity1 rdf:resource="http://conference#Committee_member"/>
+        <entity2 rdf:resource="http://iasted#Technical_commitee"/>
+        <measure rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.3806</measure>
+        <relation>=</relation>
+      </Cell>
+    </map>
+    <map>
+      <Cell>
+        <entity1 rdf:resource="http://conference#Camera_ready_contribution"/>
+        <entity2 rdf:resource="http://iasted#Camera_ready_manuscript_deadline"/>
+        <measure rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.42</measure>
+        <relation>=</relation>
+      </Cell>
+    </map>
+    <map>
+      <Cell>
+        <entity1 rdf:resource="http://conference#Registeered_applicant"/>
+        <entity2 rdf:resource="http://iasted#Registration"/>
+        <measure rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.3437</measure>
+        <relation>=</relation>
+      </Cell>
+    </map>
+    <map>
+      <Cell>
+        <entity1 rdf:resource="http://conference#Accepted_contribution"/>
+        <entity2 rdf:resource="http://iasted#Accepting_manuscript"/>
+        <measure rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.3607</measure>
+        <relation>=</relation>
+      </Cell>
+    </map>
+    <map>
+      <Cell>
+        <entity1 rdf:resource="http://conference#Active_conference_participant"/>
+        <entity2 rdf:resource="http://iasted#Conference_activity"/>
+        <measure rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.4463</measure>
+        <relation>=</relation>
+      </Cell>
+    </map>
+    <map>
+      <Cell>
+        <entity1 rdf:resource="http://conference#Conference_document"/>
+        <entity2 rdf:resource="http://iasted#Document"/>
+        <measure rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.4024</measure>
+        <relation>=</relation>
+      </Cell>
+    </map>
+    <map>
+      <Cell>
+        <entity1 rdf:resource="http://conference#Review"/>
+        <entity2 rdf:resource="http://iasted#Review"/>
+        <measure rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.5691</measure>
+        <relation>=</relation>
+      </Cell>
+    </map>
+    <map>
+      <Cell>
+        <entity1 rdf:resource="http://conference#Conference_fees"/>
+        <entity2 rdf:resource="http://iasted#Fee"/>
+        <measure rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.4616</measure>
+        <relation>=</relation>
+      </Cell>
+    </map>
+    <map>
+      <Cell>
+        <entity1 rdf:resource="http://conference#Conference"/>
+        <entity2 rdf:resource="http://iasted#Conference_state"/>
+        <measure rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.5833</measure>
+        <relation>=</relation>
+      </Cell>
+    </map>
+    <map>
+      <Cell>
+        <entity1 rdf:resource="http://conference#Regular_author"/>
+        <entity2 rdf:resource="http://iasted#Author"/>
+        <measure rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.3495</measure>
+        <relation>=</relation>
+      </Cell>
+    </map>
+    <map>
+      <Cell>
+        <entity1 rdf:resource="http://conference#Tutorial"/>
+        <entity2 rdf:resource="http://iasted#Tutorial"/>
+        <measure rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.43</measure>
+        <relation>=</relation>
+      </Cell>
+    </map>
+    <map>
+      <Cell>
+        <entity1 rdf:resource="http://conference#Person"/>
+        <entity2 rdf:resource="http://iasted#Person"/>
+        <measure rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.4375</measure>
+        <relation>=</relation>
+      </Cell>
+    </map>
+    <map>
+      <Cell>
+        <entity1 rdf:resource="http://conference#Information_for_participants"/>
+        <entity2 rdf:resource="http://iasted#Author_information_form"/>
+        <measure rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.3415</measure>
+        <relation>=</relation>
+      </Cell>
+    </map>
+    <map>
+      <Cell>
+        <entity1 rdf:resource="http://conference#Reviewer"/>
+        <entity2 rdf:resource="http://iasted#Reviewer"/>
+        <measure rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.4375</measure>
+        <relation>=</relation>
+      </Cell>
+    </map>
+    <map>
+      <Cell>
+        <entity1 rdf:resource="http://conference#has_the_first_name"/>
+        <entity2 rdf:resource="http://iasted#give"/>
+        <measure rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.5</measure>
+        <relation>=</relation>
+      </Cell>
+    </map>
+    <map>
+      <Cell>
+        <entity1 rdf:resource="http://conference#is_an_ending_date"/>
+        <entity2 rdf:resource="http://iasted#is_dated_on"/>
+        <measure rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.5</measure>
+        <relation>=</relation>
+      </Cell>
+    </map>
+    <map>
+      <Cell>
+        <entity1 rdf:resource="http://conference#has_an_email"/>
+        <entity2 rdf:resource="http://iasted#is_present_in"/>
+        <measure rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.5</measure>
+        <relation>=</relation>
+      </Cell>
+    </map>
+    <map>
+      <Cell>
+        <entity1 rdf:resource="http://conference#has_the_last_name"/>
+        <entity2 rdf:resource="http://iasted#speak_in"/>
+        <measure rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.5</measure>
+        <relation>=</relation>
+      </Cell>
+    </map>
+  </Alignment>
+</rdf:RDF>

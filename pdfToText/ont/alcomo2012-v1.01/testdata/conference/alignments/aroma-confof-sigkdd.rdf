@@ -1,0 +1,94 @@
+<?xml version='1.0' encoding='utf-8' standalone='no'?>
+<rdf:RDF xmlns='http://knowledgeweb.semanticweb.org/heterogeneity/alignment#'
+         xmlns:rdf='http://www.w3.org/1999/02/22-rdf-syntax-ns#'
+         xmlns:xsd='http://www.w3.org/2001/XMLSchema#'
+         xmlns:align='http://knowledgeweb.semanticweb.org/heterogeneity/alignment#'>
+<Alignment>
+  <xml>yes</xml>
+  <level>0</level>
+  <type>**</type>
+  <method>fr.inrialpes.exmo.aroma.AROMA</method>
+  <onto1>
+    <Ontology rdf:about="http://confOf">
+      <location>file:/C:/Users/LSKIAD~1/AppData/Local/Temp/source8883851197384621204.rdf</location>
+    </Ontology>
+  </onto1>
+  <onto2>
+    <Ontology rdf:about="http://sigkdd">
+      <location>file:/C:/Users/LSKIAD~1/AppData/Local/Temp/target5908574201109802168.rdf</location>
+    </Ontology>
+  </onto2>
+  <map>
+    <Cell>
+      <entity1 rdf:resource='http://confOf#Conference'/>
+      <entity2 rdf:resource='http://sigkdd#Conference'/>
+      <relation>=</relation>
+      <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>0.6286335758917008</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource='http://confOf#Participant'/>
+      <entity2 rdf:resource='http://sigkdd#Fee'/>
+      <relation>=</relation>
+      <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>0.7341894440874653</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource='http://confOf#Submission_event'/>
+      <entity2 rdf:resource='http://sigkdd#Deadline_Abstract_Submission'/>
+      <relation>=</relation>
+      <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>0.5971096784708628</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource='http://confOf#Organization'/>
+      <entity2 rdf:resource='http://sigkdd#Organizing_Committee'/>
+      <relation>=</relation>
+      <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>0.5971096784708628</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource='http://confOf#Paper'/>
+      <entity2 rdf:resource='http://sigkdd#Paper'/>
+      <relation>=</relation>
+      <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>0.6067176268586635</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource='http://confOf#Author'/>
+      <entity2 rdf:resource='http://sigkdd#Deadline_Author_notification'/>
+      <relation>=</relation>
+      <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>0.5971096784708628</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource='http://confOf#Working_event'/>
+      <entity2 rdf:resource='http://sigkdd#Place'/>
+      <relation>=</relation>
+      <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>0.5971096784708628</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource='http://confOf#Person'/>
+      <entity2 rdf:resource='http://sigkdd#Person'/>
+      <relation>=</relation>
+      <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>0.7841425842666682</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource='http://confOf#hasCity'/>
+      <entity2 rdf:resource='http://sigkdd#City_of_conference'/>
+      <relation>=</relation>
+      <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>0.4865828809674071</measure>
+    </Cell>
+  </map>
+</Alignment>
+</rdf:RDF>

@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<rdf:RDF xmlns="http://knowledgeweb.semanticweb.org/heterogeneity/alignment" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:xsd="http://www.w3.org/2001/XMLSchema#">
+  <Alignment>
+    <xml>yes</xml>
+    <level>0</level>
+    <type>11</type>
+    <onto1>http://cmt</onto1>
+    <onto2>http://conference</onto2>
+    <uri1>http://cmt</uri1>
+    <uri2>http://conference</uri2>
+    <map>
+      <Cell>
+        <entity1 rdf:resource="http://cmt#Rejection"/>
+        <entity2 rdf:resource="http://conference#Rejected_contribution"/>
+        <measure rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.6937</measure>
+        <relation>=</relation>
+      </Cell>
+    </map>
+    <map>
+      <Cell>
+        <entity1 rdf:resource="http://cmt#Review"/>
+        <entity2 rdf:resource="http://conference#Review"/>
+        <measure rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.5718</measure>
+        <relation>=</relation>
+      </Cell>
+    </map>
+    <map>
+      <Cell>
+        <entity1 rdf:resource="http://cmt#Acceptance"/>
+        <entity2 rdf:resource="http://conference#Accepted_contribution"/>
+        <measure rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.6329</measure>
+        <relation>=</relation>
+      </Cell>
+    </map>
+    <map>
+      <Cell>
+        <entity1 rdf:resource="http://cmt#Person"/>
+        <entity2 rdf:resource="http://conference#Person"/>
+        <measure rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.5133</measure>
+        <relation>=</relation>
+      </Cell>
+    </map>
+    <map>
+      <Cell>
+        <entity1 rdf:resource="http://cmt#Decision"/>
+        <entity2 rdf:resource="http://conference#Reviewed_contribution"/>
+        <measure rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.4043</measure>
+        <relation>=</relation>
+      </Cell>
+    </map>
+    <map>
+      <Cell>
+        <entity1 rdf:resource="http://cmt#ProgramCommittee"/>
+        <entity2 rdf:resource="http://conference#Program_committee"/>
+        <measure rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.6875</measure>
+        <relation>=</relation>
+      </Cell>
+    </map>
+    <map>
+      <Cell>
+        <entity1 rdf:resource="http://cmt#ConferenceMember"/>
+        <entity2 rdf:resource="http://conference#Conference_part"/>
+        <measure rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.5131</measure>
+        <relation>=</relation>
+      </Cell>
+    </map>
+    <map>
+      <Cell>
+        <entity1 rdf:resource="http://cmt#Reviewer"/>
+        <entity2 rdf:resource="http://conference#Reviewer"/>
+        <measure rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.5186</measure>
+        <relation>=</relation>
+      </Cell>
+    </map>
+    <map>
+      <Cell>
+        <entity1 rdf:resource="http://cmt#name"/>
+        <entity2 rdf:resource="http://conference#has_the_first_name"/>
+        <measure rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.5</measure>
+        <relation>=</relation>
+      </Cell>
+    </map>
+    <map>
+      <Cell>
+        <entity1 rdf:resource="http://cmt#email"/>
+        <entity2 rdf:resource="http://conference#has_an_email"/>
+        <measure rdf:datatype="http://www.w3.org/2001/XMLSchema#float">1.0</measure>
+        <relation>=</relation>
+      </Cell>
+    </map>
+    <map>
+      <Cell>
+        <entity1 rdf:resource="http://cmt#date"/>
+        <entity2 rdf:resource="http://conference#has_important_dates"/>
+        <measure rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.6055</measure>
+        <relation>=</relation>
+      </Cell>
+    </map>
+    <map>
+      <Cell>
+        <entity1 rdf:resource="http://cmt#hasConferenceMember"/>
+        <entity2 rdf:resource="http://conference#is_part_of_conference_volumes"/>
+        <measure rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.6847</measure>
+        <relation>=</relation>
+      </Cell>
+    </map>
+    <map>
+      <Cell>
+        <entity1 rdf:resource="http://cmt#endReview"/>
+        <entity2 rdf:resource="http://conference#has_a_review"/>
+        <measure rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.75</measure>
+        <relation>=</relation>
+      </Cell>
+    </map>
+    <map>
+      <Cell>
+        <entity1 rdf:resource="http://cmt#memberOfConference"/>
+        <entity2 rdf:resource="http://conference#is_a_topis_of_conference_parts"/>
+        <measure rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.5158</measure>
+        <relation>=</relation>
+      </Cell>
+    </map>
+    <map>
+      <Cell>
+        <entity1 rdf:resource="http://cmt#memberOfProgramCommittee"/>
+        <entity2 rdf:resource="http://conference#has_a_program_committee"/>
+        <measure rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.6526</measure>
+        <relation>=</relation>
+      </Cell>
+    </map>
+    <map>
+      <Cell>
+        <entity1 rdf:resource="http://cmt#hasAuthor"/>
+        <entity2 rdf:resource="http://conference#has_authors"/>
+        <measure rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.5</measure>
+        <relation>=</relation>
+      </Cell>
+    </map>
+    <map>
+      <Cell>
+        <entity1 rdf:resource="http://cmt#hasProgramCommitteeMember"/>
+        <entity2 rdf:resource="http://conference#was_a_program_committee_of"/>
+        <measure rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.6575</measure>
+        <relation>=</relation>
+      </Cell>
+    </map>
+    <map>
+      <Cell>
+        <entity1 rdf:resource="http://cmt#writtenBy"/>
+        <entity2 rdf:resource="http://conference#invited_by"/>
+        <measure rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.5</measure>
+        <relation>=</relation>
+      </Cell>
+    </map>
+    <map>
+      <Cell>
+        <entity1 rdf:resource="http://cmt#writeReview"/>
+        <entity2 rdf:resource="http://conference#reviews"/>
+        <measure rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.5724</measure>
+        <relation>=</relation>
+      </Cell>
+    </map>
+  </Alignment>
+</rdf:RDF>

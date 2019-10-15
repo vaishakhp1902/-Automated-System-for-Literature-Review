@@ -1,0 +1,1275 @@
+DECSUP—12446; No of Pages 11
+
+Decision Support Systems xxx (2014) xxx—xxx
+
+ 
+
+ 
+
+Contents lists available at ScienceDirect
+
+Decision Support Systems
+
+journal homepage: www.elsevier.com/|ocate/dss
+
+ 
+
+ 
+
+An efﬁcacious method for detecting phishing webpages through target
+
+domain identiﬁcation
+
+Gowtham Ramesh 3*, Ilango Krishnamurthi b, K. Sampath Sree Kumar 3
+
+a Computer Science and Engineering, Amrita School of Engineering, Amrita Vishwa Vidyapeetham, Coimbatore, Tamilnadu, India
+b Computer Science and Engineering, Sri Krishna College of Engineering and Technology, Kuniamuthur, Coimbatore, Tamilnadu, India
+
+ 
+
+ARTICLE INFO ABSTRACT
+
+ 
+
+ 
+
+Article history:
+
+Received 26 February 2013
+
+Received in revised form 1 December 2013
+Accepted 7 January 2014
+
+Available online xxxx
+
+Phishing is a fraudulent act to acquire sensitive information from unsuspecting users by masking as a trustworthy
+entity in an electronic commerce. Several mechanisms such as spoofed e—mails, DNS spooﬁng and chat rooms
+which contain links to phishing websites are used to trick the victims. Though there are many existing antiphishing solutions, phishers continue to lure the victims. In this paper, we present a novel approach that not
+
+only overcomes many of the difﬁculties in detecting phishing websites but also identiﬁes the phishing target
+
+ 
+
+Keywords:
+
+Phishing
+
+Anti-phishing
+E-commerce security
+Target domain detection
+
+that is being mimicked. We have proposed an anti—phishing technique that groups the domains from hyperlinks
+having direct or indirect association with the given suspicious webpage. The domains gathered from the directly
+associated webpages are compared with the domains gathered from the indirectly associated webpages to arrive
+at a target domain set. On applying Target Identiﬁcation (TID) algorithm on this set, we zero—in the target domain.
+We then perform third—party DNS lookup of the suspicious domain and the target domain and on comparison we
+
+identify the legitimacy of the suspicious page.
+
+© 2014 Elsevier B.V. All rights reserved.
+
+ 
+
+1. Introduction
+
+Phishing encourages end users to visit fake webpages which have
+similar look and feel of a webpage with the malicious intention to
+steal user credentials and identities. This identity theft is used for
+many illegal activities like online money laundering. The losses created
+as a result of these activities run into billions of dollars [1]. According to
+the RSA's online fraud report, in the year 2012 there is 59% increase in
+phishing attacks as compared to 2011 and an estimated loss of more
+than $1.5 billion due to phishing attacks on the global organizations in
+the same period, which is 22% higher than in 2011 [2]. This results in
+people losing faith over the e—commerce industry and leads to signiﬁcant loss in their market value [3]. Thereby there is a strong demand
+for an effective measure to curb such phishing attacks.
+
+Any phishing attack usually involves ﬁrst, creation of a fake website
+which looks similar to a legitimate website and then lures the users to
+these fake websites instead of the legitimate webpage, to provide the
+required authentication and other personal details. These details are
+extracted from the user without his knowledge. To mitigate this attack
+many possible counter measures have been developed by the researchers such as white—list based methods, blacklist based methods,
+heuristic approaches, hybrid approaches or multifaceted mechanisms.
+
+All the aforesaid anti—phishing methods attempt to identify the
+phishing webpage, but lack techniques to identify the legitimate
+webpage that the phishing webpage mimics (phishing target [4]).
+
+* Corresponding author.
+E-mail address: rameshgowtham@gmail.com (G. Ramesh).
+
+0167-9236/$ — see front matter © 2014 Elsevier B.V. All rights reserved.
+http://dx.doi.org/10.1016/j.dss.2014.01.002
+
+However, any anti—phishing technique becomes incomplete without
+identiﬁcation of the phishing target, as it plays a vital role in conﬁrming
+that there is a phishing attack on a legitimate webpage. Unfortunately,
+ﬁnding the target webpage can be tedious at times when phishers attack the less popular or new webpages. Sometimes, it is also difﬁcult
+to identify the target because of the masquerading techniques used by
+the phishers. For example, if the phishers create the webpage using
+only embedded objects like images and scripts then identifying the target becomes tedious with the existing methods.
+
+Hence, there is a need for a holistic approach that can identify the
+right phishing target even when attackers use any masquerading techniques. Such a method would gain signiﬁcant importance among antiphishing techniques as it alerts the target owners to take necessary
+counter measures and enhance security.
+
+In this paper, we propose a novel approach to detect the phishing
+webpages. In this process, we take the webpage under scrutiny and identify all the direct and indirect links associated with the page and generate
+domain group sets 51 and S2 respectively. From these sets we identify the
+target domain set, which is given as input to Target Identiﬁcation (TID) algorithm to identify the phishing target. Using DNS lookup, we map the
+domains of suspicious webpage and phishing target to corresponding IP
+addresses. On comparing both the IP addresses, we conclude the authenticity of the suspicious webpage. As our approach depends only on content of the suspicious webpage it requires neither a prior knowledge
+about the site nor requires the training data.
+
+An overview of literature review and related work is presented in
+Section 2. Section 3 covers the system overview. In Section 4, we have
+explained the target domain set construction followed by the target
+
+Please cite this article as: G. Ramesh, et al., An efﬁcacious method for detecting phishing webpages through target domain identiﬁcation, Decision
+
+Support Systems (2014), http://dx.doi.org/10.1016/j.dss.2014.01.0022 G. Ramesh et al. / Decision Support Systems xxx (2014) xxx—xxx
+
+domain identiﬁcation using TID—algorithm and phishing detection
+procedure in Sections 5 and 6 respectively. The implementation details,
+evaluation methodology and experimental results are discussed in
+Section 7. We conclude by highlighting the key features of our technique and its limitations in Section 8.
+
+2. Related work
+
+Various solutions to phishing have been developed during the past
+years. In this section, we brieﬂy review some of the notable antiphishing works and empirical studies based on it. The studies of different approaches have motivated us to propose a method that overcomes
+these limitations of the existing schemes.
+
+The white—list approach maintains a list of all safe websites and their
+associated information. Any website that does not appear in the list is
+treated as a suspicious website. The current white—list tools usually
+use a universal white—list of all legitimate websites that need to be
+constantly updated. In order to simplify this, Han et al. [7] developed
+an approach to maintain an individual white—list which records the
+well—known legitimate websites of the user rather than maintaining a
+universal legitimate site list. In this approach, the Automated Individual
+White—List (AIWL) records every URL along with its LUI (Login User
+Interface) information and the legitimate IP addresses mapping to
+these URLs. Here the AIWL warns the user when the account information submitted to the website does not match with the entry in the
+white—list. This helps the user to distinguish a pharming website. This
+technique is adopted and suitably improvised for our work.
+
+The blacklist approach maintains a list of known phishing sites to
+check the currently visiting website against the list. This blacklist is usually
+gathered from multiple data sources like spam traps or spam ﬁlters, user
+posts (e.g. phishtank) or veriﬁed phish compiled by third parties such as
+takedown vendors or ﬁnancial institutions. Prakash et al. [8] used an
+approximate matching algorithm that divides a URL into multiple components that are matched individually against entries in the blacklist. Zhang
+et al. [9] proposed a system where customized blacklists are provided for
+the individuals who choose to contribute data to a centralized log—sharing
+infrastructure. This individual blacklist is generated by combining relevance ranking score and the severity score generated for each contributor.
+But the blacklist needs frequent updates from their sources and the exponential growth of the list demands great deal of system resources.
+
+The heuristic—based approaches extract one or more features from a
+webpage to detect phishing instead of depending on any of precompiled
+lists. Most of these features are extracted from URL and HTML DOM
+(Document Object Model) of the suspicious webpage. Zhang et al. [10]
+proposed a content—based approach CANTINA, based on the tf—idf
+(term frequency and inverse document frequency) algorithm to identify
+top ranking keywords from the page content and meta keywords/
+description tags. These keywords are searched through a trusted search
+engine such as Google. Here, a webpage is considered legitimate if the
+page domain appears in the top N search results. CANTINA+ is an
+upgraded version of CANTINA proposed by Xiang et al. [11], where
+new components are included to achieve better results. Particularly,
+they have included ten other features along with four of the CANTINA
+features and one extended feature. In our approach we have used tf—idf
+similar to CANTINA to extract keywords from the webpage.
+
+Another heuristic based approach exploring HTML DOM is
+“Phishark” developed by Prevost et al. [12]. In this research they have
+analyzed and studied the characteristics of phishing attack and have
+deﬁned twenty heuristics to detect phishing webpages. These twenty
+heuristics were then checked for the effectiveness to decide as to
+which of these heuristics would play a major role in identifying both
+the phishing and the legitimate webpages. Since, these approaches
+do not require any pre—compiled lists, they are capable of detecting
+new phishing webpages by identifying anomalies in it, but legitimate
+sites also may have such anomalies when it is developed by novice
+
+developers. These methods fall short in detecting a phishing webpage
+made up of only embedded objects like images and scripts.
+
+The other area of research focuses on detecting phishing by comparing
+visual and image similarities between webpages. Fu et al. [13] proposed
+an approach which uses the Earth Mover's Distance (EMD) to measure
+webpage visual similarity. In this approach they ﬁrst convert the webpage
+into low resolution images and then use color and coordinate features to
+represent the image signatures. EMD is used to calculate the signature distances of the images of the webpages. They used trained EMD threshold
+vector for classifying a webpage as a phishing or legitimate. Medvet
+et al. [14] proposed an approach which identiﬁes phishing webpages, by
+considering text pieces and their style, images embedded in the page
+and the overall visual appearance features of the webpage. Chen et al.
+[15] present an image based anti—phishing system, which is built on
+discriminative key point features in webpages. Their invariant content descriptor and the Contrast Context Histogram (CCH) compute the similarity degree between suspicious and legitimate pages. Chen et al. [16] also
+proposed an approach which uses gestalt theory for detecting visual similarity between two webpages. They used the concept of super—signals to
+treat the webpage as indivisible unite; these indivisible super—signals are
+compared using the algorithmic complexity theory. But these techniques
+may result in false positive when a legitimate page crosses the similarity
+threshold value and also fails to identify the targeted page.
+
+Multifaceted approaches use any combination of techniques in
+computational science to detect phishing websites. joshi et al. [17]
+developed the PhishGuard tool that identiﬁes phishing websites by
+submitting actual credentials after the bogus credentials during the
+login process of a website. They have also proposed architecture for analyzing the responses from server against the submission of all those
+credentials to determine if the website is legitimate or a phished one.
+Yue and Wang [18] designed a BogusBiter tool that submits a large
+number of bogus credentials along with the actual credential of users
+to nullify the attack. A similar approach has been applied by joshi et al.
+[17] but BogusBiter is triggered only when a login page is classiﬁed as
+a phishing page by a browser's built—in detection component.
+
+Shahriar and Zulkernine [19] proposed a model to test trustworthiness to suspected phishing websites. In a trustworthiness testing, they
+check if the behavior (response) of websites matches with the known
+behavior of a phishing or legitimate website to decide whether a
+website is phishing or legitimate. The model is explained using the
+notion of Finite State Machine (FSM) that captures the submission of
+forms with random inputs and the corresponding responses to describe
+the website's behavior. This approach can detect advanced XSS—based
+attacks that many contemporary tools currently fail to detect.
+
+A category of research focuses on experimental studies to comprehend the signiﬁcance of implementing anti—phishing strategies. Bose
+and Leung [5] demonstrated an experimental study showing that the
+ﬁrms that invest in adopting advanced phishing countermeasures earn
+trust of the customers which in turn reﬂects as encouraging return in
+their market value. Lai et al.'s [6] study on identity theft through coping
+perspective creates awareness for consumers, government agencies and
+e—commerce industries to counteract against such threats. Chen et al. [3]
+proposed a method to assess the possible ﬁnancial loss of phishing targets. In this method key phrase extraction technique is used to discover
+the reports of phishing attack on ﬁrms. To estimate the potential ﬁnancial
+loss of ﬁrms an event study was conducted to determine the change in
+market value after the release of phishing attack report. These studies
+clearly reveal the severity of phishing attacks and requirement of an effective anti—phishing method to protect ﬁrms and consumers.
+
+Our work is also motivated by two multifaceted approaches that
+detect phishing targets along with the phishing webpage. These
+approaches are discussed in brief below.
+
+Wenyin et al. [20] proposed to identify legitimacy of a given suspicious
+webpage and discovering its phishing target by calculating and reasoning
+deﬁned association relations on its Semantic Link Network (SLN). This
+approach ﬁrst ﬁnds the given webpage's associated pages and then
+
+Please cite this article as: G. Ramesh, et al., An efﬁcacious method for detecting phishing webpages through target domain identiﬁcation, Decision
+
+Support Systems (2014), http://dx.doi.org/10.1016/j.dss.2014.01.002G. Ramesh et al. / Decision Support Systems xxx (2014) xxx—xxx 3
+
+constructs a SLN from those webpages. They exploited a mechanism of
+reasoning on the SLN to identify whether the given webpage was a
+phishing page, and discovered its target if so. Although this method
+can detect a phishing webpage and ﬁnd its target as well, there are
+cases where the system fails when phishing webpage contains few
+hyperlinks or the keywords extracted from the phishing webpage do
+not match with the keywords of the target webpage. If a legitimate
+webpage is not easily discovered by a search engine, it is likely to be
+identiﬁed as phishing. Moreover, the computational cost of building a
+semantic link network is expensive.
+
+Wenyin et al. [21] also proposed an anti—phishing approach that identiﬁes phishing targets using suspicious webpage's associated relationships. A webgraph is constructed from the associated pages and further
+partition of the graph results a web community (the parasitic community) for the given webpage. Parasitic coefﬁcient is used to measure the parasitic relationship's strength from the given page to each page in the
+community. The page with the strongest parasitic relationship to the
+given suspicious webpage is regarded as the phishing target. If such a target is found, they identify the given suspicious webpage as a phishing
+webpage. Otherwise, they considered it legitimate. The construction of directly associated link set and indirectly associated link set in our method
+is adopted from this paper with additions and modiﬁcations.
+
+Table 1 provides a brief summary of related works in comparison to
+our work with respect to ﬁve features. These includes efﬁciency of the
+methods in detection of phishing websites hosted in any language,
+detection of new phishing websites that have not yet been identiﬁed,
+detection of phishing webpages designed in embedded objects, detection of pharming based attacks and detection of phishing target.
+
+3. System overview
+
+Fig. 1 shows the overall system design. Our system identiﬁes phishing websites based on the following certainty that for a phishing
+website, the target will be a legitimate site, whereas for a genuine
+website, the system will point to the genuine site itself as its own target.
+On this stand we identify the phishing webpage by comparing the
+suspicious webpage with its target.
+
+For a given suspicious page, our method ﬁrst identiﬁes all the direct
+and indirect links associated with that page. The links which are directly
+associated with the webpage are extracted from the HTML source of the
+page and grouped based on their domains, as a set of domain 51. The indirectly associated links of the page are then retrieved by ﬁrst extracting
+the keywords in the webpage and feeding these keywords to a search engine. We retrieve the ﬁrst n links returned by the search engine as
+indirectly associated links and group them as a second set of domain 32.
+A reduced domain set 53 is constructed by extracting only the common
+domains present in both 51 and 52. This set 53 is fed as an input to a
+
+Table 1
+Summary of related work in comparison with our work.
+
+Work Language independence Zero day protection
+Han et al. [7] Yes No
+Prakash et al. [8] Yes No
+Zhang et al. [9] Yes No
+Zhang et al. [10] No Yes
+Xiang et al. [11] No Yes
+Prevost et al. [12] No Yes
+Fu et al. [13] Yes No
+Medvet et al. [14] Yes No
+Chen et al. [15] Yes No
+Chen et al. [16] Yes No
+joshi et al. [17] Yes Yes
+Yue and Wang [18] Yes Yes
+Shahriar and Zulkernine [19] Yes Yes
+Wenyin et al. [20] Yes Yes
+Wenyin et al. [21] Yes Yes
+Our work Yes Yes
+
+TID algorithm, to identify the phishing target domain. We use DNS lookup
+to map the domain of the identiﬁed phishing target to its corresponding
+IP address. Similarly, we also map the domain of the suspicious webpage
+to its corresponding IP address. On comparing the two IP addresses we
+conclude the authenticity of the suspicious webpage.
+
+4. Target domain set discovery
+
+In this section, we discuss our approach for identifying the target
+domain set, consisting of domains which are directly and indirectly associated to the suspicious webpage. This set possibly contains a domain
+which is either the victim domain if the suspicious page is a phish or the
+domain of a legitimate page. In this approach we consider only domains
+of the associated webpage instead of considering the individual links.
+Our experiments have proved that this approach not only improves
+our prediction accuracy but also minimizes the computation overhead.
+We further discuss these merits in Section 7.
+
+4.1. Keyword extraction
+
+Keywords are important words in the webpage associated with a
+product or service. These keywords determine the web identity of a
+page. We apply term frequency—inverse document frequency (tf—idf)
+scheme [22] to extract the keywords set from various portions of a
+suspicious webpage e.g. title tag, meta tag (meta description tag, meta
+keywords tag), alt attribute of tags and body tag and create a document.
+This document is tokenized and pre—processed to eliminate the most commonly occurring words, stop words and words of size less than or equal to
+two before applying the tf—idf algorithm. The tf—idf algorithm assigns
+weight to every word in the document based on its importance to the document. A word that appears often in the document but rarely in the corpus
+will score high, while the other combinations will not. Finally we retrieve
+up to seven keywords from the resultant keywords set based on its tf—idf
+score [10]. These keywords are further used in identifying the indirectly
+associated links of the webpage as explained in the following section.
+
+4.2. Extracting link sets
+
+The connection between any phishing page and the webpage it imitates is the hyperlinks from the phishing webpage. Hence, analyzing
+the links in suspicious webpage is important to identify its target and
+to verify its legitimacy. Therefore, we build two link sets L1 and L2
+from the suspicious webpage.
+
+The links in directly associated link set (L1) are extracted from DOM
+object's properties of the suspicious webpage P, which includes href, src,
+and alt attribute of anchor, image, area, script and link tags. Here, we
+
+Embedded objects Pharming based attack Phishing target detection
+No Yes N0
+N0 N0 N0
+N0 N0 N0
+N0 N0 N0
+N0 N0 N0
+N0 N0 No
+Yes Yes N0
+N0 N0 No
+Yes N0 No
+Yes N0 N0
+No Yes N0
+No Yes N0
+No Yes N0
+N0 No Yes
+N0 No Yes
+Yes Yes Yes
+
+Please cite this article as: G. Ramesh, et al., An efﬁcacious method for detecting phishing webpages through target domain identiﬁcation, Decision
+
+Support Systems (2014), http://dx.doi.org/10.1016/j.dss.2014.01.0024 G. Ramesh et al. / Decision Support Systems xxx (2014) xxx—xxx
+
+SEARCH ENGINE
+
+ 
+
+ 
+
+Directly associated
+
+SUSPICIOUS WEB PAGE ﬁnks (L1)
+
+         
+
+DNS
+
+LOOKUP
+
+Label
+(Phishingllegiu'mate)
+
+ 
+
+@ THIRD-PARTY
+
+   
+
+w " DOMAIN SET
+82
+@ii)
+Indirectly associated
+links (L2)
+00ng SET (‘9‘ ~ oJiiSﬁEJET
+1
+
+TARGET DOMAIN
+
+Fig. 1. System design (A1 —A3: Extract links present in webpage; group links according to domains; domain set S1 given for set comparison; B1—B5: Extract keywords; keywords feed to
+search engine; extract the results; group links according to domains; domain set 52 given for set comparison; C1—C4: Identiﬁed target domain set; input target domain set to TID algorithm;
+identify the target domain; supply domain name of the target domain to third-party DNS server; D1: Supply domain name of the suspicious webpage to third-party DNS server; E1: Label
+
+generation based on DNS comparison (phishing = 0, legitimate = 1).
+
+replace the relative links by their hierarchically associated known absolute link.
+
+The links in indirectly associated link set (L2) are obtained from search
+engine results, by supplying keywords extracted as given in Section 4.1.
+Search engines take keywords of a web document as a query and crawls
+the web to identify the webpages which closely match the description
+given. When a suspicious page is phished, no matter what keywords we
+add on the query string, search engines will not return the phished page
+in top ranked results [10]. Therefore, we have considered this as the
+most reliable way of identifying a genuine webpage. The links extracted
+from the search engine result (L2) are used to narrow down the domains
+in set L1 for the target domain identiﬁcation which is explained in the following sections. Here, as it would be impractical to consider all the links
+returned by the search engine, we take only a ﬁnite number of these
+links. In our system, we have chosen the ﬁrst ten links as the associated
+links because we have observed through experiments that the target domain always appears among the highest ranked.
+
+4.3. Identifying the target domain set
+
+The links in set L1 are grouped by domains which results in domain set
+51. Similarly we ﬁnd the domain set 52 from the set L2. The target domain
+set S3 is constructed by considering common domains preset in both S1
+and 52. This intersection operation narrows down the possible target domains by eliminating irrelevant domains linked from suspicious page. Let
+us consider the case of www.abc.com/index.html being a suspicious
+webpage whose target webpage is www.xyz.comis. But not all the links
+from www.abc.com/index.html are directed to www.xyz.com, few of
+the links might be directed to some irrelevant domains. This reduced domain set S3 will be given as an input to TID algorithm, which analyzes all
+domains in the target domain set and predicts the target domain.
+
+5. Identifying the target domain
+
+In this section we have discussed about how the target domain is
+identiﬁed from the target domain set (S3) also we check the authenticity of the suspicious webpage. The set 53 contains the predicted target
+domains and depending on the number of domains in it two scenarios
+are possible. In the following subsections we would discuss the target
+domain discovery in each of these scenarios and the corresponding
+algorithm is explained in Fig. 2.
+
+5.1. The intersecting set S3 is a nonempty set
+
+For each of the domains in the target domain set, we calculate the
+cost it takes to reach the domain from the current suspicious webpage
+P. The cost of reaching a domain from the webpage is the number of
+links that are directly and indirectly associated with the webpage.
+Consider a domain ‘i’ in the target domain set, let the number of directly
+associated links be D,- and the number of indirectly associated links be G,,
+then the cost, X,- is calculated as Eq. (1).
+
+Xi=Di+Gi (1)
+
+Let us consider the number of domains in the target domain set to be
+n. The set L3 contains all the links from P to the domain set S3. Taking
+one domain at a time in S3, we ﬁnd links in set L3 which points to
+that domain. And by visiting each of those pages, we sort the links in
+the webpage according to the domains in the target domain set S3,
+and we maintain the count of number of links, which are pointing
+from current visiting domain to domains in the S3. We represent this
+count as Ni,j where i is a visiting domain and j is a domain in set S3.
+
+In ﬁnding phishing target we use the count for each domain in S3. To
+this count Nb]- (number of links from domain i to each domain in S3), we
+also multiply the corresponding weight of domain j in order to minimize
+the effect of heavily populated links from domains i to j. While considering the count NW- alone, there is a possibility that a skew is created. In other
+words, we mean to say that there can be a situation where the number of
+links pointing from domain i to off—target domain j is very large in comparison to the number of links pointing from domain i to a target domain
+in S3, which may lead to erroneous results in ﬁnding the phishing target.
+To overcome this drawback, we introduce the concept of weights. For
+every domain i in the target domain set, we ﬁnd its corresponding weight.
+The weight of a domain is calculated by taking the membership of the domain in the set L3. For example, let us consider that there are three domains in the target domain set S3 and 44 links in L3. Out of 44 links in
+L3, let 10 links point to a domain—1, 31 links point to domain—2 and 3
+links point to domain—3. Then, the membership of domain—1, domain—2
+and domain—3 would be 0.227, 0.705 and 0.068 respectively. For this calculation, we have considered both crawlable links and non—crawlable
+links (links that point to image, external objects, etc.,) of the webpages.
+Mathematically, this is expressed as shown in Eq. (2).
+
+X.
+
+Wi : n
+i:1Xi
+
+Please cite this article as: G. Ramesh, et al., An efﬁcacious method for detecting phishing webpages through target domain identiﬁcation, Decision
+
+Support Systems (2014), http://dx.doi.org/10.1016/j.dss.2014.01.002G. Ramesh et al. / Decision Support Systems xxx (2014) xxx—xxx 5
+
+Input: Target Domain set (SS)
+Output: Target domain
+
+1. If 83 is nonempty set
+
+(a) Calculate the cost of reaching a domain from webpage.
+(b) Calculate the cost of reaching from one domain to other domain,
+
+for all domains in 83.
+
+(c) Construct the cost matrix.
+(d) Identify the target domain.
+
+2. If S3 is a null set
+
+(a) If 81 and 82 are nonempty sets
+
+i. When the ratio of active to inactive links in the suspicious
+page less than 1, consider 82 as target domain set SB and go
+
+to step 1.
+
+ii. Otherwise, consider target domain set SB as union of 81 and
+
+S2 and go to step 1.
+
+(b) If 81 is a null set and 82 is nonempty set
+
+i. Consider 82 as target domain set SB and go to step 1.
+
+(c) 82 is null set
+
+i. Declare as phishing page, phishing target is the domain
+having highest number of occurrences in set L1.
+
+Fig. 2. TID algorithm.
+
+Finally, to identify the target domain, we perform the following
+steps. In order to ﬁnd the target domain, we need to calculate the cost
+of reaching from one domain to other domains in the target domain
+set. It is calculated as Eq. (3).
+
+Xiy}. :Ni,j*Wj (3)
+
+where i and j are the domains in the target domain set. The corresponding graph is shown in Fig. 3.
+
+We need also to construct a square matrix that maps the cost taken to
+reach a domain from every single domain including itself. The domains in
+this matrix include not just the target domains but the domain of P as well.
+We calculate the sum of each column, which indicates the cost of reaching
+the domain from all domains in 53 as shown in Fig. 4. The domain corresponding to the column with the highest sum is our target domain.
+
+5.2. The intersecting set 53 is a null set
+This case occurs when none of the elements in sets S1 and 52 matches
+
+or either of the sets 51 or 52 is a null set. Set 51 would be a null set when
+we couldn't extract links from webpage. Set 52 would be a null set when
+
+ 
+
+we could not extract keywords from the webpage. This happens in situations when a suspicious webpage is only made up of any combinations
+like images, scripts or encoded content. In the following subsections we
+explain phishing target detection when SB is a null set.
+
+5.2.1. 51 and 52 are nonempty sets
+
+Here, we check the ratio of active to inactive links in the suspicious
+webpage to narrow down the possible target domains. If the ratio is less
+than 1, it shows that the attacker is trying to manipulate the links in a
+webpage to bypass or mislead the phishing detection via fake links to a
+non—existing webpage. In this case we treat the set 52 as the target domain
+set S3 and proceed to construct the cost matrix as discussed in Section 5.1.
+
+In the case of a legitimate webpage most of the links are active and
+the ratio of active links to inactive links is always greater than 1. Here,
+we consider the case where all links of P are directed to its own domain
+or the case where webpage is having a sizable number of links pointing
+to the external domains. In the abovementioned cases we take every domain that is present in Sl and S2 to be in SB and proceed further using
+the method discussed in Section 5.1 to construct the cost matrix. Here,
+
+I LE1 = Pages under domain N
+
+Fig. 3. Graph indicating the target domain set and link costs.
+
+Please cite this article as: G. Ramesh, et al., An efﬁcacious method for detecting phishing webpages through target domain identiﬁcation, Decision
+
+Support Systems (2014), http://dx.doi.org/10.1016/j.dss.2014.01.0026 G. Ramesh et al. / Decision Support Systems xxx (2014) xxx—xxx
+
+ 
+
+N N N N
+23:23ij Zj=pXj7b Zj=pXj7i 23:1?ij
+
+Fig. 4. Cost matrix for target identiﬁcation.
+
+we cannot identify the target by the column sum of the matrix alone,
+since the sets 51 and S2 are distinct. To reduce this uncertainty in the
+target detection, we go for post processing.
+
+In the post processing, we consider each of domains corresponding
+to the column in the matrix starting from the domain having the highest
+cost. The domain name is then compared with the keywords extracted
+from the suspicious page. If matched, we declare it as a target domain
+since the URL address of most of the genuine websites is related to its
+content. This characteristic of the URL address clearly shows that there
+is a relationship between base domain of the webpage and the keywords extracted from the webpage. For example, the co—operative
+bank's URL is https://personal.co—operativebank.co.uk. The keyword
+identity set for this webpage is {co—operative, internet, digit, bank,
+visa} where co—operative is part of the base domain.
+
+5.2.2. S1 is a null set and $2 is a nonempty set
+In this case, we treat set S2 as the target domain set 33 and proceed
+further using the method discussed in Section 5.1.
+
+5.2.3. 52 is a null set
+
+This case occurs when we cannot extract keywords from a suspicious webpage and when the attacker explicitly tries to hide page identities from the anti-phishing tools. In this case, we identify the target
+domain by taking the foreign domain which is having highest number
+of occurrences in set L1; also we conclude the page as phishing. In the
+legitimate webpages we can extract keywords at least from the title
+and meta tags present in page source.
+
+6. Phishing detection using DNS lookup
+
+In the previous sections we have identiﬁed the target domain of the
+suspicious webpage. Here we take the target domain and the domain of
+the suspicious webpage P, and perform third-party DNS lookup. As a
+result we get the corresponding IP addresses for both the domains. On
+comparing these two sets of IP addresses we draw a conclusion on the legitimacy of P. If the IP addresses of the domain P are matched with those
+retrieved for the target domain we declare P to be a legitimate webpage.
+Otherwise, we conclude it to be a phishing webpage. We have used thirdparty DNS lookup to avoid pharming attack (The user is redirected to a
+phished page even though he enters a correct URL. Attackers carry out
+this by exploiting the vulnerability in DNS server software).
+
+In identifying the legitimacy of a webpage we have used IP address
+comparison instead of domain names, to overcome the discrepancies
+in domain names. For example we consider a case where, www.
+gmail.com may be having different aliases like mail.google.com,
+googlemail.l.google.com; here domain comparison leads to false positive.
+
+7. Implementation and evaluation
+7.1. Implementation
+Our anti—phishing system is implemented in Java platform standard
+
+edition 7. It takes URL of the suspicious webpage as input and evaluates
+its legitimacy. The directly associated links (L1) are extracted from the
+
+webpage using Jsoup HTML parser [24]. It provides a convenient way
+to access links from HTML of the page. Along with Jsoup, we have also
+used pattern matching which helps in extracting links from webpages
+that are not well formed.
+
+The indirectly associated links (L2) of a webpage are extracted in
+three step process; 1) keywords are extracted from a suspicious
+webpage using the tf—idf method. Here, we retrieve up to 7 terms
+from resultant keyword list whose tf—idf values are ranked at the top.
+These keywords are used to frame the search query. 2) The search
+query is given to search engine to retrieve the top 10 search results,
+for which we have used Google Custom Search API [25]. 3) The links
+in set L2 are extracted by parsing Google‘s search result.
+
+The links in sets L1 and I2 are grouped by domain name which results
+in sets 51 and 32 respectively. We have used guava—libraries [26] to extract parent level domain from each of the links. The target domain set
+53 is constructed by performing intersection operation between sets S1
+and S2, which is fed as an input to TID algorithm to identify the target domain. Finally, IP address of the target domain is compared with IP of suspicious webpage using Google Public DNS (8.8.8.8 and 8.8.4.4) to verify its
+genuineness. For the runtime analysis we have used hrtlib.jar [27] timing
+library. This library uses Java Native Interface (JNI) implementations to return even a submillisecond timing spent by our system.
+
+7.2. Metrics used in evaluation
+
+We have used three metrics to evaluate the performance of system,
+which are true positive rate (TPR), false positive rate (FPR) and accuracy
+(ACC).
+
+The true positive rate measures the percentage of correctly classiﬁed
+phishing sites. The TPR is computed using Eq. (4).
+
+TP TP
+TPR _ P _ (TP + FN) (4)
+
+where TP is the number of correctly classiﬁed phishing pages. P is the
+number of phishing pages, which is equivalent to the sum of correctly
+classiﬁed phishes (TP) and missed phishes (FN).
+
+The false positive rate measures the percentage of legitimate sites
+wrongly classiﬁed as phishing. The FPR is computed using Eq. (5).
+
+PP PP
+PPR : T : (FP + TN) (5)
+
+Here FP is the number of legitimate pages which are wrongly
+classiﬁed as phishing, L is the number of legitimate pages which is
+equivalent to the sum of falsely classiﬁed legitimate pages (PP) and
+correctly classiﬁed legitimate pages (TN).
+
+The accuracy measures the degree of closeness between measurements of classiﬁed sites and sum of actual phishing sites and legitimate
+sites. The ACC is computed using Eq. (6).
+
+(TP + TN)
+
+ACC = —(P + L) (6)
+
+Here accuracy value will be close to 1 for any ideal anti—phishing
+system. Accuracy of the system can be improved by having higher TP
+value and lower FP value.
+
+7.3. Description of data
+
+We have collected a real world dataset of 4574 live phishing and
+legitimate websites over a period of 3 months from November 2012
+to January 2013. Speciﬁcally, our dataset consists of 1200 legitimate
+pages and 3374 unique phishing pages.
+
+Please cite this article as: G. Ramesh, et al., An efﬁcacious method for detecting phishing webpages through target domain identiﬁcation, Decision
+
+Support Systems (2014), http://dx.doi.org/10.1016/j.dss.2014.01.002G. Ramesh et al. / Decision Support Systems xxx (2014) xxx—xxx 7
+
+Legitimate pages in our dataset are obtained from three sources as
+shown in Table 2. Legitimate pages in our dataset mainly focus on the
+popular and most targeted websites published in the sources.
+
+Each entry in our phishing dataset is unique which are downloaded
+from two sources as shown in Table 3.
+
+7.4. Detection accuracy
+
+The experiment results are shown in Table 4. The true positive rate
+of this method is 99.67%, false positive rate is 0.5% and accuracy is
+99.62% as shown Fig. 5. This statistics clearly shows that this system detects phishes with less false positives and high accuracy rate. Moreover,
+
+for all the successfully classiﬁed pages we have identiﬁed its target also.
+
+The key reason for false positive is the absence of the target
+domain in the target domain set S3. This occurs because of two reasons;
+(1) when a legitimate webpage's domain is not listed in the top 10
+search engine results and (2) when we could not extract keywords
+from a page. Similarly the false negative occurs when a phishing page
+is hosted on the compromised domain.
+
+The test results of our method are compared to those of CANTINA
+[10], CANTINA + [11], and Wenyin's methods [20,21]. As Table 5 shows
+our method is more advantageous over other methods as our method
+has a low false positive rate and higher accuracy. The results of other
+methods (except Wenyin's method [21]) are collected from the respective papers and the testing dataset for each method is different.
+
+The accuracy of phishing target detection of our method is 99.85%
+which shows that our target detection method has more merits than
+other methods that have been discussed in the related work section.
+Earlier target detection approaches most of the times identify cluster
+of target pages for a suspicious webpage and leaves the decision to the
+user to select right target page. But, our approach eliminates this problem by detecting a target domain instead of target pages.
+
+In Appendix—A, we have included the screenshot of our system
+output and phishtank's (www.phishtank.com) user review on a webpage. In Appendix—B, we have shown a brief comparison of our system's
+output with sitewatcher [21] results and phishtank's user reviews.
+
+7.5. Runtime analysis
+
+All our experiments were carried out on a computer with a 2.4 GHz
+processor and 4 GB RAM. We have observed that our method takes
+average run time of 20,806 ms :|: 27,272 ms to decide the legitimacy
+and identify target of the webpage. Table 6 shows the average runtime
+of four modules. In this, average runtime of domain set Sl generation
+includes time taken for the extraction of links from HTML DOM of the
+suspicious webpage and time taken for grouping it by domain. Similarly,
+average runtime of domain set S2 generation includes time taken for
+extraction of keywords from suspicious webpage, querying the search
+engine, parsing the search result and grouping it by domain. Among
+these four modules the TID algorithm has a wide standard deviation
+in the runtime. This is because, for some of the webpages the set S3
+is a null, but 51 and S2 are not null sets. In this case, TID algorithm
+constructs cost matrix for every domain in sets S1 and S2 for the target
+detection which leads to increase in computation time.
+
+Table 2
+Legitimate data source.
+
+Source Sites Link
+
+Google's top 1000 most-visited sites 675 http://www.google.com/adplanner/
+
+static/top1000/
+
+Alexa's top sites 340 http://www.alexa.com/topsites
+
+Netcraft's most visited sites 135 http://toolbar.netcraft.com/stats/
+topsites/
+
+Millersmiles‘ top targeted sites 50 http://www.millersmiles.co.uk
+
+Table 3
+Phishing data source.
+Source Sites Link
+Phishtank‘s open database 2589 http://www.phishtank.com/
+
+developer_inf0.php
+http: //antiphishing.reasonables.com/
+BlackList.aspx
+
+Reasonable-phishing webpage list 785
+
+Table 4
+Experiment results: N is the total number of pages, n is the number of correctly classiﬁed
+
+pages.
+
+Phishing pages Legitimate pages Total
+N 3374 1200 4574
+n 3363 1 194 4557
+
+7.6. Detection accuracy of system with dijfferentsearch engines
+
+7.6.1. Metrics used in search engine evaluation
+
+In this section we have evaluated the effectiveness of various search engines in order to ﬁnd the right one that helps to enhance the accuracy of our
+anti—phishing system. As discussed in Section 4.2 the indirectly associated
+link set (L2) is constructed from search engine results by supplying keywords obtained from suspicious webpage. These links in set L2 are further
+grouped by domains resulting in set S2. The scope of detecting right target
+domain increases when the number of entries in S2 is less, also it signiﬁcantly reduces the process of constructing cost matrix for detecting target
+domain. Thus in our method, the search engine that returns more pages
+(in top ten ranks) from same domain is considered the most effective.
+
+Here, we have used discounted cumulative gain (DCG) based evaluation [23] to measure the effectiveness of search engines. DCG examines
+the ranked list of search result for a given query based on two assumptions. 1 ) Highly relevant documents are more valuable when they attain
+the high ranking positions in the search engine result list. 2) Highly relevant documents are less useful when they appear in the lesser ranked
+positions of search engine result list, as it gains less focus of the user.
+
+Each search engine's average performance is evaluated by four step
+process. In the ﬁrst step, the relevance score G’ (gain vector) is
+constructed by examining each document from ranked positions 1 to
+10 in the search result of a query. In gain vector, if the base domain of
+the search result is a target domain it is represented as 1 otherwise 0.
+For example, G’ = <1,1,1,1,0,0,1,0,1,0>.
+
+In the second step, the discounted cumulative gain accumulated at a
+particular rank position i is calculated for G’. This discounting function is
+required to gradually reduce the document's relevance score as its rank
+increases.
+
+  
+
+ 
+
+ 
+
+ 
+
+ 
+
+G[i] ifi<b
+DCGW : DCG[i—1+—Gm.] ifizb (7)
+10gbl
+100 a °o 99. 5% 99. 62%
+90 r
+80 4
+70 a
+60 w
+50 J
+40 4‘
+30 ~
+20 1
+1° 7 o. 5% 0.32%
+0 t— i
+True True False False Accuracy
+positive negative negative positive
+
+Fig. 5. Assessment of experiment.
+
+Please cite this article as: G. Ramesh, et al., An efﬁcacious method for detecting phishing webpages through target domain identiﬁcation, Decision
+
+Support Systems (2014), http://dx.doi.org/10.1016/j.dss.2014.01.0028 G. Ramesh et al. / Decision Support Systems xxx (2014) xxx—xxx
+
+Table 5
+Comparison among anti-phishing methods.
+
+Anti-phishing methods No. of legitimate pages (L) No. of phishing pages (P) Total pages in dataset (L + P) TPR FPR Accuracy
+CANTINA [10] 100 100 200 89% 1% 94%
+CANTINA + [11] 4780 8118 12,898 99.63% 0.4% 99.6%
+Semantic link network method [20] 1000 1000 2000 83.4% 13.8% 84.8%
+Antiphishing through phishing target discovery [21] 1200 2000 3200 93.25% 4.16% 98.73%
+Our method 1200 3374 4574 99.67% 0.5% 99.62%
+
+T b1 6 of documents from the same target domain. Though, with google.com
+
+a e
+
+Average runtime and standard deviation of four modules.
+
+Modules Average runtime (milliseconds)
+Domain set 51 generation 3192 :l: 3443
+
+Domain set S2 generation 2290 :I: 894
+
+TID algorithm 13,123 :1: 24,399
+
+DNS lookup and IP comparison 670 :I: 703
+
+where the base value b is considered as 2 and the G[i] denotes ith position in the gain vector G’.
+
+In the third step DCG vectors are normalized. As, comparing a search
+engine's performance from one search result to the next cannot be consistently achieved using DCG alone, the cumulative gain at each position
+for a chosen value of i should be normalized across search queries. The
+normalized DCG vectors (nDCG) are obtained by dividing DCG by the
+corresponding ideal DCG vectors as shown in Eq. (8). In our system
+the ideal vector 1’ is selected as all 15 since, ﬁrst n positions are expected
+to get pages from same target domain, that is 1’ = <1,1,1,1,1,1,1,1,1,1>.
+The ideal DCG/1 vector is obtained by applying Eq. (7) on the selected
+ideal gain vector 1’.
+
+We obtain following DCG/1 by applying Eq. (7) on ideal gain vector 1’.
+
+DCG} 2 <1, 2, 2.63, 313,356,395, 430,464,495, 5.25>
+
+Normalized discounted cumulative gain is computed as:
+
+DCG/1 DCG’2 DCG’n>
+DCG}1 ’Dccp ’ Dcc;n '
+
+Finally, the average of nDCG up to position K is calculated as shown
+in Eq. (9).
+
+nDCG/ = <
+
+ 
+
+(8)
+
+Avg—pos(nDCG, K) : 1<—1 * Z nDCG[i] (9)
+i:l..l(
+
+The average value 1 shows that ideal result has been returned by the
+search engine. Here, the average value indicates the accuracy of current
+search for a given query.
+
+7.6.2. Detection accuracy
+
+Using the aforementioned method, we have assessed the performance of ﬁve different search engines and phishing detection accuracy
+of our system, the test results are as shown in Table 7. This experiment
+was conducted with 2000 URLs randomly selected from dataset stated
+in Section 7.3. The experiment results show that, with 76% of average
+performance google.com performs better by returning more number
+
+Table 7
+Accuracy of different search engines on same dataset.
+
+S. No. Search engine Average performance
+on our dataset(in %)
+
+1 google.com 76.76
+
+2 aol.com 71.1
+
+3 hotbot.com 65.5
+
+4 bing.com 59.48
+
+5 excite.com 57.94
+
+we could successfully detect the legitimacy of 1993 webpages, there is
+no signiﬁcant difference in the system's prediction accuracy even
+when using other search engines. For example, with excite.com also
+our system could successfully classify 1989 webpages. This is achieved
+because on average excite.com returns 4 documents that are from target
+domain in the search result which gives room to have multiple domains
+other than the target domain in set 52. But these non—target domains in
+set 32 are removed or minimized when we compare it with set 51 (explained in Section 4.3). Thus, this operation helps our system to sustain
+the accuracy with any search engine.
+
+7.7. Limitations of our approach
+
+In this approach we cannot detect phishing webpages hosted on the
+compromised domains. This is because, the set S1 contains the phishing
+target. When intersecting it with the domain set 52 the target domain
+would be eliminated from the target domain set S3. This may result in
+the false prediction of target domain.
+
+If we cannot extract links or keywords from the suspicious webpage,
+sets Sl and 32 will become null. As our approach requires either links or
+keywords of suspicious page to proceed in detection of target domain,
+the absence of both will lead to an undesirable situation which in turn
+results in false prediction.
+
+In our method the accuracy of prediction depends on the keywords
+that are extracted from the suspicious page. Wrong keywords extracted
+will lead to irrelevant search results which may in turn lead to
+erroneous prediction and classiﬁcation. This demands the extraction
+of effective keywords that uniquely identify the document.
+
+Our method has the advantage of detecting phishing webpages of any
+language but, it requires an effective language independent keyword
+extraction method to ﬁnd a right target domain. In the tf—idf method to
+retrieve document frequency value of a term, we use a ready-made frequency list compiled by http://www.wordfrequency.info, but the bottleneck is that the frequency list is available only for few languages. For
+other language websites which do not have a ready—made frequency list
+we extract keywords only from title and meta tags of it with size greater
+than or equal to two instead of depending on the tf—idf method. This may
+affect the accuracy of target detection.
+
+Our approach uses search engine results and DNS lookup to identify
+target and phishiness of webpages. Therefore, the prediction time of our
+system depends upon the speed of the search engine and DNS lookup
+time. The delay caused by any of these external sources would increase
+the target prediction time proportionally. But with, today's high speed
+internet and availability of alternate sources this bottleneck problem is
+eliminated.
+
+TPR (in %) FPR (in %) Accuracy (in %)
+99.8 0.5 99.65
+
+99.7 0.5 99.6
+
+99.8 0.7 99.55
+
+99.7 0.8 99.45
+
+99.8 0.9 99.45
+
+Please cite this article as: G. Ramesh, et al., An efﬁcacious method for detecting phishing webpages through target domain identiﬁcation, Decision
+
+Support Systems (2014), http://dx.doi.org/10.1016/j.dss.2014.01.002G. Ramesh et al. / Decision Support Systems xxx (2014) xxx—xxx 9
+
+8. Conclusion
+
+Our system identiﬁes phishing websites along with its victimized domain that most of the anti—phishing methods lack. Also,
+our approach detects newest phishing websites hosted in any
+language. We have convincing results which show that our system
+has 99.62% of accuracy out of which 99.85% target domains were rightly
+
+Appendix A
+
+identiﬁed. This high detection accuracy is possible because of the
+methods we have adopted to narrow down the possible target
+domains from initial sets and cost matrix construction for target
+detection. Though we have got impressive runtime performance
+from our system, it can be further improved by devising a target
+identiﬁcation strategy without typically depending on external
+information repositories in the web.
+
+PhishTank is operated by OpenDNS, a free service that makes your Internet safer, faster, and smarter. Get started
+today!
+
+PhIShTank 
+ 
+
+Home Add A Phish Verify A Phish Phish Search
+
+Stats FAQ
+
+in: ramgshgowtham | My Account | Sign Out
+
+Developers Mailing Lists My Account
+
+ 
+
+Submission #1932226 is currently ofﬂine
+
+Submitted Jul 14th 2013 7:44 PM by leofelix (Current time: Jan let 2014 7:32 AM UTC)
+
+http://50.63.131.249/primarylogin.php
+
+i Veriﬁed: Is a phish Next unveriﬁed phish >
+
+As verified by NotBuyingIt alsf78 codpiece knack
+
+ 
+
+Is a phish 100%
+
+Is NOT a phish 0%
+
+Screenshot of site | View site in frame
+
+_ T-'l
+W III
+
+E Lloyds TSB | for the journey
+
+ 
+
+View technical details
+
+—VieW Site i“ W
+
+a Mobile
+
+COOK“: pohcy
+
+Weir‘i-a‘ne to Internet Banking
+
+If you don‘t already use internet Banking. it's simple to register online.
+
+Please enter your user ID and password below
+
+User ID:
+
+Password:
+
+ 
+
+[3 Remember my User ID ['9]
+
+Friends of PhishTank | Terms of Use | Privacy | Contact
+PhishTank is operated by OpenDNS. Learn more about PhishTank or OpenDNS.
+
+Server: pt8.phishtank.com
+
+Fig. 6. Phishtank — Details on suspected phish (1932226).
+
+Please cite this article as: G. Ramesh, et al., An efﬁcacious method for detecting phishing webpages through target domain identiﬁcation, Decision
+
+Support Systems (2014), http://dx.doi.org/10.1016/j.dss.2014.01.00210 G. Ramesh et al. / Decision Support Systems xxx (2014) xxx—xxx
+
+[30mm 23 .. X 33‘] j“ 5% p.[ 1' El , F3 , = E] References
+
+<terminated> CopyOfproject [Java Application] C:\Program FilesUava\jre6\bin\javaw.exe [1] Proof point: security, compliance and the cloud, http://blog.proofpoint.com/2012/
+
+Please enter the UPI: 1 11/spear-phishing-attack-cause-of-massive-south-carolina-data-breach.html
+
+htth/I’Se-él131-249/p' ima'ylosi" - PM November 27 2012(Visited: June 2013).
+
+Extracting Links from the webpage. - - [2] RSA Anti-Fraud Command Center, RSA monthly online fraud report, http://www.
+emc.com/collateral/fraud-report/online-rsa-fraud-report-O12013.pdf January
+
+The domain under DAL (S1) = 2013(Visited: June 2013).
+
+59- 53 - 131 - {149 1103/3“? - ‘0'“ lloydstsb. ‘0‘ ”k [3] Xi Chen, Indranil Bose, Alvin Chung Man Leung, Chenhui Guo, Assessing the severity
+
+lloydsbank1nggroup.com “Fa-”‘3 rsac.org of phishing attacks: a hybrid data mining approach, Decision Support Systems 50
+
+(4) (2011) 662—672.
+
+Extracting keywords and querying. 533"" Engine. ' ' [4] Guang Xiang, Jason 1. Hong, A hybrid phish detection approach by identity discovery
+Keywords : 11°Yd5 tSb welcome internet and keywords retrieval, Proceedings of the 18th International Conference on World
+Language - on Wide Web, ACM, 2009, pp. 571—580.
+
+The domain under IAL ($2) :
+
+lloydstsb.com lloydstsb.co.uk lloydstsb-usa.com
+lloydstsbbusiness.com lloydstsb-offshore.com yimg.com
+lloydsbankinggroup.com
+
+$3 is = [lloydstsb.com, lloydstsb.co.uk, lloydsbankinggroup.com]
+size of S3 is = 3
+
+Now calculating inward links and weightage ....
+
+[5] Indranil Bose, Alvin Chung Man Leung, The impact of adoption of identity
+theft countermeasures on ﬁrm value, Decision Support Systems (2013) 753—763,
+http://dx.d0i.org/10.1016/j.dss.2013.03.001.
+
+[6] Fujun Lai, Dahui Li, Chang-Tseh Hsieh, Fighting identity theft: the coping perspective, Decision Support Systems 52 (2) (2012) 353—363.
+
+[7] Weili I-Ian, Ye Cao, Elisa Bertino, Jianming Yong, Using automated individual
+white-list to protect web digital identities, Expert Systems with Applications 39
+
+Number of links from webpage to domain 0 = 10 (15)(2012)11861_1_1869' , , .
+Number of links from webpage to domain 1 a 31 [8] Pawan Prakash, Manlsh Kumar, Ramana Rao Kompella, M1nax1 Gupta, PhishNet:
+Number of links from webpage to domain 2 = 3 predlctlve blacklistlng to detect phlshing attacks, INFOCOM, 2010 Proceedlngs
+The total weight from webpage to $3 = 44 IEEE, IEEE 201931313- 1‘5- I . I I I I
+Neightage of domain 9 = 9327 [9] Jian Zhang, Phillip Porras, johannes Ullr1ch, Highly predictive blackllsting, Proc. of
+Neightage of domain 1 = 9,795 the 17th Conference on Security Symposium, USENIX Association, Berkeley, CA,
+Neightage of domain 2 = 0.068 USA1008. PP- 107—122The number of crawlable 1inks(L3) : 18 [10] Yue Zhang, Jason 1. Hong, Lorrie F. Cranor, CANTINA — a content-based approach to
+Crawling and finding the Target domain. . , detecting phishing web sites, Proc. of the 16th International Conference on World
+Wide Web, Banff, Alberta, Canada, May 08-12 2007, pp. 639—648.
+The target domain is : lloydstsb.com [11] G. Xiang, J. Hong, C.P. Rose, L. Cranor, CANTINA+: afeature-rich machine learning
+50.63.131.249 framework for detecting phishing web sites, ACM Transactions on Information
+[50.63.131.249] and System Security 14 (2) (September 2011 )(Article 21, 28 pp.).
+lloydstsb.com [12] Prevost, Gustavo Gonzalez Granadillo, Maryline Laurent, Decisive heuristics to
+[141.92.130.226] differentiate legitimate from phishing sites, Proc. of Conference on Network and
+The Nebpage is Phishing! ! ! Information Systems Security (SAR—SSI), La Rochelle, France, May 2011, pp. 1—9.
+
+[13] Anthony Y. Fu, Liu Wenyin, Xiaotie Deng, Detecting phishing web pages with visual
+similarity assessment based on earth mover's distance (EMD), IEEE Transactions on
+' ’ Dependable and Secure Computing 3 (4) (2006) 301 —311.
+[14] E. Medvet, E. Kirda, C. Kruegel, Visual-similarity-based phishing detection, IEEE
+Fig. 7- System OUtPUt- International Conference on Security and Privacy in Communication Networks,
+Istanbul, Turkey, IEEE Computer Society Press, September 2008.
+
+[15] KT. Chen, ].Y. Chen, C.R. Huang, C.-S. Chen, Fighting phishing with discriminative
+keypoint features, IEEE Internet Computing 13 (3) (2009) 56—63.
+
+[16] TC. Chen, S. Dick, J. Miller, Detecting visually similar web pages: application to
+phishing detection, ACM Transactions on Internet Technology (TOIT) 10 (2) (May
+2010)(Article 5, 38 pp.).
+
+[17] Yogesh Joshi, Samir Saklikar, Debabrata Das, Subir Saha, PhishGuard: a browser
+plug-in for protection from phishing, Internet Multimedia Services Architecture
+and Applications, 2008. 2nd International Conference on IMSAA 2008, IEEE, 2008,
+
+pp. 1-6.
+[18] Chuan Yue, I-laining Wang, BogusBiter: a transparent protection against phishing
+
+attacks, ACM Transactions on Internet Technology (TOIT) 10 (2) (2010) 6.
+[19] Hossain Shahriar, Mohammad Zulkernine, Trustworthiness testing of phishing
+
+Appendix B websites: a behavior model-based approach, Future Generation Computer Systems
+28 (8) (2012) 1258—1271.
+
+A brief comparison Of our system output With phishtank [20] Liu Wenyin, Ning Fang,.Xi.aojun Quan, Bite Qiu, Gang Liu, Discovering phishing
+(www.phishtank.com) user reviews and SiteWatcher [21] output by Eggfztaagfggﬁgggmnm hnk nemork’ Fume Generauon compmer SyStems 26
+supplying random URLS that are SEIECtEd from PhiShtank'S (Valid [21] Liu Wenyin, Gang Liu, Bite Qiu, Xiaojun Quan, Antiphishing through phishing target
+phishes, Invalid and Unknown) URL databases. discovery. IEEE Internet Computing 16 (2) (2012) 52—61
+URL Language Phishtank user Our output Sitewatcher output
+review
+Is a Is not Set S3 Prediction Target domain Prediction Number
+phish a phish of targets
+http ://serviciowebintemetbod.ekiwi.es/ EN 100 0 bodmillenium.com Phishing www.bodmillenium.com Unknown Unknown
+http://kiwi6.com/ﬁle/ EN 43 57 kiwi6.com Legitimate www.kiwi6.com Unknown Unknown
+http://umzuegweien.at/ubersiedlung-wien/ EN 50 50 umzuegweienat Legitimate www.umzuegweien.at Unknown Unknown
+http ://aquariorestaurante.com EN 100 0 paypal.co.uk Phishing www.paypal.co.uk Unknown Unknown
+http I//php—developers.co.za/templates EN 100 0 paypal.com Phishing www.paypal.com Phishing 15
+http://specialneedsok.org/drupal/ FR 80 20 paypal.com Phishing www.paypal.com Unknown Unknown
+http://mobile365.mk/ EN 40 60 mobile365.mk Legitimate www.mobile365.mk Legitimate 1
+http ://www.ff—winners.com/wp—includes/ EN 100 0 llyodstsb.com Phishing www.11yodstsb.co.uk Unknown Unknown
+SimplePie/Cache/indexhtm llyodstsb.co.uk
+llyodsbankinggroup.com
+http://www.ﬁzakikas.com/index1099.php EN 100 0 ﬁzakikas.com Phishing www.facebook.com Unknovm Unknown
+facebook.c0m
+
+Please cite this article as: G. Ramesh, et al., An efﬁcacious method for detecting phishing webpages through target domain identiﬁcation, Decision
+
+Support Systems (2014), http://dx.doi.org/1 0.1 01 6/j‘.dss.20'14.01.002G. Ramesh et al. / Decision Support Systems xxx (2014) xxx—xxx 11
+
+[22] Gerard Salton, Michael J. McGill, Introduction to Modern Information Retrieval,
+McGraw-Hill, New York, 1983.
+
+[23] Kalervo Jarvelin, Jaana I<el<alainen, Cumulated gain-based evaluation of IR techniques, ACM Transactions on Information Systems (T015) 20 (4) (2002) 422—446.
+
+[24] Jsoup: Java HTML parser, http://jsoup.org(Visited: October 2013).
+
+[25] Google custom search APIs and tools, https://developers.google.com/customsearch/(Visited: October 2013).
+
+[26] Guava: Google core libraries for Java, http://code.google.com/p/guava-libraries/
+(Visited: September 2013).
+
+[27] Vladimir Roubtsov, My kingdom for a good timer—reach submillisecond timing
+precision in Java, http://www.javaworld.com/javaqa/2003-01/01-qa-0110-timing.
+html(Visited: September 2013).
+
+Mr. R. Gowtham is an assistant professor in the Department of Computer Science 82
+Engineering at Amrita University, India. He has obtained his B.E. degree from Periyar University and ME. degree from Anna University. He is currently pursuing Ph.D. under Anna
+University. His research interests are in the areas of information security and data mining.
+
+Dr. Ilango Krishnamurthi graduated from BITS, Pilani and then Iowa State University,
+USA both in the ﬁeld of Computer Science 82 Engineering. He then earned his doctorate
+degree in Computer Science 81 Engineering from the Indian Institute of Technology,
+Chennai. He has been teaching Computer Science 82 Engineering since the year 1988.
+He spent 15 years at NIT, Trichirapalli in the capacities of Lecturer, Assistant Professor
+and Coordinator of the part time B.Tech programme. Since October 2005, he is with
+SKCET as professor and then HOD since July 2006. Since June 2008 he has been promoted as Dean, CSE Department. He has published several research papers in National,
+International journals and conferences. His current research interests are in the areas
+of semantic web and data mining. Dr. Ilango is currently guiding ten students towards
+their doctorate degrees.
+
+K. Sampath Sree Kumar is currently pursuing his B.E. degree in Computer Science and
+Engineering at Amrita University, Coimbatore. His research interests include semantic
+web, Web security and Information retrieval.
+
+Please cite this article as: G. Ramesh, et al., An efﬁcacious method for detecting phishing webpages through target domain identiﬁcation, Decision
+
+Support Systems (2014), http://dx.doi.org/10.1016/j.dss.2014.01.002

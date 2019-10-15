@@ -1,0 +1,1244 @@
+<?xml version='1.0' encoding='utf-8' standalone='no'?>
+<rdf:RDF xmlns='http://knowledgeweb.semanticweb.org/heterogeneity/alignment' 
+xmlns:rdf='http://www.w3.org/1999/02/22-rdf-syntax-ns#' 
+xmlns:xsd='http://www.w3.org/2001/XMLSchema#'>
+<Alignment>
+ <xml>yes</xml>
+ <level>0</level>
+ <type>11</type>
+ <onto1>http://edas</onto1>
+ <onto2>http://ekaw</onto2>
+<map>
+ <Cell>
+  <entity1 rdf:resource='http://edas#Organization'/>
+  <entity2 rdf:resource='http://ekaw#Organisation'/>
+  <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>0.9666666984558105</measure>
+  <relation>=</relation>
+ </Cell>
+</map>
+<map>
+ <Cell>
+  <entity1 rdf:resource='http://edas#Property'/>
+  <entity2 rdf:resource='http://ekaw#Property'/>
+  <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>0.7</measure>
+  <relation>=</relation>
+ </Cell>
+</map>
+<map>
+ <Cell>
+  <entity1 rdf:resource='http://edas#Class'/>
+  <entity2 rdf:resource='http://ekaw#Class'/>
+  <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>0.7</measure>
+  <relation>=</relation>
+ </Cell>
+</map>
+<map>
+ <Cell>
+  <entity1 rdf:resource='http://edas#Programme'/>
+  <entity2 rdf:resource='http://ekaw#Programme_Brochure'/>
+  <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>0.8999999761581421</measure>
+  <relation>=</relation>
+ </Cell>
+</map>
+<map>
+ <Cell>
+  <entity1 rdf:resource='http://edas#first'/>
+  <entity2 rdf:resource='http://ekaw#first'/>
+  <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>0.7</measure>
+  <relation>=</relation>
+ </Cell>
+</map>
+<map>
+ <Cell>
+  <entity1 rdf:resource='http://edas#object'/>
+  <entity2 rdf:resource='http://ekaw#object'/>
+  <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>0.7</measure>
+  <relation>=</relation>
+ </Cell>
+</map>
+<map>
+ <Cell>
+  <entity1 rdf:resource='http://edas#Container'/>
+  <entity2 rdf:resource='http://ekaw#Container'/>
+  <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>0.7</measure>
+  <relation>=</relation>
+ </Cell>
+</map>
+<map>
+ <Cell>
+  <entity1 rdf:resource='http://edas#List'/>
+  <entity2 rdf:resource='http://ekaw#List'/>
+  <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>1.0</measure>
+  <relation>=</relation>
+ </Cell>
+</map>
+<map>
+ <Cell>
+  <entity1 rdf:resource='http://edas#Statement'/>
+  <entity2 rdf:resource='http://ekaw#Statement'/>
+  <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>0.7</measure>
+  <relation>=</relation>
+ </Cell>
+</map>
+<map>
+ <Cell>
+  <entity1 rdf:resource='http://edas#Person'/>
+  <entity2 rdf:resource='http://ekaw#Person'/>
+  <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>0.7</measure>
+  <relation>=</relation>
+ </Cell>
+</map>
+<map>
+ <Cell>
+  <entity1 rdf:resource='http://edas#MultimediaTopic'/>
+  <entity2 rdf:resource='http://ekaw#Multi-author_Volume'/>
+  <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>0.7908772230148315</measure>
+  <relation>=</relation>
+ </Cell>
+</map>
+<map>
+ <Cell>
+  <entity1 rdf:resource='http://edas#Document'/>
+  <entity2 rdf:resource='http://ekaw#Document'/>
+  <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>0.7</measure>
+  <relation>=</relation>
+ </Cell>
+</map>
+<map>
+ <Cell>
+  <entity1 rdf:resource='http://edas#Paper'/>
+  <entity2 rdf:resource='http://ekaw#Paper'/>
+  <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>0.7</measure>
+  <relation>=</relation>
+ </Cell>
+</map>
+<map>
+ <Cell>
+  <entity1 rdf:resource='http://edas#Conference'/>
+  <entity2 rdf:resource='http://ekaw#Conference'/>
+  <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>0.7</measure>
+  <relation>=</relation>
+ </Cell>
+</map>
+<map>
+ <Cell>
+  <entity1 rdf:resource='http://edas#AcademicEvent'/>
+  <entity2 rdf:resource='http://ekaw#Academic_Institution'/>
+  <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>0.8538461923599243</measure>
+  <relation>=</relation>
+ </Cell>
+</map>
+<map>
+ <Cell>
+  <entity1 rdf:resource='http://edas#SocialEvent'/>
+  <entity2 rdf:resource='http://ekaw#Social_Event'/>
+  <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>0.9833333492279053</measure>
+  <relation>=</relation>
+ </Cell>
+</map>
+<map>
+ <Cell>
+  <entity1 rdf:resource='http://edas#ConferenceEvent'/>
+  <entity2 rdf:resource='http://ekaw#Conference_Banquet'/>
+  <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>0.9023931622505188</measure>
+  <relation>=</relation>
+ </Cell>
+</map>
+<map>
+ <Cell>
+  <entity1 rdf:resource='http://edas#Review'/>
+  <entity2 rdf:resource='http://ekaw#Review'/>
+  <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>0.7</measure>
+  <relation>=</relation>
+ </Cell>
+</map>
+<map>
+ <Cell>
+  <entity1 rdf:resource='http://edas#PaperPresentation'/>
+  <entity2 rdf:resource='http://ekaw#Paper_Author'/>
+  <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>0.8024510145187378</measure>
+  <relation>=</relation>
+ </Cell>
+</map>
+<map>
+ <Cell>
+  <entity1 rdf:resource='http://edas#Datatype'/>
+  <entity2 rdf:resource='http://ekaw#Datatype'/>
+  <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>1.0</measure>
+  <relation>=</relation>
+ </Cell>
+</map>
+<map>
+ <Cell>
+  <entity1 rdf:resource='http://edas#int'/>
+  <entity2 rdf:resource='http://ekaw#Invited_Talk'/>
+  <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>0.800000011920929</measure>
+  <relation>=</relation>
+ </Cell>
+</map>
+<map>
+ <Cell>
+  <entity1 rdf:resource='http://edas#TPCMember'/>
+  <entity2 rdf:resource='http://ekaw#PC_Member'/>
+  <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>0.9259259104728699</measure>
+  <relation>=</relation>
+ </Cell>
+</map>
+<map>
+ <Cell>
+  <entity1 rdf:resource='http://edas#predicate'/>
+  <entity2 rdf:resource='http://ekaw#predicate'/>
+  <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>0.7</measure>
+  <relation>=</relation>
+ </Cell>
+</map>
+<map>
+ <Cell>
+  <entity1 rdf:resource='http://edas#Workshop'/>
+  <entity2 rdf:resource='http://ekaw#Workshop'/>
+  <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>0.7</measure>
+  <relation>=</relation>
+ </Cell>
+</map>
+<map>
+ <Cell>
+  <entity1 rdf:resource='http://edas#Resource'/>
+  <entity2 rdf:resource='http://ekaw#Resource'/>
+  <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>0.7</measure>
+  <relation>=</relation>
+ </Cell>
+</map>
+<map>
+ <Cell>
+  <entity1 rdf:resource='http://edas#rest'/>
+  <entity2 rdf:resource='http://ekaw#rest'/>
+  <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>0.7</measure>
+  <relation>=</relation>
+ </Cell>
+</map>
+<map>
+ <Cell>
+  <entity1 rdf:resource='http://edas#AcceptedPaper'/>
+  <entity2 rdf:resource='http://ekaw#Accepted_Paper'/>
+  <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>0.985714316368103</measure>
+  <relation>=</relation>
+ </Cell>
+</map>
+<map>
+ <Cell>
+  <entity1 rdf:resource='http://edas#ActivePaper'/>
+  <entity2 rdf:resource='http://ekaw#Assigned_Paper'/>
+  <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>0.7896103858947754</measure>
+  <relation>=</relation>
+ </Cell>
+</map>
+<map>
+ <Cell>
+  <entity1 rdf:resource='http://edas#subject'/>
+  <entity2 rdf:resource='http://ekaw#subject'/>
+  <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>0.7</measure>
+  <relation>=</relation>
+ </Cell>
+</map>
+<map>
+ <Cell>
+  <entity1 rdf:resource='http://edas#Literal'/>
+  <entity2 rdf:resource='http://ekaw#Literal'/>
+  <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>0.7</measure>
+  <relation>=</relation>
+ </Cell>
+</map>
+<map>
+ <Cell>
+  <entity1 rdf:resource='http://edas#Topic'/>
+  <entity2 rdf:resource='http://ekaw#Tutorial_Chair'/>
+  <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>0.7257143259048462</measure>
+  <relation>=</relation>
+ </Cell>
+</map>
+<map>
+ <Cell>
+  <entity1 rdf:resource='http://edas#Restriction'/>
+  <entity2 rdf:resource='http://ekaw#Restriction'/>
+  <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>0.7</measure>
+  <relation>=</relation>
+ </Cell>
+</map>
+<map>
+ <Cell>
+  <entity1 rdf:resource='http://edas#SatelliteAndSpaceCommunicationsTopic'/>
+  <entity2 rdf:resource='http://ekaw#Late-Registered_Participant'/>
+  <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>0.6654321551322937</measure>
+  <relation>=</relation>
+ </Cell>
+</map>
+<map>
+ <Cell>
+  <entity1 rdf:resource='http://edas#NumericalReviewQuestion'/>
+  <entity2 rdf:resource='http://ekaw#Neutral_Review'/>
+  <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>0.7136645913124084</measure>
+  <relation>=</relation>
+ </Cell>
+</map>
+<map>
+ <Cell>
+  <entity1 rdf:resource='http://edas#NGO'/>
+  <entity2 rdf:resource='http://ekaw#Negative_Review'/>
+  <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>0.64000004529953</measure>
+  <relation>=</relation>
+ </Cell>
+</map>
+<map>
+ <Cell>
+  <entity1 rdf:resource='http://edas#ClosingTalk'/>
+  <entity2 rdf:resource='http://ekaw#Contributed_Talk'/>
+  <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>0.7306817770004272</measure>
+  <relation>=</relation>
+ </Cell>
+</map>
+<map>
+ <Cell>
+  <entity1 rdf:resource='http://edas#hasLocation'/>
+  <entity2 rdf:resource='http://ekaw#hasUpdatedVersion'/>
+  <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>0.8128342032432556</measure>
+  <relation>=</relation>
+ </Cell>
+</map>
+<map>
+ <Cell>
+  <entity1 rdf:resource='http://edas#SessionChair'/>
+  <entity2 rdf:resource='http://ekaw#Session_Chair'/>
+  <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>0.9846153855323792</measure>
+  <relation>=</relation>
+ </Cell>
+</map>
+<map>
+ <Cell>
+  <entity1 rdf:resource='http://edas#ConferenceChair'/>
+  <entity2 rdf:resource='http://ekaw#Conference_Paper'/>
+  <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>0.9099999666213989</measure>
+  <relation>=</relation>
+ </Cell>
+</map>
+<map>
+ <Cell>
+  <entity1 rdf:resource='http://edas#hasMenu'/>
+  <entity2 rdf:resource='http://ekaw#hasEvent'/>
+  <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>0.8458333611488342</measure>
+  <relation>=</relation>
+ </Cell>
+</map>
+<map>
+ <Cell>
+  <entity1 rdf:resource='http://edas#ConferenceChair'/>
+  <entity2 rdf:resource='http://ekaw#Conference_Paper'/>
+  <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>0.9099999666213989</measure>
+  <relation>=</relation>
+ </Cell>
+</map>
+<map>
+ <Cell>
+  <entity1 rdf:resource='http://edas#hasRating'/>
+  <entity2 rdf:resource='http://ekaw#hasPart'/>
+  <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>0.8500000238418579</measure>
+  <relation>=</relation>
+ </Cell>
+</map>
+<map>
+ <Cell>
+  <entity1 rdf:resource='http://edas#hasReviewHistory'/>
+  <entity2 rdf:resource='http://ekaw#hasReview'/>
+  <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>0.9125000238418579</measure>
+  <relation>=</relation>
+ </Cell>
+</map>
+<map>
+ <Cell>
+  <entity1 rdf:resource='http://edas#Alt'/>
+  <entity2 rdf:resource='http://ekaw#Alt'/>
+  <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>0.7</measure>
+  <relation>=</relation>
+ </Cell>
+</map>
+<map>
+ <Cell>
+  <entity1 rdf:resource='http://edas#TravelGrant'/>
+  <entity2 rdf:resource='http://ekaw#TransitiveProperty'/>
+  <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>0.7484006881713867</measure>
+  <relation>=</relation>
+ </Cell>
+</map>
+<map>
+ <Cell>
+  <entity1 rdf:resource='http://edas#hasRating'/>
+  <entity2 rdf:resource='http://ekaw#hasPart'/>
+  <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>0.8500000238418579</measure>
+  <relation>=</relation>
+ </Cell>
+</map>
+<map>
+ <Cell>
+  <entity1 rdf:resource='http://edas#hasReviewHistory'/>
+  <entity2 rdf:resource='http://ekaw#hasReview'/>
+  <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>0.9125000238418579</measure>
+  <relation>=</relation>
+ </Cell>
+</map>
+<map>
+ <Cell>
+  <entity1 rdf:resource='http://edas#relatedToEvent'/>
+  <entity2 rdf:resource='http://ekaw#referencedIn'/>
+  <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>0.7174602746963501</measure>
+  <relation>=</relation>
+ </Cell>
+</map>
+<map>
+ <Cell>
+  <entity1 rdf:resource='http://edas#NonAcademicEvent'/>
+  <entity2 rdf:resource='http://ekaw#Scientific_Event'/>
+  <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>0.7166666984558105</measure>
+  <relation>=</relation>
+ </Cell>
+</map>
+<map>
+ <Cell>
+  <entity1 rdf:resource='http://edas#ConferenceChair'/>
+  <entity2 rdf:resource='http://ekaw#Conference_Paper'/>
+  <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>0.9099999666213989</measure>
+  <relation>=</relation>
+ </Cell>
+</map>
+<map>
+ <Cell>
+  <entity1 rdf:resource='http://edas#PersonalReviewHistory'/>
+  <entity2 rdf:resource='http://ekaw#Neutral_Review'/>
+  <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>0.7395381927490234</measure>
+  <relation>=</relation>
+ </Cell>
+</map>
+<map>
+ <Cell>
+  <entity1 rdf:resource='http://edas#PublishedPaper'/>
+  <entity2 rdf:resource='http://ekaw#Submitted_Paper'/>
+  <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>0.7790765166282654</measure>
+  <relation>=</relation>
+ </Cell>
+</map>
+<map>
+ <Cell>
+  <entity1 rdf:resource='http://edas#isDefinedBy'/>
+  <entity2 rdf:resource='http://ekaw#isDefinedBy'/>
+  <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>1.0</measure>
+  <relation>=</relation>
+ </Cell>
+</map>
+<map>
+ <Cell>
+  <entity1 rdf:resource='http://edas#RatedPapers'/>
+  <entity2 rdf:resource='http://ekaw#Submitted_Paper'/>
+  <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>0.7535353302955627</measure>
+  <relation>=</relation>
+ </Cell>
+</map>
+<map>
+ <Cell>
+  <entity1 rdf:resource='http://edas#SessionChair'/>
+  <entity2 rdf:resource='http://ekaw#Session_Chair'/>
+  <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>0.9846153855323792</measure>
+  <relation>=</relation>
+ </Cell>
+</map>
+<map>
+ <Cell>
+  <entity1 rdf:resource='http://edas#isTopicOf'/>
+  <entity2 rdf:resource='http://ekaw#coversTopic'/>
+  <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>0.6618567109107971</measure>
+  <relation>=</relation>
+ </Cell>
+</map>
+<map>
+ <Cell>
+  <entity1 rdf:resource='http://edas#hasRating'/>
+  <entity2 rdf:resource='http://ekaw#hasPart'/>
+  <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>0.8500000238418579</measure>
+  <relation>=</relation>
+ </Cell>
+</map>
+<map>
+ <Cell>
+  <entity1 rdf:resource='http://edas#RejectedPaper'/>
+  <entity2 rdf:resource='http://ekaw#Rejected_Paper'/>
+  <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>0.985714316368103</measure>
+  <relation>=</relation>
+ </Cell>
+</map>
+<map>
+ <Cell>
+  <entity1 rdf:resource='http://edas#hasRelatedPaper'/>
+  <entity2 rdf:resource='http://ekaw#hasReviewer'/>
+  <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>0.8521211743354797</measure>
+  <relation>=</relation>
+ </Cell>
+</map>
+<map>
+ <Cell>
+  <entity1 rdf:resource='http://edas#Reception'/>
+  <entity2 rdf:resource='http://ekaw#Restriction'/>
+  <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>0.805675745010376</measure>
+  <relation>=</relation>
+ </Cell>
+</map>
+<map>
+ <Cell>
+  <entity1 rdf:resource='http://edas#isMenuOf'/>
+  <entity2 rdf:resource='http://ekaw#inverse_of_partOf_7'/>
+  <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>0.6697368025779724</measure>
+  <relation>=</relation>
+ </Cell>
+</map>
+<map>
+ <Cell>
+  <entity1 rdf:resource='http://edas#ConferenceDinner'/>
+  <entity2 rdf:resource='http://ekaw#Conference_Trip'/>
+  <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>0.8933333158493042</measure>
+  <relation>=</relation>
+ </Cell>
+</map>
+<map>
+ <Cell>
+  <entity1 rdf:resource='http://edas#TravelGrant'/>
+  <entity2 rdf:resource='http://ekaw#Track'/>
+  <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>0.7369697093963623</measure>
+  <relation>=</relation>
+ </Cell>
+</map>
+<map>
+ <Cell>
+  <entity1 rdf:resource='http://edas#ConferenceSession'/>
+  <entity2 rdf:resource='http://ekaw#Conference_Session'/>
+  <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>0.9888889193534851</measure>
+  <relation>=</relation>
+ </Cell>
+</map>
+<map>
+ <Cell>
+  <entity1 rdf:resource='http://edas#Reception'/>
+  <entity2 rdf:resource='http://ekaw#Proceedings'/>
+  <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>0.75709468126297</measure>
+  <relation>=</relation>
+ </Cell>
+</map>
+<map>
+ <Cell>
+  <entity1 rdf:resource='http://edas#IndustryOrganization'/>
+  <entity2 rdf:resource='http://ekaw#Industrial_Paper'/>
+  <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>0.8293182253837585</measure>
+  <relation>=</relation>
+ </Cell>
+</map>
+<map>
+ <Cell>
+  <entity1 rdf:resource='http://edas#hasMenu'/>
+  <entity2 rdf:resource='http://ekaw#hasReview'/>
+  <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>0.770370364189148</measure>
+  <relation>=</relation>
+ </Cell>
+</map>
+<map>
+ <Cell>
+  <entity1 rdf:resource='http://edas#ComputerNetworksTopic'/>
+  <entity2 rdf:resource='http://ekaw#Conference_Trip'/>
+  <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>0.7180952429771423</measure>
+  <relation>=</relation>
+ </Cell>
+</map>
+<map>
+ <Cell>
+  <entity1 rdf:resource='http://edas#hasBiography'/>
+  <entity2 rdf:resource='http://ekaw#hasReview'/>
+  <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>0.7148148417472839</measure>
+  <relation>=</relation>
+ </Cell>
+</map>
+<map>
+ <Cell>
+  <entity1 rdf:resource='http://edas#subPropertyOf'/>
+  <entity2 rdf:resource='http://ekaw#subPropertyOf'/>
+  <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>1.0</measure>
+  <relation>=</relation>
+ </Cell>
+</map>
+<map>
+ <Cell>
+  <entity1 rdf:resource='http://edas#ReviewQuestion'/>
+  <entity2 rdf:resource='http://ekaw#Regular_Session'/>
+  <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>0.7279365062713623</measure>
+  <relation>=</relation>
+ </Cell>
+</map>
+<map>
+ <Cell>
+  <entity1 rdf:resource='http://edas#Attendee'/>
+  <entity2 rdf:resource='http://ekaw#Invited_Speaker'/>
+  <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>0.661111056804657</measure>
+  <relation>=</relation>
+ </Cell>
+</map>
+<map>
+ <Cell>
+  <entity1 rdf:resource='http://edas#Presenter'/>
+  <entity2 rdf:resource='http://ekaw#Presenter'/>
+  <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>0.7</measure>
+  <relation>=</relation>
+ </Cell>
+</map>
+<map>
+ <Cell>
+  <entity1 rdf:resource='http://edas#isWrittenBy'/>
+  <entity2 rdf:resource='http://ekaw#writtenBy'/>
+  <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>0.9023569226264954</measure>
+  <relation>=</relation>
+ </Cell>
+</map>
+<map>
+ <Cell>
+  <entity1 rdf:resource='http://edas#PersonalPublicationHistory'/>
+  <entity2 rdf:resource='http://ekaw#Proceedings_Publisher'/>
+  <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>0.7073626518249512</measure>
+  <relation>=</relation>
+ </Cell>
+</map>
+<map>
+ <Cell>
+  <entity1 rdf:resource='http://edas#hasRelatedPaper'/>
+  <entity2 rdf:resource='http://ekaw#hasReviewer'/>
+  <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>0.8521211743354797</measure>
+  <relation>=</relation>
+ </Cell>
+</map>
+<map>
+ <Cell>
+  <entity1 rdf:resource='http://edas#paperDueOn'/>
+  <entity2 rdf:resource='http://ekaw#paperInVolume'/>
+  <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>0.6992136955261231</measure>
+  <relation>=</relation>
+ </Cell>
+</map>
+<map>
+ <Cell>
+  <entity1 rdf:resource='http://edas#range'/>
+  <entity2 rdf:resource='http://ekaw#range'/>
+  <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>0.7</measure>
+  <relation>=</relation>
+ </Cell>
+</map>
+<map>
+ <Cell>
+  <entity1 rdf:resource='http://edas#relatedToPaper'/>
+  <entity2 rdf:resource='http://ekaw#reviewOfPaper'/>
+  <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>0.8227106332778931</measure>
+  <relation>=</relation>
+ </Cell>
+</map>
+<map>
+ <Cell>
+  <entity1 rdf:resource='http://edas#ComputerNetworksManagementTopic'/>
+  <entity2 rdf:resource='http://ekaw#ContainerMembershipProperty'/>
+  <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>0.695579469203949</measure>
+  <relation>=</relation>
+ </Cell>
+</map>
+<map>
+ <Cell>
+  <entity1 rdf:resource='http://edas#CommunicationsTopic'/>
+  <entity2 rdf:resource='http://ekaw#ContainerMembershipProperty'/>
+  <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>0.7061914205551147</measure>
+  <relation>=</relation>
+ </Cell>
+</map>
+<map>
+ <Cell>
+  <entity1 rdf:resource='http://edas#isLocationOf'/>
+  <entity2 rdf:resource='http://ekaw#locationOf'/>
+  <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>0.9444444179534912</measure>
+  <relation>=</relation>
+ </Cell>
+</map>
+<map>
+ <Cell>
+  <entity1 rdf:resource='http://edas#TravelGrant'/>
+  <entity2 rdf:resource='http://ekaw#Tutorial_Abstract'/>
+  <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>0.6715813875198364</measure>
+  <relation>=</relation>
+ </Cell>
+</map>
+<map>
+ <Cell>
+  <entity1 rdf:resource='http://edas#isReviewing'/>
+  <entity2 rdf:resource='http://ekaw#listsEvent'/>
+  <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>0.7151514887809753</measure>
+  <relation>=</relation>
+ </Cell>
+</map>
+<map>
+ <Cell>
+  <entity1 rdf:resource='http://edas#Attendee'/>
+  <entity2 rdf:resource='http://ekaw#Invited_Speaker'/>
+  <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>0.661111056804657</measure>
+  <relation>=</relation>
+ </Cell>
+</map>
+<map>
+ <Cell>
+  <entity1 rdf:resource='http://edas#ComputerNetworksTopic'/>
+  <entity2 rdf:resource='http://ekaw#Conference_Trip'/>
+  <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>0.7180952429771423</measure>
+  <relation>=</relation>
+ </Cell>
+</map>
+<map>
+ <Cell>
+  <entity1 rdf:resource='http://edas#PowerlineTransmissionTopic'/>
+  <entity2 rdf:resource='http://ekaw#Poster_Session'/>
+  <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>0.6797069311141968</measure>
+  <relation>=</relation>
+ </Cell>
+</map>
+<map>
+ <Cell>
+  <entity1 rdf:resource='http://edas#ConferenceSession'/>
+  <entity2 rdf:resource='http://ekaw#Conference_Proceedings'/>
+  <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>0.886167585849762</measure>
+  <relation>=</relation>
+ </Cell>
+</map>
+<map>
+ <Cell>
+  <entity1 rdf:resource='http://edas#PowerlineTransmissionTopic'/>
+  <entity2 rdf:resource='http://ekaw#Positive_Review'/>
+  <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>0.6242734789848328</measure>
+  <relation>=</relation>
+ </Cell>
+</map>
+<map>
+ <Cell>
+  <entity1 rdf:resource='http://edas#forEvent'/>
+  <entity2 rdf:resource='http://ekaw#partOfEvent'/>
+  <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>0.6942641139030457</measure>
+  <relation>=</relation>
+ </Cell>
+</map>
+<map>
+ <Cell>
+  <entity1 rdf:resource='http://edas#Call'/>
+  <entity2 rdf:resource='http://ekaw#Camera_Ready_Paper'/>
+  <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>0.6296296715736389</measure>
+  <relation>=</relation>
+ </Cell>
+</map>
+<map>
+ <Cell>
+  <entity1 rdf:resource='http://edas#ContainerMembershipProperty'/>
+  <entity2 rdf:resource='http://ekaw#ContainerMembershipProperty'/>
+  <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>1.0</measure>
+  <relation>=</relation>
+ </Cell>
+</map>
+<map>
+ <Cell>
+  <entity1 rdf:resource='http://edas#hasEndDateTime'/>
+  <entity2 rdf:resource='http://ekaw#presentationOfPaper'/>
+  <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>0.6468671560287476</measure>
+  <relation>=</relation>
+ </Cell>
+</map>
+<map>
+ <Cell>
+  <entity1 rdf:resource='http://edas#ConferenceDinner'/>
+  <entity2 rdf:resource='http://ekaw#Conference_Proceedings'/>
+  <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>0.8971969485282898</measure>
+  <relation>=</relation>
+ </Cell>
+</map>
+<map>
+ <Cell>
+  <entity1 rdf:resource='http://edas#RejectRating'/>
+  <entity2 rdf:resource='http://ekaw#Research_Institute'/>
+  <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>0.7570370435714722</measure>
+  <relation>=</relation>
+ </Cell>
+</map>
+<map>
+ <Cell>
+  <entity1 rdf:resource='http://edas#Place'/>
+  <entity2 rdf:resource='http://ekaw#Proceedings'/>
+  <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>0.6618182063102722</measure>
+  <relation>=</relation>
+ </Cell>
+</map>
+<map>
+ <Cell>
+  <entity1 rdf:resource='http://edas#isLocationOf'/>
+  <entity2 rdf:resource='http://ekaw#locationOf'/>
+  <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>0.9444444179534912</measure>
+  <relation>=</relation>
+ </Cell>
+</map>
+<map>
+ <Cell>
+  <entity1 rdf:resource='http://edas#providedBy'/>
+  <entity2 rdf:resource='http://ekaw#organisedBy'/>
+  <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>0.683549702167511</measure>
+  <relation>=</relation>
+ </Cell>
+</map>
+<map>
+ <Cell>
+  <entity1 rdf:resource='http://edas#ConferenceVenuePlace'/>
+  <entity2 rdf:resource='http://ekaw#Conference_Participant'/>
+  <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>0.8387013077735901</measure>
+  <relation>=</relation>
+ </Cell>
+</map>
+<map>
+ <Cell>
+  <entity1 rdf:resource='http://edas#ConferenceSession'/>
+  <entity2 rdf:resource='http://ekaw#Conference_Session'/>
+  <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>0.9888889193534851</measure>
+  <relation>=</relation>
+ </Cell>
+</map>
+<map>
+ <Cell>
+  <entity1 rdf:resource='http://edas#WithdrawnPaper'/>
+  <entity2 rdf:resource='http://ekaw#Regular_Paper'/>
+  <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>0.6794872283935547</measure>
+  <relation>=</relation>
+ </Cell>
+</map>
+<map>
+ <Cell>
+  <entity1 rdf:resource='http://edas#subClassOf'/>
+  <entity2 rdf:resource='http://ekaw#subClassOf'/>
+  <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>1.0</measure>
+  <relation>=</relation>
+ </Cell>
+</map>
+<map>
+ <Cell>
+  <entity1 rdf:resource='http://edas#hasRelatedPaper'/>
+  <entity2 rdf:resource='http://ekaw#presentationOfPaper'/>
+  <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>0.710154116153717</measure>
+  <relation>=</relation>
+ </Cell>
+</map>
+<map>
+ <Cell>
+  <entity1 rdf:resource='http://edas#ComputerNetworksSecurityTopic'/>
+  <entity2 rdf:resource='http://ekaw#Conference_Participant'/>
+  <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>0.6975269913673401</measure>
+  <relation>=</relation>
+ </Cell>
+</map>
+<map>
+ <Cell>
+  <entity1 rdf:resource='http://edas#SlideSet'/>
+  <entity2 rdf:resource='http://ekaw#Student'/>
+  <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>0.7214285731315613</measure>
+  <relation>=</relation>
+ </Cell>
+</map>
+<map>
+ <Cell>
+  <entity1 rdf:resource='http://edas#ReviewRating'/>
+  <entity2 rdf:resource='http://ekaw#Proceedings'/>
+  <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>0.6262626051902771</measure>
+  <relation>=</relation>
+ </Cell>
+</map>
+<map>
+ <Cell>
+  <entity1 rdf:resource='http://edas#TalkEvent'/>
+  <entity2 rdf:resource='http://ekaw#Student'/>
+  <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>0.6719576716423035</measure>
+  <relation>=</relation>
+ </Cell>
+</map>
+<map>
+ <Cell>
+  <entity1 rdf:resource='http://edas#isWrittenBy'/>
+  <entity2 rdf:resource='http://ekaw#writtenBy'/>
+  <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>0.9023569226264954</measure>
+  <relation>=</relation>
+ </Cell>
+</map>
+<map>
+ <Cell>
+  <entity1 rdf:resource='http://edas#type'/>
+  <entity2 rdf:resource='http://ekaw#type'/>
+  <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>0.7</measure>
+  <relation>=</relation>
+ </Cell>
+</map>
+<map>
+ <Cell>
+  <entity1 rdf:resource='http://edas#relatesTo'/>
+  <entity2 rdf:resource='http://ekaw#seeAlso'/>
+  <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>0.6899471282958984</measure>
+  <relation>=</relation>
+ </Cell>
+</map>
+<map>
+ <Cell>
+  <entity1 rdf:resource='http://edas#WelcomeTalk'/>
+  <entity2 rdf:resource='http://ekaw#Web_Site'/>
+  <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>0.6303030252456665</measure>
+  <relation>=</relation>
+ </Cell>
+</map>
+<map>
+ <Cell>
+  <entity1 rdf:resource='http://edas#PersonalHistory'/>
+  <entity2 rdf:resource='http://ekaw#Possible_Reviewer'/>
+  <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>0.6721568703651428</measure>
+  <relation>=</relation>
+ </Cell>
+</map>
+<map>
+ <Cell>
+  <entity1 rdf:resource='http://edas#PersonalHistory'/>
+  <entity2 rdf:resource='http://ekaw#Possible_Reviewer'/>
+  <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>0.6721568703651428</measure>
+  <relation>=</relation>
+ </Cell>
+</map>
+<map>
+ <Cell>
+  <entity1 rdf:resource='http://edas#isWrittenBy'/>
+  <entity2 rdf:resource='http://ekaw#writtenBy'/>
+  <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>0.9023569226264954</measure>
+  <relation>=</relation>
+ </Cell>
+</map>
+<map>
+ <Cell>
+  <entity1 rdf:resource='http://edas#SignalProcessingTopic'/>
+  <entity2 rdf:resource='http://ekaw#Industrial_Session'/>
+  <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>0.6522181630134583</measure>
+  <relation>=</relation>
+ </Cell>
+</map>
+<map>
+ <Cell>
+  <entity1 rdf:resource='http://edas#Workshop'/>
+  <entity2 rdf:resource='http://ekaw#Workshop'/>
+  <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>0.7</measure>
+  <relation>=</relation>
+ </Cell>
+</map>
+<map>
+ <Cell>
+  <entity1 rdf:resource='http://edas#MealBreak'/>
+  <entity2 rdf:resource='http://ekaw#Abstract'/>
+  <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>0.6481481194496155</measure>
+  <relation>=</relation>
+ </Cell>
+</map>
+<map>
+ <Cell>
+  <entity1 rdf:resource='http://edas#hasCity'/>
+  <entity2 rdf:resource='http://ekaw#technicallyOrganises'/>
+  <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>0.6079365611076355</measure>
+  <relation>=</relation>
+ </Cell>
+</map>
+<map>
+ <Cell>
+  <entity1 rdf:resource='http://edas#IndustryOrganization'/>
+  <entity2 rdf:resource='http://ekaw#Individual_Presentation'/>
+  <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>0.772028923034668</measure>
+  <relation>=</relation>
+ </Cell>
+</map>
+<map>
+ <Cell>
+  <entity1 rdf:resource='http://edas#Ontology'/>
+  <entity2 rdf:resource='http://ekaw#Ontology'/>
+  <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>0.7</measure>
+  <relation>=</relation>
+ </Cell>
+</map>
+<map>
+ <Cell>
+  <entity1 rdf:resource='http://edas#relatesTo'/>
+  <entity2 rdf:resource='http://ekaw#references'/>
+  <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>0.6918518543243408</measure>
+  <relation>=</relation>
+ </Cell>
+</map>
+<map>
+ <Cell>
+  <entity1 rdf:resource='http://edas#MealMenu'/>
+  <entity2 rdf:resource='http://ekaw#OC_Member'/>
+  <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>0.6481481194496155</measure>
+  <relation>=</relation>
+ </Cell>
+</map>
+<map>
+ <Cell>
+  <entity1 rdf:resource='http://edas#PendingPaper'/>
+  <entity2 rdf:resource='http://ekaw#Poster_Paper'/>
+  <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>0.7499999403953552</measure>
+  <relation>=</relation>
+ </Cell>
+</map>
+<map>
+ <Cell>
+  <entity1 rdf:resource='http://edas#AcceptRating'/>
+  <entity2 rdf:resource='http://ekaw#Abstract'/>
+  <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>0.7124999761581421</measure>
+  <relation>=</relation>
+ </Cell>
+</map>
+<map>
+ <Cell>
+  <entity1 rdf:resource='http://edas#AcceptRating'/>
+  <entity2 rdf:resource='http://ekaw#OC_Chair'/>
+  <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>0.6138889193534851</measure>
+  <relation>=</relation>
+ </Cell>
+</map>
+<map>
+ <Cell>
+  <entity1 rdf:resource='http://edas#AcceptRating'/>
+  <entity2 rdf:resource='http://ekaw#PC_Chair'/>
+  <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>0.6138889193534851</measure>
+  <relation>=</relation>
+ </Cell>
+</map>
+<map>
+ <Cell>
+  <entity1 rdf:resource='http://edas#WeekRejectRating'/>
+  <entity2 rdf:resource='http://ekaw#Early-Registered_Participant'/>
+  <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>0.615079402923584</measure>
+  <relation>=</relation>
+ </Cell>
+</map>
+<map>
+ <Cell>
+  <entity1 rdf:resource='http://edas#OrganizationalMeeting'/>
+  <entity2 rdf:resource='http://ekaw#Organising_Agency'/>
+  <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>0.8159918785095215</measure>
+  <relation>=</relation>
+ </Cell>
+</map>
+<map>
+ <Cell>
+  <entity1 rdf:resource='http://edas#hasCity'/>
+  <entity2 rdf:resource='http://ekaw#technicallyOrganises'/>
+  <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>0.6079365611076355</measure>
+  <relation>=</relation>
+ </Cell>
+</map>
+<map>
+ <Cell>
+  <entity1 rdf:resource='http://edas#OrganizationalMeeting'/>
+  <entity2 rdf:resource='http://ekaw#Organising_Agency'/>
+  <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>0.8159918785095215</measure>
+  <relation>=</relation>
+ </Cell>
+</map>
+<map>
+ <Cell>
+  <entity1 rdf:resource='http://edas#seeAlso'/>
+  <entity2 rdf:resource='http://ekaw#seeAlso'/>
+  <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>1.0</measure>
+  <relation>=</relation>
+ </Cell>
+</map>
+<map>
+ <Cell>
+  <entity1 rdf:resource='http://edas#Seq'/>
+  <entity2 rdf:resource='http://ekaw#Seq'/>
+  <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>1.0</measure>
+  <relation>=</relation>
+ </Cell>
+</map>
+<map>
+ <Cell>
+  <entity1 rdf:resource='http://edas#XMLLiteral'/>
+  <entity2 rdf:resource='http://ekaw#XMLLiteral'/>
+  <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>1.0</measure>
+  <relation>=</relation>
+ </Cell>
+</map>
+<map>
+ <Cell>
+  <entity1 rdf:resource='http://edas#isProviderOf'/>
+  <entity2 rdf:resource='http://ekaw#publisherOf'/>
+  <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>0.6922799944877625</measure>
+  <relation>=</relation>
+ </Cell>
+</map>
+<map>
+ <Cell>
+  <entity1 rdf:resource='http://edas#comment'/>
+  <entity2 rdf:resource='http://ekaw#comment'/>
+  <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>0.7</measure>
+  <relation>=</relation>
+ </Cell>
+</map>
+<map>
+ <Cell>
+  <entity1 rdf:resource='http://edas#Excursion'/>
+  <entity2 rdf:resource='http://ekaw#Session'/>
+  <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>0.7566137313842773</measure>
+  <relation>=</relation>
+ </Cell>
+</map>
+<map>
+ <Cell>
+  <entity1 rdf:resource='http://edas#TestOnlyTopic'/>
+  <entity2 rdf:resource='http://ekaw#Tutorial'/>
+  <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>0.642307698726654</measure>
+  <relation>=</relation>
+ </Cell>
+</map>
+<map>
+ <Cell>
+  <entity1 rdf:resource='http://edas#SecurityTopic'/>
+  <entity2 rdf:resource='http://ekaw#Seq'/>
+  <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>0.6854700446128845</measure>
+  <relation>=</relation>
+ </Cell>
+</map>
+<map>
+ <Cell>
+  <entity1 rdf:resource='http://edas#RejectRating'/>
+  <entity2 rdf:resource='http://ekaw#Event'/>
+  <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>0.6166666746139526</measure>
+  <relation>=</relation>
+ </Cell>
+</map>
+<map>
+ <Cell>
+  <entity1 rdf:resource='http://edas#Bag'/>
+  <entity2 rdf:resource='http://ekaw#Bag'/>
+  <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>0.7</measure>
+  <relation>=</relation>
+ </Cell>
+</map>
+<map>
+ <Cell>
+  <entity1 rdf:resource='http://edas#ObjectProperty'/>
+  <entity2 rdf:resource='http://ekaw#ObjectProperty'/>
+  <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>1.0</measure>
+  <relation>=</relation>
+ </Cell>
+</map>
+<map>
+ <Cell>
+  <entity1 rdf:resource='http://edas#DiningPlace'/>
+  <entity2 rdf:resource='http://ekaw#Demo_Paper'/>
+  <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>0.6290909051895142</measure>
+  <relation>=</relation>
+ </Cell>
+</map>
+<map>
+ <Cell>
+  <entity1 rdf:resource='http://edas#FunctionalProperty'/>
+  <entity2 rdf:resource='http://ekaw#Location'/>
+  <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>0.6342592835426331</measure>
+  <relation>=</relation>
+ </Cell>
+</map>
+<map>
+ <Cell>
+  <entity1 rdf:resource='http://edas#subClassOf'/>
+  <entity2 rdf:resource='http://ekaw#scientificallyOrganises'/>
+  <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>0.6082608699798584</measure>
+  <relation>=</relation>
+ </Cell>
+</map>
+<map>
+ <Cell>
+  <entity1 rdf:resource='http://edas#domain'/>
+  <entity2 rdf:resource='http://ekaw#domain'/>
+  <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>0.7</measure>
+  <relation>=</relation>
+ </Cell>
+</map>
+<map>
+ <Cell>
+  <entity1 rdf:resource='http://edas#isMemberOf'/>
+  <entity2 rdf:resource='http://ekaw#reviewerOfPaper'/>
+  <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>0.6111111044883728</measure>
+  <relation>=</relation>
+ </Cell>
+</map>
+<map>
+ <Cell>
+  <entity1 rdf:resource='http://edas#hasTopic'/>
+  <entity2 rdf:resource='http://ekaw#coversTopic'/>
+  <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>0.7095959186553955</measure>
+  <relation>=</relation>
+ </Cell>
+</map>
+<map>
+ <Cell>
+  <entity1 rdf:resource='http://edas#label'/>
+  <entity2 rdf:resource='http://ekaw#label'/>
+  <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>0.7</measure>
+  <relation>=</relation>
+ </Cell>
+</map>
+<map>
+ <Cell>
+  <entity1 rdf:resource='http://edas#relatesTo'/>
+  <entity2 rdf:resource='http://ekaw#eventOnList'/>
+  <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>0.6262626647949219</measure>
+  <relation>=</relation>
+ </Cell>
+</map>
+<map>
+ <Cell>
+  <entity1 rdf:resource='http://edas#hasEmail'/>
+  <entity2 rdf:resource='http://ekaw#heldIn'/>
+  <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>0.6625000238418579</measure>
+  <relation>=</relation>
+ </Cell>
+</map>
+<map>
+ <Cell>
+  <entity1 rdf:resource='http://edas#isReviewHistoryOf'/>
+  <entity2 rdf:resource='http://ekaw#updatedVersionOf'/>
+  <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>0.6710784435272217</measure>
+  <relation>=</relation>
+ </Cell>
+</map>
+<map>
+ <Cell>
+  <entity1 rdf:resource='http://edas#hasLastName'/>
+  <entity2 rdf:resource='http://ekaw#heldIn'/>
+  <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>0.6318181753158569</measure>
+  <relation>=</relation>
+ </Cell>
+</map>
+<map>
+ <Cell>
+  <entity1 rdf:resource='http://edas#isReviewedBy'/>
+  <entity2 rdf:resource='http://ekaw#topicCoveredBy'/>
+  <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>0.64682537317276</measure>
+  <relation>=</relation>
+ </Cell>
+</map>
+<map>
+ <Cell>
+  <entity1 rdf:resource='http://edas#isInitiatedBy'/>
+  <entity2 rdf:resource='http://ekaw#organisedBy'/>
+  <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>0.6773226857185364</measure>
+  <relation>=</relation>
+ </Cell>
+</map>
+</Alignment>
+</rdf:RDF>

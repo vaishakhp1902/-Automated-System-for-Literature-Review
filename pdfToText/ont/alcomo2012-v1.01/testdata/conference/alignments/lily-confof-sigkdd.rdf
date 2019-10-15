@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<rdf:RDF xmlns="http://knowledgeweb.semanticweb.org/heterogeneity/alignment" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:xsd="http://www.w3.org/2001/XMLSchema#">
+  <Alignment>
+    <xml>yes</xml>
+    <level>0</level>
+    <type>11</type>
+    <onto1>http://confOf</onto1>
+    <onto2>http://sigkdd</onto2>
+    <uri1>http://confOf</uri1>
+    <uri2>http://sigkdd</uri2>
+    <map>
+      <Cell>
+        <entity1 rdf:resource="http://confOf#Organization"/>
+        <entity2 rdf:resource="http://sigkdd#Organizing_Committee_member"/>
+        <measure rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.3426</measure>
+        <relation>=</relation>
+      </Cell>
+    </map>
+    <map>
+      <Cell>
+        <entity1 rdf:resource="http://confOf#Registration_of_participants_event"/>
+        <entity2 rdf:resource="http://sigkdd#Registration_Non-Member"/>
+        <measure rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.3382</measure>
+        <relation>=</relation>
+      </Cell>
+    </map>
+    <map>
+      <Cell>
+        <entity1 rdf:resource="http://confOf#Reviewing_event"/>
+        <entity2 rdf:resource="http://sigkdd#Review"/>
+        <measure rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.4318</measure>
+        <relation>=</relation>
+      </Cell>
+    </map>
+    <map>
+      <Cell>
+        <entity1 rdf:resource="http://confOf#Chair_PC"/>
+        <entity2 rdf:resource="http://sigkdd#General_Chair"/>
+        <measure rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.447</measure>
+        <relation>=</relation>
+      </Cell>
+    </map>
+    <map>
+      <Cell>
+        <entity1 rdf:resource="http://confOf#Student"/>
+        <entity2 rdf:resource="http://sigkdd#Registration_Student"/>
+        <measure rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.3897</measure>
+        <relation>=</relation>
+      </Cell>
+    </map>
+    <map>
+      <Cell>
+        <entity1 rdf:resource="http://confOf#Conference"/>
+        <entity2 rdf:resource="http://sigkdd#Conference"/>
+        <measure rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.4375</measure>
+        <relation>=</relation>
+      </Cell>
+    </map>
+    <map>
+      <Cell>
+        <entity1 rdf:resource="http://confOf#Author"/>
+        <entity2 rdf:resource="http://sigkdd#Author_of_paper"/>
+        <measure rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.3115</measure>
+        <relation>=</relation>
+      </Cell>
+    </map>
+    <map>
+      <Cell>
+        <entity1 rdf:resource="http://confOf#Submission_event"/>
+        <entity2 rdf:resource="http://sigkdd#Deadline_Paper_Submission"/>
+        <measure rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.3124</measure>
+        <relation>=</relation>
+      </Cell>
+    </map>
+    <map>
+      <Cell>
+        <entity1 rdf:resource="http://confOf#starts_on"/>
+        <entity2 rdf:resource="http://sigkdd#Start_of_conference"/>
+        <measure rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.379</measure>
+        <relation>=</relation>
+      </Cell>
+    </map>
+    <map>
+      <Cell>
+        <entity1 rdf:resource="http://confOf#hasFirstName"/>
+        <entity2 rdf:resource="http://sigkdd#Name"/>
+        <measure rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.6477</measure>
+        <relation>=</relation>
+      </Cell>
+    </map>
+    <map>
+      <Cell>
+        <entity1 rdf:resource="http://confOf#hasCity"/>
+        <entity2 rdf:resource="http://sigkdd#City_of_conference"/>
+        <measure rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.379</measure>
+        <relation>=</relation>
+      </Cell>
+    </map>
+  </Alignment>
+</rdf:RDF>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry excluding="**/.svn|**/.svn/" kind="src" path="src"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="lib" path="lib/hermit-v136-libs/axiom-1.2.8.jar"/>
+	<classpathentry kind="lib" path="lib/hermit-v136-libs/dk.brics.automaton-1.11-2.jar"/>
+	<classpathentry kind="lib" path="lib/hermit-v136-libs/jautomata-core-2.0-alpha-1.jar"/>
+	<classpathentry kind="lib" path="lib/hermit-v136-libs/junit-4.4.jar"/>
+	<classpathentry kind="lib" path="lib/hermitv136/HermiT.jar"/>
+	<classpathentry kind="lib" path="lib/log4j1216/log4j-1.2.16.jar"/>
+	<classpathentry kind="lib" path="lib/owlapiv322/owlapi-3.2.2.jar"/>
+	<classpathentry kind="lib" path="lib/pelletv230/aterm-java-1.6.jar"/>
+	<classpathentry kind="lib" path="lib/pelletv230/pellet-cli.jar"/>
+	<classpathentry kind="lib" path="lib/pelletv230/pellet-core.jar"/>
+	<classpathentry kind="lib" path="lib/pelletv230/pellet-datatypes.jar"/>
+	<classpathentry kind="lib" path="lib/pelletv230/pellet-dig.jar"/>
+	<classpathentry kind="lib" path="lib/pelletv230/pellet-el.jar"/>
+	<classpathentry kind="lib" path="lib/pelletv230/pellet-explanation.jar"/>
+	<classpathentry kind="lib" path="lib/pelletv230/pellet-jena.jar"/>
+	<classpathentry kind="lib" path="lib/pelletv230/pellet-modularity.jar"/>
+	<classpathentry kind="lib" path="lib/pelletv230/pellet-owlapiv3.jar"/>
+	<classpathentry kind="lib" path="lib/pelletv230/pellet-pellint.jar"/>
+	<classpathentry kind="lib" path="lib/pelletv230/pellet-query.jar"/>
+	<classpathentry kind="lib" path="lib/pelletv230/pellet-rules.jar"/>
+	<classpathentry kind="lib" path="lib/pelletv230/servlet.jar"/>
+	<classpathentry kind="lib" path="lib/pelletv230-libs/jgrapht-jdk1.5.jar"/>
+	<classpathentry kind="lib" path="lib/junit-410/junit-dep-4.10.jar"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>

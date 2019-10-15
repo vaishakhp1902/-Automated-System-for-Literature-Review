@@ -1,0 +1,15 @@
+every DT
+successfully RB
+distinguished VBN
+phishing VBG
+webpage NN
+victimized VBD
+domain NN
+target NN
+paper NN
+addresses VBZ
+method NNS
+proposed VBN
+automatically RB
+identifying VBG
+lacuna NN

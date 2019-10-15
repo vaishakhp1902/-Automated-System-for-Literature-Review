@@ -1,0 +1,852 @@
+<?xml version='1.0' encoding='utf-8' standalone='no'?>
+<rdf:RDF xmlns='http://knowledgeweb.semanticweb.org/heterogeneity/alignment' 
+xmlns:rdf='http://www.w3.org/1999/02/22-rdf-syntax-ns#' 
+xmlns:xsd='http://www.w3.org/2001/XMLSchema#'>
+<Alignment>
+ <xml>yes</xml>
+ <level>0</level>
+ <type>11</type>
+ <onto1>http://confOf</onto1>
+ <onto2>http://edas</onto2>
+<map>
+ <Cell>
+  <entity1 rdf:resource='http://confOf#first'/>
+  <entity2 rdf:resource='http://edas#first'/>
+  <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>0.7</measure>
+  <relation>=</relation>
+ </Cell>
+</map>
+<map>
+ <Cell>
+  <entity1 rdf:resource='http://confOf#Country'/>
+  <entity2 rdf:resource='http://edas#Country'/>
+  <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>0.7</measure>
+  <relation>=</relation>
+ </Cell>
+</map>
+<map>
+ <Cell>
+  <entity1 rdf:resource='http://confOf#Workshop'/>
+  <entity2 rdf:resource='http://edas#Workshop'/>
+  <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>0.7</measure>
+  <relation>=</relation>
+ </Cell>
+</map>
+<map>
+ <Cell>
+  <entity1 rdf:resource='http://confOf#object'/>
+  <entity2 rdf:resource='http://edas#object'/>
+  <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>0.7</measure>
+  <relation>=</relation>
+ </Cell>
+</map>
+<map>
+ <Cell>
+  <entity1 rdf:resource='http://confOf#List'/>
+  <entity2 rdf:resource='http://edas#List'/>
+  <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>1.0</measure>
+  <relation>=</relation>
+ </Cell>
+</map>
+<map>
+ <Cell>
+  <entity1 rdf:resource='http://confOf#Statement'/>
+  <entity2 rdf:resource='http://edas#Statement'/>
+  <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>0.7</measure>
+  <relation>=</relation>
+ </Cell>
+</map>
+<map>
+ <Cell>
+  <entity1 rdf:resource='http://confOf#Author'/>
+  <entity2 rdf:resource='http://edas#Author'/>
+  <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>0.7</measure>
+  <relation>=</relation>
+ </Cell>
+</map>
+<map>
+ <Cell>
+  <entity1 rdf:resource='http://confOf#Property'/>
+  <entity2 rdf:resource='http://edas#Property'/>
+  <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>0.7</measure>
+  <relation>=</relation>
+ </Cell>
+</map>
+<map>
+ <Cell>
+  <entity1 rdf:resource='http://confOf#Social_event'/>
+  <entity2 rdf:resource='http://edas#SocialEvent'/>
+  <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>0.9833333492279053</measure>
+  <relation>=</relation>
+ </Cell>
+</map>
+<map>
+ <Cell>
+  <entity1 rdf:resource='http://confOf#Administrative_event'/>
+  <entity2 rdf:resource='http://edas#AcademicEvent'/>
+  <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>0.6671153903007507</measure>
+  <relation>=</relation>
+ </Cell>
+</map>
+<map>
+ <Cell>
+  <entity1 rdf:resource='http://confOf#Person'/>
+  <entity2 rdf:resource='http://edas#Person'/>
+  <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>0.7</measure>
+  <relation>=</relation>
+ </Cell>
+</map>
+<map>
+ <Cell>
+  <entity1 rdf:resource='http://confOf#City'/>
+  <entity2 rdf:resource='http://edas#SecurityTopic'/>
+  <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>0.7692307829856873</measure>
+  <relation>=</relation>
+ </Cell>
+</map>
+<map>
+ <Cell>
+  <entity1 rdf:resource='http://confOf#predicate'/>
+  <entity2 rdf:resource='http://edas#predicate'/>
+  <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>0.7</measure>
+  <relation>=</relation>
+ </Cell>
+</map>
+<map>
+ <Cell>
+  <entity1 rdf:resource='http://confOf#Member'/>
+  <entity2 rdf:resource='http://edas#TPCMember'/>
+  <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>0.7111111164093018</measure>
+  <relation>=</relation>
+ </Cell>
+</map>
+<map>
+ <Cell>
+  <entity1 rdf:resource='http://confOf#Resource'/>
+  <entity2 rdf:resource='http://edas#Resource'/>
+  <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>0.7</measure>
+  <relation>=</relation>
+ </Cell>
+</map>
+<map>
+ <Cell>
+  <entity1 rdf:resource='http://confOf#rest'/>
+  <entity2 rdf:resource='http://edas#rest'/>
+  <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>0.7</measure>
+  <relation>=</relation>
+ </Cell>
+</map>
+<map>
+ <Cell>
+  <entity1 rdf:resource='http://confOf#Paper'/>
+  <entity2 rdf:resource='http://edas#Paper'/>
+  <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>0.7</measure>
+  <relation>=</relation>
+ </Cell>
+</map>
+<map>
+ <Cell>
+  <entity1 rdf:resource='http://confOf#positiveInteger'/>
+  <entity2 rdf:resource='http://edas#PowerlineTransmissionTopic'/>
+  <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>0.7141880393028259</measure>
+  <relation>=</relation>
+ </Cell>
+</map>
+<map>
+ <Cell>
+  <entity1 rdf:resource='http://confOf#Class'/>
+  <entity2 rdf:resource='http://edas#Class'/>
+  <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>0.7</measure>
+  <relation>=</relation>
+ </Cell>
+</map>
+<map>
+ <Cell>
+  <entity1 rdf:resource='http://confOf#subject'/>
+  <entity2 rdf:resource='http://edas#subject'/>
+  <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>0.7</measure>
+  <relation>=</relation>
+ </Cell>
+</map>
+<map>
+ <Cell>
+  <entity1 rdf:resource='http://confOf#Conference'/>
+  <entity2 rdf:resource='http://edas#Conference'/>
+  <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>0.7</measure>
+  <relation>=</relation>
+ </Cell>
+</map>
+<map>
+ <Cell>
+  <entity1 rdf:resource='http://confOf#Literal'/>
+  <entity2 rdf:resource='http://edas#Literal'/>
+  <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>0.7</measure>
+  <relation>=</relation>
+ </Cell>
+</map>
+<map>
+ <Cell>
+  <entity1 rdf:resource='http://confOf#Organization'/>
+  <entity2 rdf:resource='http://edas#Organization'/>
+  <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>0.7</measure>
+  <relation>=</relation>
+ </Cell>
+</map>
+<map>
+ <Cell>
+  <entity1 rdf:resource='http://confOf#Seq'/>
+  <entity2 rdf:resource='http://edas#Seq'/>
+  <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>1.0</measure>
+  <relation>=</relation>
+ </Cell>
+</map>
+<map>
+ <Cell>
+  <entity1 rdf:resource='http://confOf#Topic'/>
+  <entity2 rdf:resource='http://edas#Topic'/>
+  <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>0.7</measure>
+  <relation>=</relation>
+ </Cell>
+</map>
+<map>
+ <Cell>
+  <entity1 rdf:resource='http://confOf#string'/>
+  <entity2 rdf:resource='http://edas#string'/>
+  <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>0.7</measure>
+  <relation>=</relation>
+ </Cell>
+</map>
+<map>
+ <Cell>
+  <entity1 rdf:resource='http://confOf#hasTopic'/>
+  <entity2 rdf:resource='http://edas#hasTopic'/>
+  <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>1.0</measure>
+  <relation>=</relation>
+ </Cell>
+</map>
+<map>
+ <Cell>
+  <entity1 rdf:resource='http://confOf#Tutorial'/>
+  <entity2 rdf:resource='http://edas#TravelGrant'/>
+  <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>0.6590909361839294</measure>
+  <relation>=</relation>
+ </Cell>
+</map>
+<map>
+ <Cell>
+  <entity1 rdf:resource='http://confOf#Social_event'/>
+  <entity2 rdf:resource='http://edas#SocialEvent'/>
+  <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>0.9833333492279053</measure>
+  <relation>=</relation>
+ </Cell>
+</map>
+<map>
+ <Cell>
+  <entity1 rdf:resource='http://confOf#hasCity'/>
+  <entity2 rdf:resource='http://edas#hasCity'/>
+  <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>1.0</measure>
+  <relation>=</relation>
+ </Cell>
+</map>
+<map>
+ <Cell>
+  <entity1 rdf:resource='http://confOf#Trip'/>
+  <entity2 rdf:resource='http://edas#WithdrawnPaper'/>
+  <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>0.6785714626312256</measure>
+  <relation>=</relation>
+ </Cell>
+</map>
+<map>
+ <Cell>
+  <entity1 rdf:resource='http://confOf#hasPhone'/>
+  <entity2 rdf:resource='http://edas#hasPhone'/>
+  <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>1.0</measure>
+  <relation>=</relation>
+ </Cell>
+</map>
+<map>
+ <Cell>
+  <entity1 rdf:resource='http://confOf#hasFirstName'/>
+  <entity2 rdf:resource='http://edas#hasFirstName'/>
+  <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>1.0</measure>
+  <relation>=</relation>
+ </Cell>
+</map>
+<map>
+ <Cell>
+  <entity1 rdf:resource='http://confOf#Datatype'/>
+  <entity2 rdf:resource='http://edas#Datatype'/>
+  <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>1.0</measure>
+  <relation>=</relation>
+ </Cell>
+</map>
+<map>
+ <Cell>
+  <entity1 rdf:resource='http://confOf#Alt'/>
+  <entity2 rdf:resource='http://edas#Alt'/>
+  <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>0.7</measure>
+  <relation>=</relation>
+ </Cell>
+</map>
+<map>
+ <Cell>
+  <entity1 rdf:resource='http://confOf#Reception'/>
+  <entity2 rdf:resource='http://edas#Reception'/>
+  <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>0.7</measure>
+  <relation>=</relation>
+ </Cell>
+</map>
+<map>
+ <Cell>
+  <entity1 rdf:resource='http://confOf#Container'/>
+  <entity2 rdf:resource='http://edas#Container'/>
+  <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>0.7</measure>
+  <relation>=</relation>
+ </Cell>
+</map>
+<map>
+ <Cell>
+  <entity1 rdf:resource='http://confOf#Company'/>
+  <entity2 rdf:resource='http://edas#ComputerNetworksTopic'/>
+  <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>0.7904762029647827</measure>
+  <relation>=</relation>
+ </Cell>
+</map>
+<map>
+ <Cell>
+  <entity1 rdf:resource='http://confOf#hasStreet'/>
+  <entity2 rdf:resource='http://edas#hasStreet'/>
+  <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>1.0</measure>
+  <relation>=</relation>
+ </Cell>
+</map>
+<map>
+ <Cell>
+  <entity1 rdf:resource='http://confOf#hasCountry'/>
+  <entity2 rdf:resource='http://edas#hasCountry'/>
+  <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>1.0</measure>
+  <relation>=</relation>
+ </Cell>
+</map>
+<map>
+ <Cell>
+  <entity1 rdf:resource='http://confOf#studyAt'/>
+  <entity2 rdf:resource='http://edas#startDate'/>
+  <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>0.7519577145576477</measure>
+  <relation>=</relation>
+ </Cell>
+</map>
+<map>
+ <Cell>
+  <entity1 rdf:resource='http://confOf#DatatypeProperty'/>
+  <entity2 rdf:resource='http://edas#DatatypeProperty'/>
+  <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>1.0</measure>
+  <relation>=</relation>
+ </Cell>
+</map>
+<map>
+ <Cell>
+  <entity1 rdf:resource='http://confOf#hasCountry'/>
+  <entity2 rdf:resource='http://edas#hasCountry'/>
+  <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>1.0</measure>
+  <relation>=</relation>
+ </Cell>
+</map>
+<map>
+ <Cell>
+  <entity1 rdf:resource='http://confOf#Reviewing_event'/>
+  <entity2 rdf:resource='http://edas#Review'/>
+  <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>0.7039999961853027</measure>
+  <relation>=</relation>
+ </Cell>
+</map>
+<map>
+ <Cell>
+  <entity1 rdf:resource='http://confOf#Bag'/>
+  <entity2 rdf:resource='http://edas#Bag'/>
+  <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>0.7</measure>
+  <relation>=</relation>
+ </Cell>
+</map>
+<map>
+ <Cell>
+  <entity1 rdf:resource='http://confOf#hasEmail'/>
+  <entity2 rdf:resource='http://edas#hasEmail'/>
+  <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>1.0</measure>
+  <relation>=</relation>
+ </Cell>
+</map>
+<map>
+ <Cell>
+  <entity1 rdf:resource='http://confOf#Company'/>
+  <entity2 rdf:resource='http://edas#ComputerNetworksTopic'/>
+  <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>0.7904762029647827</measure>
+  <relation>=</relation>
+ </Cell>
+</map>
+<map>
+ <Cell>
+  <entity1 rdf:resource='http://confOf#Company'/>
+  <entity2 rdf:resource='http://edas#ComputerNetworksTopic'/>
+  <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>0.7904762029647827</measure>
+  <relation>=</relation>
+ </Cell>
+</map>
+<map>
+ <Cell>
+  <entity1 rdf:resource='http://confOf#hasAdministrativeEvent'/>
+  <entity2 rdf:resource='http://edas#hasStartDateTime'/>
+  <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>0.8069493174552917</measure>
+  <relation>=</relation>
+ </Cell>
+</map>
+<map>
+ <Cell>
+  <entity1 rdf:resource='http://confOf#hasKeyword'/>
+  <entity2 rdf:resource='http://edas#hasPhone'/>
+  <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>0.786791667342186</measure>
+  <relation>=</relation>
+ </Cell>
+</map>
+<map>
+ <Cell>
+  <entity1 rdf:resource='http://confOf#Alt'/>
+  <entity2 rdf:resource='http://edas#Call'/>
+  <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>0.7222222685813904</measure>
+  <relation>=</relation>
+ </Cell>
+</map>
+<map>
+ <Cell>
+  <entity1 rdf:resource='http://confOf#Reviewing_results_event'/>
+  <entity2 rdf:resource='http://edas#Reviewer'/>
+  <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>0.6686956405639649</measure>
+  <relation>=</relation>
+ </Cell>
+</map>
+<map>
+ <Cell>
+  <entity1 rdf:resource='http://confOf#TransitiveProperty'/>
+  <entity2 rdf:resource='http://edas#ContainerMembershipProperty'/>
+  <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>0.7229938507080078</measure>
+  <relation>=</relation>
+ </Cell>
+</map>
+<map>
+ <Cell>
+  <entity1 rdf:resource='http://confOf#Restriction'/>
+  <entity2 rdf:resource='http://edas#Restriction'/>
+  <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>0.7</measure>
+  <relation>=</relation>
+ </Cell>
+</map>
+<map>
+ <Cell>
+  <entity1 rdf:resource='http://confOf#isDefinedBy'/>
+  <entity2 rdf:resource='http://edas#isDefinedBy'/>
+  <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>1.0</measure>
+  <relation>=</relation>
+ </Cell>
+</map>
+<map>
+ <Cell>
+  <entity1 rdf:resource='http://confOf#hasPostalCode'/>
+  <entity2 rdf:resource='http://edas#hasPostalCode'/>
+  <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>1.0</measure>
+  <relation>=</relation>
+ </Cell>
+</map>
+<map>
+ <Cell>
+  <entity1 rdf:resource='http://confOf#earlyRegistration'/>
+  <entity2 rdf:resource='http://edas#registrationDueOn'/>
+  <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>0.6928104758262634</measure>
+  <relation>=</relation>
+ </Cell>
+</map>
+<map>
+ <Cell>
+  <entity1 rdf:resource='http://confOf#hasAdministrativeEvent'/>
+  <entity2 rdf:resource='http://edas#hasLastName'/>
+  <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>0.767845094203949</measure>
+  <relation>=</relation>
+ </Cell>
+</map>
+<map>
+ <Cell>
+  <entity1 rdf:resource='http://confOf#ContainerMembershipProperty'/>
+  <entity2 rdf:resource='http://edas#ContainerMembershipProperty'/>
+  <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>1.0</measure>
+  <relation>=</relation>
+ </Cell>
+</map>
+<map>
+ <Cell>
+  <entity1 rdf:resource='http://confOf#ContainerMembershipProperty'/>
+  <entity2 rdf:resource='http://edas#ContactInformation'/>
+  <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>0.8037036657333374</measure>
+  <relation>=</relation>
+ </Cell>
+</map>
+<map>
+ <Cell>
+  <entity1 rdf:resource='http://confOf#earlyRegistration'/>
+  <entity2 rdf:resource='http://edas#registrationDueOn'/>
+  <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>0.6928104758262634</measure>
+  <relation>=</relation>
+ </Cell>
+</map>
+<map>
+ <Cell>
+  <entity1 rdf:resource='http://confOf#hasAdministrativeEvent'/>
+  <entity2 rdf:resource='http://edas#hasEndDateTime'/>
+  <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>0.7593939304351807</measure>
+  <relation>=</relation>
+ </Cell>
+</map>
+<map>
+ <Cell>
+  <entity1 rdf:resource='http://confOf#Thing'/>
+  <entity2 rdf:resource='http://edas#Thing'/>
+  <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>0.7</measure>
+  <relation>=</relation>
+ </Cell>
+</map>
+<map>
+ <Cell>
+  <entity1 rdf:resource='http://confOf#FunctionalProperty'/>
+  <entity2 rdf:resource='http://edas#FunctionalProperty'/>
+  <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>1.0</measure>
+  <relation>=</relation>
+ </Cell>
+</map>
+<map>
+ <Cell>
+  <entity1 rdf:resource='http://confOf#hasAdministrativeEvent'/>
+  <entity2 rdf:resource='http://edas#hasSubmissionDeadline'/>
+  <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>0.7707070708274841</measure>
+  <relation>=</relation>
+ </Cell>
+</map>
+<map>
+ <Cell>
+  <entity1 rdf:resource='http://confOf#hasPostalCode'/>
+  <entity2 rdf:resource='http://edas#hasPostalCode'/>
+  <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>1.0</measure>
+  <relation>=</relation>
+ </Cell>
+</map>
+<map>
+ <Cell>
+  <entity1 rdf:resource='http://confOf#Seq'/>
+  <entity2 rdf:resource='http://edas#SessionChair'/>
+  <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>0.6888889074325562</measure>
+  <relation>=</relation>
+ </Cell>
+</map>
+<map>
+ <Cell>
+  <entity1 rdf:resource='http://confOf#writtenBy'/>
+  <entity2 rdf:resource='http://edas#isWrittenBy'/>
+  <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>0.7218854904174805</measure>
+  <relation>=</relation>
+ </Cell>
+</map>
+<map>
+ <Cell>
+  <entity1 rdf:resource='http://confOf#range'/>
+  <entity2 rdf:resource='http://edas#range'/>
+  <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>0.7</measure>
+  <relation>=</relation>
+ </Cell>
+</map>
+<map>
+ <Cell>
+  <entity1 rdf:resource='http://confOf#seeAlso'/>
+  <entity2 rdf:resource='http://edas#seeAlso'/>
+  <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>1.0</measure>
+  <relation>=</relation>
+ </Cell>
+</map>
+<map>
+ <Cell>
+  <entity1 rdf:resource='http://confOf#comment'/>
+  <entity2 rdf:resource='http://edas#comment'/>
+  <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>0.7</measure>
+  <relation>=</relation>
+ </Cell>
+</map>
+<map>
+ <Cell>
+  <entity1 rdf:resource='http://confOf#isDefinedBy'/>
+  <entity2 rdf:resource='http://edas#isInitiatedBy'/>
+  <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>0.8247085809707642</measure>
+  <relation>=</relation>
+ </Cell>
+</map>
+<map>
+ <Cell>
+  <entity1 rdf:resource='http://confOf#hasFax'/>
+  <entity2 rdf:resource='http://edas#hasName'/>
+  <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>0.6577777862548828</measure>
+  <relation>=</relation>
+ </Cell>
+</map>
+<map>
+ <Cell>
+  <entity1 rdf:resource='http://confOf#studyAt'/>
+  <entity2 rdf:resource='http://edas#endDate'/>
+  <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>0.6190476417541504</measure>
+  <relation>=</relation>
+ </Cell>
+</map>
+<map>
+ <Cell>
+  <entity1 rdf:resource='http://confOf#XMLLiteral'/>
+  <entity2 rdf:resource='http://edas#XMLLiteral'/>
+  <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>1.0</measure>
+  <relation>=</relation>
+ </Cell>
+</map>
+<map>
+ <Cell>
+  <entity1 rdf:resource='http://confOf#Datatype'/>
+  <entity2 rdf:resource='http://edas#dateTime'/>
+  <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>0.824999988079071</measure>
+  <relation>=</relation>
+ </Cell>
+</map>
+<map>
+ <Cell>
+  <entity1 rdf:resource='http://confOf#SymmetricProperty'/>
+  <entity2 rdf:resource='http://edas#ObjectProperty'/>
+  <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>0.6897122263908386</measure>
+  <relation>=</relation>
+ </Cell>
+</map>
+<map>
+ <Cell>
+  <entity1 rdf:resource='http://confOf#Banquet'/>
+  <entity2 rdf:resource='http://edas#BreakEvent'/>
+  <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>0.616428554058075</measure>
+  <relation>=</relation>
+ </Cell>
+</map>
+<map>
+ <Cell>
+  <entity1 rdf:resource='http://confOf#Banquet'/>
+  <entity2 rdf:resource='http://edas#Document'/>
+  <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>0.6011905074119568</measure>
+  <relation>=</relation>
+ </Cell>
+</map>
+<map>
+ <Cell>
+  <entity1 rdf:resource='http://confOf#TransitiveProperty'/>
+  <entity2 rdf:resource='http://edas#PersonalReviewHistory'/>
+  <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>0.6719577312469482</measure>
+  <relation>=</relation>
+ </Cell>
+</map>
+<map>
+ <Cell>
+  <entity1 rdf:resource='http://confOf#Ontology'/>
+  <entity2 rdf:resource='http://edas#Ontology'/>
+  <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>0.7</measure>
+  <relation>=</relation>
+ </Cell>
+</map>
+<map>
+ <Cell>
+  <entity1 rdf:resource='http://confOf#Short_paper'/>
+  <entity2 rdf:resource='http://edas#RatedPapers'/>
+  <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>0.6060606002807618</measure>
+  <relation>=</relation>
+ </Cell>
+</map>
+<map>
+ <Cell>
+  <entity1 rdf:resource='http://confOf#DatatypeProperty'/>
+  <entity2 rdf:resource='http://edas#PaperPresentation'/>
+  <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>0.6569741368293762</measure>
+  <relation>=</relation>
+ </Cell>
+</map>
+<map>
+ <Cell>
+  <entity1 rdf:resource='http://confOf#isDefinedBy'/>
+  <entity2 rdf:resource='http://edas#isReviewHistoryOf'/>
+  <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>0.706238865852356</measure>
+  <relation>=</relation>
+ </Cell>
+</map>
+<map>
+ <Cell>
+  <entity1 rdf:resource='http://confOf#seeAlso'/>
+  <entity2 rdf:resource='http://edas#relatesTo'/>
+  <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>0.785714328289032</measure>
+  <relation>=</relation>
+ </Cell>
+</map>
+<map>
+ <Cell>
+  <entity1 rdf:resource='http://confOf#subClassOf'/>
+  <entity2 rdf:resource='http://edas#subClassOf'/>
+  <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>1.0</measure>
+  <relation>=</relation>
+ </Cell>
+</map>
+<map>
+ <Cell>
+  <entity1 rdf:resource='http://confOf#domain'/>
+  <entity2 rdf:resource='http://edas#domain'/>
+  <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>0.7</measure>
+  <relation>=</relation>
+ </Cell>
+</map>
+<map>
+ <Cell>
+  <entity1 rdf:resource='http://confOf#subPropertyOf'/>
+  <entity2 rdf:resource='http://edas#subPropertyOf'/>
+  <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>1.0</measure>
+  <relation>=</relation>
+ </Cell>
+</map>
+<map>
+ <Cell>
+  <entity1 rdf:resource='http://confOf#reviewes'/>
+  <entity2 rdf:resource='http://edas#isReviewedBy'/>
+  <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>0.7242063879966736</measure>
+  <relation>=</relation>
+ </Cell>
+</map>
+<map>
+ <Cell>
+  <entity1 rdf:resource='http://confOf#label'/>
+  <entity2 rdf:resource='http://edas#label'/>
+  <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>0.7</measure>
+  <relation>=</relation>
+ </Cell>
+</map>
+<map>
+ <Cell>
+  <entity1 rdf:resource='http://confOf#type'/>
+  <entity2 rdf:resource='http://edas#type'/>
+  <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>0.7</measure>
+  <relation>=</relation>
+ </Cell>
+</map>
+<map>
+ <Cell>
+  <entity1 rdf:resource='http://confOf#hasVAT'/>
+  <entity2 rdf:resource='http://edas#hasRating'/>
+  <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>0.6859259128570557</measure>
+  <relation>=</relation>
+ </Cell>
+</map>
+<map>
+ <Cell>
+  <entity1 rdf:resource='http://confOf#hasVAT'/>
+  <entity2 rdf:resource='http://edas#hasRelatedDocument'/>
+  <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>0.6340740680694581</measure>
+  <relation>=</relation>
+ </Cell>
+</map>
+<map>
+ <Cell>
+  <entity1 rdf:resource='http://confOf#parallel_with'/>
+  <entity2 rdf:resource='http://edas#hasCall'/>
+  <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>0.6263735890388489</measure>
+  <relation>=</relation>
+ </Cell>
+</map>
+<map>
+ <Cell>
+  <entity1 rdf:resource='http://confOf#location'/>
+  <entity2 rdf:resource='http://edas#hasLocation'/>
+  <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>0.660606050491333</measure>
+  <relation>=</relation>
+ </Cell>
+</map>
+<map>
+ <Cell>
+  <entity1 rdf:resource='http://confOf#location'/>
+  <entity2 rdf:resource='http://edas#hasLocation'/>
+  <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>0.660606050491333</measure>
+  <relation>=</relation>
+ </Cell>
+</map>
+<map>
+ <Cell>
+  <entity1 rdf:resource='http://confOf#hasSurname'/>
+  <entity2 rdf:resource='http://edas#hasProgramme'/>
+  <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>0.6662221908569337</measure>
+  <relation>=</relation>
+ </Cell>
+</map>
+<map>
+ <Cell>
+  <entity1 rdf:resource='http://confOf#has_short_title'/>
+  <entity2 rdf:resource='http://edas#hasReviewHistory'/>
+  <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>0.6117777824401855</measure>
+  <relation>=</relation>
+ </Cell>
+</map>
+<map>
+ <Cell>
+  <entity1 rdf:resource='http://confOf#reviewes'/>
+  <entity2 rdf:resource='http://edas#forEvent'/>
+  <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>0.6666666865348816</measure>
+  <relation>=</relation>
+ </Cell>
+</map>
+<map>
+ <Cell>
+  <entity1 rdf:resource='http://confOf#follows'/>
+  <entity2 rdf:resource='http://edas#forEvent'/>
+  <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>0.6095238327980042</measure>
+  <relation>=</relation>
+ </Cell>
+</map>
+<map>
+ <Cell>
+  <entity1 rdf:resource='http://confOf#hasHomePage'/>
+  <entity2 rdf:resource='http://edas#hasMember'/>
+  <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>0.6529293060302734</measure>
+  <relation>=</relation>
+ </Cell>
+</map>
+<map>
+ <Cell>
+  <entity1 rdf:resource='http://confOf#Ontology'/>
+  <entity2 rdf:resource='http://edas#CommunicationTheoryTopic'/>
+  <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>0.6666666865348816</measure>
+  <relation>=</relation>
+ </Cell>
+</map>
+<map>
+ <Cell>
+  <entity1 rdf:resource='http://confOf#ObjectProperty'/>
+  <entity2 rdf:resource='http://edas#ObjectProperty'/>
+  <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>1.0</measure>
+  <relation>=</relation>
+ </Cell>
+</map>
+<map>
+ <Cell>
+  <entity1 rdf:resource='http://confOf#TransitiveProperty'/>
+  <entity2 rdf:resource='http://edas#PersonalReviewHistory'/>
+  <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>0.6719577312469482</measure>
+  <relation>=</relation>
+ </Cell>
+</map>
+<map>
+ <Cell>
+  <entity1 rdf:resource='http://confOf#SymmetricProperty'/>
+  <entity2 rdf:resource='http://edas#MeetingRoomPlace'/>
+  <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>0.6377450823783875</measure>
+  <relation>=</relation>
+ </Cell>
+</map>
+</Alignment>
+</rdf:RDF>

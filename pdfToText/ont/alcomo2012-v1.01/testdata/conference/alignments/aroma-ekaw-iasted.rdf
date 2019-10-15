@@ -1,0 +1,263 @@
+<?xml version='1.0' encoding='utf-8' standalone='no'?>
+<rdf:RDF xmlns='http://knowledgeweb.semanticweb.org/heterogeneity/alignment#'
+         xmlns:rdf='http://www.w3.org/1999/02/22-rdf-syntax-ns#'
+         xmlns:xsd='http://www.w3.org/2001/XMLSchema#'
+         xmlns:align='http://knowledgeweb.semanticweb.org/heterogeneity/alignment#'>
+<Alignment>
+  <xml>yes</xml>
+  <level>0</level>
+  <type>**</type>
+  <method>fr.inrialpes.exmo.aroma.AROMA</method>
+  <onto1>
+    <Ontology rdf:about="http://ekaw">
+      <location>file:/C:/Users/LSKIAD~1/AppData/Local/Temp/source8275113778911827212.rdf</location>
+    </Ontology>
+  </onto1>
+  <onto2>
+    <Ontology rdf:about="http://iasted">
+      <location>file:/C:/Users/LSKIAD~1/AppData/Local/Temp/target2342353297537105926.rdf</location>
+    </Ontology>
+  </onto2>
+  <map>
+    <Cell>
+      <entity1 rdf:resource='http://ekaw#Conference_Paper'/>
+      <entity2 rdf:resource='http://iasted#Conference_days'/>
+      <relation>=</relation>
+      <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>0.6171071140248781</measure>
+      <alignapilocalns:method xmlns:alignapilocalns="aroma">fr.inrialpes.exmo.ontosim.entity.EntityLexicalMeasure</alignapilocalns:method>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource='http://ekaw#Camera_Ready_Paper'/>
+      <entity2 rdf:resource='http://iasted#Camera_ready_manuscript_deadline'/>
+      <relation>=</relation>
+      <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>0.9286387304436139</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource='http://ekaw#Session_Chair'/>
+      <entity2 rdf:resource='http://iasted#Session_chair'/>
+      <relation>=</relation>
+      <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>0.9475542972870524</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource='http://ekaw#Session'/>
+      <entity2 rdf:resource='http://iasted#Session'/>
+      <relation>=</relation>
+      <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>0.5489585098563309</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource='http://ekaw#Conference_Participant'/>
+      <entity2 rdf:resource='http://iasted#Conference_Hiker'/>
+      <relation>=</relation>
+      <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>0.4707395495755777</measure>
+      <alignapilocalns:method xmlns:alignapilocalns="aroma">fr.inrialpes.exmo.ontosim.entity.EntityLexicalMeasure</alignapilocalns:method>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource='http://ekaw#Presenter'/>
+      <entity2 rdf:resource='http://iasted#Presentation'/>
+      <relation>=</relation>
+      <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>0.567023245408492</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource='http://ekaw#Workshop_Chair'/>
+      <entity2 rdf:resource='http://iasted#Worker_non_speaker'/>
+      <relation>=</relation>
+      <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>0.24952994348877044</measure>
+      <alignapilocalns:method xmlns:alignapilocalns="aroma">fr.inrialpes.exmo.ontosim.entity.EntityLexicalMeasure</alignapilocalns:method>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource='http://ekaw#Conference'/>
+      <entity2 rdf:resource='http://iasted#Conference_hall'/>
+      <relation>=</relation>
+      <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>0.6171071140248781</measure>
+      <alignapilocalns:method xmlns:alignapilocalns="aroma">fr.inrialpes.exmo.ontosim.entity.EntityLexicalMeasure</alignapilocalns:method>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource='http://ekaw#PC_Member'/>
+      <entity2 rdf:resource='http://iasted#Lecture'/>
+      <relation>=</relation>
+      <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>0.6655671501189546</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource='http://ekaw#Review'/>
+      <entity2 rdf:resource='http://iasted#Reviewer'/>
+      <relation>=</relation>
+      <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>0.6171071140248781</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource='http://ekaw#Review'/>
+      <entity2 rdf:resource='http://iasted#Review'/>
+      <relation>=</relation>
+      <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>0.6171071140248781</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource='http://ekaw#Tutorial_Chair'/>
+      <entity2 rdf:resource='http://iasted#Tutorial_speaker'/>
+      <relation>=</relation>
+      <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>0.5489585098563309</measure>
+      <alignapilocalns:method xmlns:alignapilocalns="aroma">fr.inrialpes.exmo.ontosim.entity.EntityLexicalMeasure</alignapilocalns:method>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource='http://ekaw#heldIn'/>
+      <entity2 rdf:resource='http://iasted#is_held_in'/>
+      <relation>=</relation>
+      <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>0.8973954185936913</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource='http://ekaw#Event'/>
+      <entity2 rdf:resource='http://iasted#Conference_activity'/>
+      <relation>=</relation>
+      <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>0.9384654687618725</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource='http://ekaw#University'/>
+      <entity2 rdf:resource='http://iasted#Presenter_university'/>
+      <relation>=</relation>
+      <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>0.5865079488900253</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource='http://ekaw#Conference_Trip'/>
+      <entity2 rdf:resource='http://iasted#City'/>
+      <relation>=</relation>
+      <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>0.7943052411626559</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource='http://ekaw#Social_Event'/>
+      <entity2 rdf:resource='http://iasted#Social_program'/>
+      <relation>=</relation>
+      <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>0.7606731956277898</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource='http://ekaw#Student'/>
+      <entity2 rdf:resource='http://iasted#Student_non_speaker'/>
+      <relation>=</relation>
+      <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>0.5865079488900253</measure>
+      <alignapilocalns:method xmlns:alignapilocalns="aroma">fr.inrialpes.exmo.ontosim.entity.EntityLexicalMeasure</alignapilocalns:method>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource='http://ekaw#Student'/>
+      <entity2 rdf:resource='http://iasted#Student_lecturer'/>
+      <relation>=</relation>
+      <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>0.6171071140248781</measure>
+      <alignapilocalns:method xmlns:alignapilocalns="aroma">fr.inrialpes.exmo.ontosim.entity.EntityLexicalMeasure</alignapilocalns:method>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource='http://ekaw#Proceedings_Publisher'/>
+      <entity2 rdf:resource='http://iasted#Book_proceeding'/>
+      <relation>=</relation>
+      <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>0.6171071140248781</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource='http://ekaw#Person'/>
+      <entity2 rdf:resource='http://iasted#Person'/>
+      <relation>=</relation>
+      <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>0.9706744598363005</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource='http://ekaw#Invited_Talk_Abstract'/>
+      <entity2 rdf:resource='http://iasted#Invitation_letter'/>
+      <relation>=</relation>
+      <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>0.6171071140248781</measure>
+      <alignapilocalns:method xmlns:alignapilocalns="aroma">fr.inrialpes.exmo.ontosim.entity.EntityLexicalMeasure</alignapilocalns:method>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource='http://ekaw#hasPart'/>
+      <entity2 rdf:resource='http://iasted#has_amount_of'/>
+      <relation>=</relation>
+      <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>0.7603489635582241</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource='http://ekaw#Document'/>
+      <entity2 rdf:resource='http://iasted#Item'/>
+      <relation>=</relation>
+      <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>0.6364684902718172</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource='http://ekaw#eventOnList'/>
+      <entity2 rdf:resource='http://iasted#is_dated_on'/>
+      <relation>=</relation>
+      <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>0.5756271543230485</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource='http://ekaw#Paper'/>
+      <entity2 rdf:resource='http://iasted#Time'/>
+      <relation>=</relation>
+      <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>0.9447428389897423</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource='http://ekaw#Submitted_Paper'/>
+      <entity2 rdf:resource='http://iasted#Submissions_deadline'/>
+      <relation>=</relation>
+      <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>0.0</measure>
+      <alignapilocalns:method xmlns:alignapilocalns="aroma">fr.inrialpes.exmo.ontosim.entity.EntityLexicalMeasure</alignapilocalns:method>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource='http://ekaw#Tutorial'/>
+      <entity2 rdf:resource='http://iasted#Tutorial'/>
+      <relation>=</relation>
+      <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>0.629987930342197</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource='http://ekaw#Scientific_Event'/>
+      <entity2 rdf:resource='http://iasted#Place'/>
+      <relation>=</relation>
+      <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>0.8090449702297878</measure>
+    </Cell>
+  </map>
+</Alignment>
+</rdf:RDF>

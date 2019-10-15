@@ -1,0 +1,652 @@
+<?xml version='1.0' encoding='utf-8' standalone='no'?>
+<rdf:RDF xmlns='http://knowledgeweb.semanticweb.org/heterogeneity/alignment' 
+xmlns:rdf='http://www.w3.org/1999/02/22-rdf-syntax-ns#' 
+xmlns:xsd='http://www.w3.org/2001/XMLSchema#'>
+<Alignment>
+ <xml>yes</xml>
+ <level>0</level>
+ <type>11</type>
+ <onto1>http://confOf</onto1>
+ <onto2>http://sigkdd</onto2>
+<map>
+ <Cell>
+  <entity1 rdf:resource='http://confOf#first'/>
+  <entity2 rdf:resource='http://sigkdd#first'/>
+  <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>0.7</measure>
+  <relation>=</relation>
+ </Cell>
+</map>
+<map>
+ <Cell>
+  <entity1 rdf:resource='http://confOf#Container'/>
+  <entity2 rdf:resource='http://sigkdd#Container'/>
+  <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>0.7</measure>
+  <relation>=</relation>
+ </Cell>
+</map>
+<map>
+ <Cell>
+  <entity1 rdf:resource='http://confOf#string'/>
+  <entity2 rdf:resource='http://sigkdd#string'/>
+  <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>0.7</measure>
+  <relation>=</relation>
+ </Cell>
+</map>
+<map>
+ <Cell>
+  <entity1 rdf:resource='http://confOf#object'/>
+  <entity2 rdf:resource='http://sigkdd#object'/>
+  <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>0.7</measure>
+  <relation>=</relation>
+ </Cell>
+</map>
+<map>
+ <Cell>
+  <entity1 rdf:resource='http://confOf#List'/>
+  <entity2 rdf:resource='http://sigkdd#List'/>
+  <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>1.0</measure>
+  <relation>=</relation>
+ </Cell>
+</map>
+<map>
+ <Cell>
+  <entity1 rdf:resource='http://confOf#Statement'/>
+  <entity2 rdf:resource='http://sigkdd#Statement'/>
+  <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>0.7</measure>
+  <relation>=</relation>
+ </Cell>
+</map>
+<map>
+ <Cell>
+  <entity1 rdf:resource='http://confOf#Author'/>
+  <entity2 rdf:resource='http://sigkdd#Author'/>
+  <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>0.7</measure>
+  <relation>=</relation>
+ </Cell>
+</map>
+<map>
+ <Cell>
+  <entity1 rdf:resource='http://confOf#Property'/>
+  <entity2 rdf:resource='http://sigkdd#Property'/>
+  <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>0.7</measure>
+  <relation>=</relation>
+ </Cell>
+</map>
+<map>
+ <Cell>
+  <entity1 rdf:resource='http://confOf#TransitiveProperty'/>
+  <entity2 rdf:resource='http://sigkdd#ContainerMembershipProperty'/>
+  <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>0.7229938507080078</measure>
+  <relation>=</relation>
+ </Cell>
+</map>
+<map>
+ <Cell>
+  <entity1 rdf:resource='http://confOf#Thing'/>
+  <entity2 rdf:resource='http://sigkdd#Thing'/>
+  <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>0.7</measure>
+  <relation>=</relation>
+ </Cell>
+</map>
+<map>
+ <Cell>
+  <entity1 rdf:resource='http://confOf#Person'/>
+  <entity2 rdf:resource='http://sigkdd#Person'/>
+  <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>0.7</measure>
+  <relation>=</relation>
+ </Cell>
+</map>
+<map>
+ <Cell>
+  <entity1 rdf:resource='http://confOf#City'/>
+  <entity2 rdf:resource='http://sigkdd#Committee'/>
+  <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>0.7249999642372131</measure>
+  <relation>=</relation>
+ </Cell>
+</map>
+<map>
+ <Cell>
+  <entity1 rdf:resource='http://confOf#predicate'/>
+  <entity2 rdf:resource='http://sigkdd#predicate'/>
+  <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>0.7</measure>
+  <relation>=</relation>
+ </Cell>
+</map>
+<map>
+ <Cell>
+  <entity1 rdf:resource='http://confOf#Paper'/>
+  <entity2 rdf:resource='http://sigkdd#Paper'/>
+  <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>0.7</measure>
+  <relation>=</relation>
+ </Cell>
+</map>
+<map>
+ <Cell>
+  <entity1 rdf:resource='http://confOf#Resource'/>
+  <entity2 rdf:resource='http://sigkdd#Resource'/>
+  <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>0.7</measure>
+  <relation>=</relation>
+ </Cell>
+</map>
+<map>
+ <Cell>
+  <entity1 rdf:resource='http://confOf#rest'/>
+  <entity2 rdf:resource='http://sigkdd#rest'/>
+  <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>0.7</measure>
+  <relation>=</relation>
+ </Cell>
+</map>
+<map>
+ <Cell>
+  <entity1 rdf:resource='http://confOf#Class'/>
+  <entity2 rdf:resource='http://sigkdd#Class'/>
+  <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>0.7</measure>
+  <relation>=</relation>
+ </Cell>
+</map>
+<map>
+ <Cell>
+  <entity1 rdf:resource='http://confOf#Organization'/>
+  <entity2 rdf:resource='http://sigkdd#Organizator'/>
+  <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>0.9484848380088806</measure>
+  <relation>=</relation>
+ </Cell>
+</map>
+<map>
+ <Cell>
+  <entity1 rdf:resource='http://confOf#subject'/>
+  <entity2 rdf:resource='http://sigkdd#subject'/>
+  <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>0.7</measure>
+  <relation>=</relation>
+ </Cell>
+</map>
+<map>
+ <Cell>
+  <entity1 rdf:resource='http://confOf#Conference'/>
+  <entity2 rdf:resource='http://sigkdd#Conference'/>
+  <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>0.7</measure>
+  <relation>=</relation>
+ </Cell>
+</map>
+<map>
+ <Cell>
+  <entity1 rdf:resource='http://confOf#Literal'/>
+  <entity2 rdf:resource='http://sigkdd#Literal'/>
+  <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>0.7</measure>
+  <relation>=</relation>
+ </Cell>
+</map>
+<map>
+ <Cell>
+  <entity1 rdf:resource='http://confOf#Restriction'/>
+  <entity2 rdf:resource='http://sigkdd#Restriction'/>
+  <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>0.7</measure>
+  <relation>=</relation>
+ </Cell>
+</map>
+<map>
+ <Cell>
+  <entity1 rdf:resource='http://confOf#University'/>
+  <entity2 rdf:resource='http://sigkdd#Restriction'/>
+  <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>0.6040403842926025</measure>
+  <relation>=</relation>
+ </Cell>
+</map>
+<map>
+ <Cell>
+  <entity1 rdf:resource='http://confOf#subClassOf'/>
+  <entity2 rdf:resource='http://sigkdd#subClassOf'/>
+  <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>1.0</measure>
+  <relation>=</relation>
+ </Cell>
+</map>
+<map>
+ <Cell>
+  <entity1 rdf:resource='http://confOf#Conference'/>
+  <entity2 rdf:resource='http://sigkdd#Conference_hall'/>
+  <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>0.9333333373069763</measure>
+  <relation>=</relation>
+ </Cell>
+</map>
+<map>
+ <Cell>
+  <entity1 rdf:resource='http://confOf#Seq'/>
+  <entity2 rdf:resource='http://sigkdd#Seq'/>
+  <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>1.0</measure>
+  <relation>=</relation>
+ </Cell>
+</map>
+<map>
+ <Cell>
+  <entity1 rdf:resource='http://confOf#ends_on'/>
+  <entity2 rdf:resource='http://sigkdd#End_of_conference'/>
+  <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>0.6525490760803223</measure>
+  <relation>=</relation>
+ </Cell>
+</map>
+<map>
+ <Cell>
+  <entity1 rdf:resource='http://confOf#Bag'/>
+  <entity2 rdf:resource='http://sigkdd#Bag'/>
+  <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>0.7</measure>
+  <relation>=</relation>
+ </Cell>
+</map>
+<map>
+ <Cell>
+  <entity1 rdf:resource='http://confOf#isDefinedBy'/>
+  <entity2 rdf:resource='http://sigkdd#isDefinedBy'/>
+  <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>1.0</measure>
+  <relation>=</relation>
+ </Cell>
+</map>
+<map>
+ <Cell>
+  <entity1 rdf:resource='http://confOf#parallel_with'/>
+  <entity2 rdf:resource='http://sigkdd#pay'/>
+  <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>0.6854700446128845</measure>
+  <relation>=</relation>
+ </Cell>
+</map>
+<map>
+ <Cell>
+  <entity1 rdf:resource='http://confOf#Conference'/>
+  <entity2 rdf:resource='http://sigkdd#Conference'/>
+  <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>0.7</measure>
+  <relation>=</relation>
+ </Cell>
+</map>
+<map>
+ <Cell>
+  <entity1 rdf:resource='http://confOf#reviewes'/>
+  <entity2 rdf:resource='http://sigkdd#Price'/>
+  <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>0.6583333611488342</measure>
+  <relation>=</relation>
+ </Cell>
+</map>
+<map>
+ <Cell>
+  <entity1 rdf:resource='http://confOf#FunctionalProperty'/>
+  <entity2 rdf:resource='http://sigkdd#ObjectProperty'/>
+  <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>0.7686387896537781</measure>
+  <relation>=</relation>
+ </Cell>
+</map>
+<map>
+ <Cell>
+  <entity1 rdf:resource='http://confOf#Alt'/>
+  <entity2 rdf:resource='http://sigkdd#Alt'/>
+  <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>0.7</measure>
+  <relation>=</relation>
+ </Cell>
+</map>
+<map>
+ <Cell>
+  <entity1 rdf:resource='http://confOf#Reception'/>
+  <entity2 rdf:resource='http://sigkdd#Registration_fee'/>
+  <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>0.699999988079071</measure>
+  <relation>=</relation>
+ </Cell>
+</map>
+<map>
+ <Cell>
+  <entity1 rdf:resource='http://confOf#XMLLiteral'/>
+  <entity2 rdf:resource='http://sigkdd#XMLLiteral'/>
+  <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>1.0</measure>
+  <relation>=</relation>
+ </Cell>
+</map>
+<map>
+ <Cell>
+  <entity1 rdf:resource='http://confOf#isDefinedBy'/>
+  <entity2 rdf:resource='http://sigkdd#designed_by'/>
+  <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>0.804713785648346</measure>
+  <relation>=</relation>
+ </Cell>
+</map>
+<map>
+ <Cell>
+  <entity1 rdf:resource='http://confOf#parallel_with'/>
+  <entity2 rdf:resource='http://sigkdd#pay'/>
+  <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>0.6854700446128845</measure>
+  <relation>=</relation>
+ </Cell>
+</map>
+<map>
+ <Cell>
+  <entity1 rdf:resource='http://confOf#earlyRegistration'/>
+  <entity2 rdf:resource='http://sigkdd#presentation'/>
+  <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>0.6486928462982178</measure>
+  <relation>=</relation>
+ </Cell>
+</map>
+<map>
+ <Cell>
+  <entity1 rdf:resource='http://confOf#Banquet'/>
+  <entity2 rdf:resource='http://sigkdd#Bag'/>
+  <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>0.7206348776817322</measure>
+  <relation>=</relation>
+ </Cell>
+</map>
+<map>
+ <Cell>
+  <entity1 rdf:resource='http://confOf#domain'/>
+  <entity2 rdf:resource='http://sigkdd#domain'/>
+  <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>0.7</measure>
+  <relation>=</relation>
+ </Cell>
+</map>
+<map>
+ <Cell>
+  <entity1 rdf:resource='http://confOf#Reviewing_event'/>
+  <entity2 rdf:resource='http://sigkdd#Review'/>
+  <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>0.7039999961853027</measure>
+  <relation>=</relation>
+ </Cell>
+</map>
+<map>
+ <Cell>
+  <entity1 rdf:resource='http://confOf#TransitiveProperty'/>
+  <entity2 rdf:resource='http://sigkdd#Bronze_Supporter'/>
+  <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>0.6752946376800537</measure>
+  <relation>=</relation>
+ </Cell>
+</map>
+<map>
+ <Cell>
+  <entity1 rdf:resource='http://confOf#seeAlso'/>
+  <entity2 rdf:resource='http://sigkdd#seeAlso'/>
+  <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>1.0</measure>
+  <relation>=</relation>
+ </Cell>
+</map>
+<map>
+ <Cell>
+  <entity1 rdf:resource='http://confOf#FunctionalProperty'/>
+  <entity2 rdf:resource='http://sigkdd#Author_of_paper'/>
+  <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>0.674074113368988</measure>
+  <relation>=</relation>
+ </Cell>
+</map>
+<map>
+ <Cell>
+  <entity1 rdf:resource='http://confOf#Alt'/>
+  <entity2 rdf:resource='http://sigkdd#Deadline_Author_notification'/>
+  <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>0.7023809552192688</measure>
+  <relation>=</relation>
+ </Cell>
+</map>
+<map>
+ <Cell>
+  <entity1 rdf:resource='http://confOf#Ontology'/>
+  <entity2 rdf:resource='http://sigkdd#Ontology'/>
+  <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>0.7</measure>
+  <relation>=</relation>
+ </Cell>
+</map>
+<map>
+ <Cell>
+  <entity1 rdf:resource='http://confOf#studyAt'/>
+  <entity2 rdf:resource='http://sigkdd#submit'/>
+  <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>0.6785714030265808</measure>
+  <relation>=</relation>
+ </Cell>
+</map>
+<map>
+ <Cell>
+  <entity1 rdf:resource='http://confOf#Administrative_event'/>
+  <entity2 rdf:resource='http://sigkdd#Author_of_paper_student'/>
+  <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>0.6266600489616394</measure>
+  <relation>=</relation>
+ </Cell>
+</map>
+<map>
+ <Cell>
+  <entity1 rdf:resource='http://confOf#earlyRegistration'/>
+  <entity2 rdf:resource='http://sigkdd#presentation'/>
+  <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>0.6486928462982178</measure>
+  <relation>=</relation>
+ </Cell>
+</map>
+<map>
+ <Cell>
+  <entity1 rdf:resource='http://confOf#type'/>
+  <entity2 rdf:resource='http://sigkdd#type'/>
+  <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>0.7</measure>
+  <relation>=</relation>
+ </Cell>
+</map>
+<map>
+ <Cell>
+  <entity1 rdf:resource='http://confOf#ContainerMembershipProperty'/>
+  <entity2 rdf:resource='http://sigkdd#ContainerMembershipProperty'/>
+  <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>1.0</measure>
+  <relation>=</relation>
+ </Cell>
+</map>
+<map>
+ <Cell>
+  <entity1 rdf:resource='http://confOf#Company'/>
+  <entity2 rdf:resource='http://sigkdd#ContainerMembershipProperty'/>
+  <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>0.6531922817230225</measure>
+  <relation>=</relation>
+ </Cell>
+</map>
+<map>
+ <Cell>
+  <entity1 rdf:resource='http://confOf#Registration_of_participants_event'/>
+  <entity2 rdf:resource='http://sigkdd#Registration_Student'/>
+  <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>0.6832941055297852</measure>
+  <relation>=</relation>
+ </Cell>
+</map>
+<map>
+ <Cell>
+  <entity1 rdf:resource='http://confOf#comment'/>
+  <entity2 rdf:resource='http://sigkdd#comment'/>
+  <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>0.7</measure>
+  <relation>=</relation>
+ </Cell>
+</map>
+<map>
+ <Cell>
+  <entity1 rdf:resource='http://confOf#starts_on'/>
+  <entity2 rdf:resource='http://sigkdd#Start_of_conference'/>
+  <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>0.6895906448364258</measure>
+  <relation>=</relation>
+ </Cell>
+</map>
+<map>
+ <Cell>
+  <entity1 rdf:resource='http://confOf#location'/>
+  <entity2 rdf:resource='http://sigkdd#Nation'/>
+  <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>0.655555534362793</measure>
+  <relation>=</relation>
+ </Cell>
+</map>
+<map>
+ <Cell>
+  <entity1 rdf:resource='http://confOf#label'/>
+  <entity2 rdf:resource='http://sigkdd#label'/>
+  <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>0.7</measure>
+  <relation>=</relation>
+ </Cell>
+</map>
+<map>
+ <Cell>
+  <entity1 rdf:resource='http://confOf#Datatype'/>
+  <entity2 rdf:resource='http://sigkdd#Datatype'/>
+  <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>1.0</measure>
+  <relation>=</relation>
+ </Cell>
+</map>
+<map>
+ <Cell>
+  <entity1 rdf:resource='http://confOf#subPropertyOf'/>
+  <entity2 rdf:resource='http://sigkdd#subPropertyOf'/>
+  <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>1.0</measure>
+  <relation>=</relation>
+ </Cell>
+</map>
+<map>
+ <Cell>
+  <entity1 rdf:resource='http://confOf#subPropertyOf'/>
+  <entity2 rdf:resource='http://sigkdd#searched_by'/>
+  <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>0.6013985872268677</measure>
+  <relation>=</relation>
+ </Cell>
+</map>
+<map>
+ <Cell>
+  <entity1 rdf:resource='http://confOf#Assistant'/>
+  <entity2 rdf:resource='http://sigkdd#Abstract'/>
+  <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>0.6033333778381348</measure>
+  <relation>=</relation>
+ </Cell>
+</map>
+<map>
+ <Cell>
+  <entity1 rdf:resource='http://confOf#range'/>
+  <entity2 rdf:resource='http://sigkdd#range'/>
+  <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>0.7</measure>
+  <relation>=</relation>
+ </Cell>
+</map>
+<map>
+ <Cell>
+  <entity1 rdf:resource='http://confOf#DatatypeProperty'/>
+  <entity2 rdf:resource='http://sigkdd#DatatypeProperty'/>
+  <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>1.0</measure>
+  <relation>=</relation>
+ </Cell>
+</map>
+<map>
+ <Cell>
+  <entity1 rdf:resource='http://confOf#ObjectProperty'/>
+  <entity2 rdf:resource='http://sigkdd#ObjectProperty'/>
+  <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>1.0</measure>
+  <relation>=</relation>
+ </Cell>
+</map>
+<map>
+ <Cell>
+  <entity1 rdf:resource='http://confOf#ObjectProperty'/>
+  <entity2 rdf:resource='http://sigkdd#Gold_Supporter'/>
+  <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>0.6309523582458496</measure>
+  <relation>=</relation>
+ </Cell>
+</map>
+<map>
+ <Cell>
+  <entity1 rdf:resource='http://confOf#Registration_of_participants_event'/>
+  <entity2 rdf:resource='http://sigkdd#Registration_SIGMOD_Member'/>
+  <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>0.6694927215576172</measure>
+  <relation>=</relation>
+ </Cell>
+</map>
+<map>
+ <Cell>
+  <entity1 rdf:resource='http://confOf#subPropertyOf'/>
+  <entity2 rdf:resource='http://sigkdd#submit'/>
+  <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>0.7038461565971375</measure>
+  <relation>=</relation>
+ </Cell>
+</map>
+<map>
+ <Cell>
+  <entity1 rdf:resource='http://confOf#studyAt'/>
+  <entity2 rdf:resource='http://sigkdd#submit'/>
+  <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>0.6785714030265808</measure>
+  <relation>=</relation>
+ </Cell>
+</map>
+<map>
+ <Cell>
+  <entity1 rdf:resource='http://confOf#SymmetricProperty'/>
+  <entity2 rdf:resource='http://sigkdd#Silver_Supporter'/>
+  <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>0.6912767291069031</measure>
+  <relation>=</relation>
+ </Cell>
+</map>
+<map>
+ <Cell>
+  <entity1 rdf:resource='http://confOf#SymmetricProperty'/>
+  <entity2 rdf:resource='http://sigkdd#Silver_Supporter'/>
+  <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>0.6912767291069031</measure>
+  <relation>=</relation>
+ </Cell>
+</map>
+<map>
+ <Cell>
+  <entity1 rdf:resource='http://confOf#range'/>
+  <entity2 rdf:resource='http://sigkdd#Date'/>
+  <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>0.6333333253860474</measure>
+  <relation>=</relation>
+ </Cell>
+</map>
+<map>
+ <Cell>
+  <entity1 rdf:resource='http://confOf#TransitiveProperty'/>
+  <entity2 rdf:resource='http://sigkdd#Registration_Non-Member'/>
+  <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>0.6342747807502747</measure>
+  <relation>=</relation>
+ </Cell>
+</map>
+<map>
+ <Cell>
+  <entity1 rdf:resource='http://confOf#XMLLiteral'/>
+  <entity2 rdf:resource='http://sigkdd#Exhibitor'/>
+  <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>0.614814817905426</measure>
+  <relation>=</relation>
+ </Cell>
+</map>
+<map>
+ <Cell>
+  <entity1 rdf:resource='http://confOf#Short_paper'/>
+  <entity2 rdf:resource='http://sigkdd#Author_of_paper'/>
+  <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>0.6335353851318359</measure>
+  <relation>=</relation>
+ </Cell>
+</map>
+<map>
+ <Cell>
+  <entity1 rdf:resource='http://confOf#Trip'/>
+  <entity2 rdf:resource='http://sigkdd#Best_Research_Paper_Award'/>
+  <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>0.6233333349227905</measure>
+  <relation>=</relation>
+ </Cell>
+</map>
+<map>
+ <Cell>
+  <entity1 rdf:resource='http://confOf#ObjectProperty'/>
+  <entity2 rdf:resource='http://sigkdd#Best_Paper_Awards_Committee'/>
+  <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>0.6282187104225159</measure>
+  <relation>=</relation>
+ </Cell>
+</map>
+<map>
+ <Cell>
+  <entity1 rdf:resource='http://confOf#seeAlso'/>
+  <entity2 rdf:resource='http://sigkdd#search'/>
+  <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>0.7142857313156128</measure>
+  <relation>=</relation>
+ </Cell>
+</map>
+<map>
+ <Cell>
+  <entity1 rdf:resource='http://confOf#label'/>
+  <entity2 rdf:resource='http://sigkdd#Name'/>
+  <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>0.6333333253860474</measure>
+  <relation>=</relation>
+ </Cell>
+</map>
+<map>
+ <Cell>
+  <entity1 rdf:resource='http://confOf#Ontology'/>
+  <entity2 rdf:resource='http://sigkdd#int'/>
+  <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>0.6388888955116272</measure>
+  <relation>=</relation>
+ </Cell>
+</map>
+</Alignment>
+</rdf:RDF>

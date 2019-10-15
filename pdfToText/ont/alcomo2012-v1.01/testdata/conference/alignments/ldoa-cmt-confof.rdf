@@ -1,0 +1,868 @@
+<?xml version='1.0' encoding='utf-8' standalone='no'?>
+<rdf:RDF xmlns='http://knowledgeweb.semanticweb.org/heterogeneity/alignment' 
+xmlns:rdf='http://www.w3.org/1999/02/22-rdf-syntax-ns#' 
+xmlns:xsd='http://www.w3.org/2001/XMLSchema#'>
+<Alignment>
+ <xml>yes</xml>
+ <level>0</level>
+ <type>11</type>
+ <onto1>http://cmt</onto1>
+ <onto2>http://confOf</onto2>
+<map>
+ <Cell>
+  <entity1 rdf:resource='http://cmt#Bag'/>
+  <entity2 rdf:resource='http://confOf#Bag'/>
+  <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>0.7</measure>
+  <relation>=</relation>
+ </Cell>
+</map>
+<map>
+ <Cell>
+  <entity1 rdf:resource='http://cmt#Co-author'/>
+  <entity2 rdf:resource='http://confOf#Country'/>
+  <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>0.7375661134719849</measure>
+  <relation>=</relation>
+ </Cell>
+</map>
+<map>
+ <Cell>
+  <entity1 rdf:resource='http://cmt#User'/>
+  <entity2 rdf:resource='http://confOf#Poster'/>
+  <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>0.75</measure>
+  <relation>=</relation>
+ </Cell>
+</map>
+<map>
+ <Cell>
+  <entity1 rdf:resource='http://cmt#Administrator'/>
+  <entity2 rdf:resource='http://confOf#Administrator'/>
+  <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>0.7</measure>
+  <relation>=</relation>
+ </Cell>
+</map>
+<map>
+ <Cell>
+  <entity1 rdf:resource='http://cmt#first'/>
+  <entity2 rdf:resource='http://confOf#first'/>
+  <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>0.7</measure>
+  <relation>=</relation>
+ </Cell>
+</map>
+<map>
+ <Cell>
+  <entity1 rdf:resource='http://cmt#object'/>
+  <entity2 rdf:resource='http://confOf#object'/>
+  <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>0.7</measure>
+  <relation>=</relation>
+ </Cell>
+</map>
+<map>
+ <Cell>
+  <entity1 rdf:resource='http://cmt#Statement'/>
+  <entity2 rdf:resource='http://confOf#Student'/>
+  <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>0.8052909970283508</measure>
+  <relation>=</relation>
+ </Cell>
+</map>
+<map>
+ <Cell>
+  <entity1 rdf:resource='http://cmt#Literal'/>
+  <entity2 rdf:resource='http://confOf#Literal'/>
+  <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>0.7</measure>
+  <relation>=</relation>
+ </Cell>
+</map>
+<map>
+ <Cell>
+  <entity1 rdf:resource='http://cmt#List'/>
+  <entity2 rdf:resource='http://confOf#List'/>
+  <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>1.0</measure>
+  <relation>=</relation>
+ </Cell>
+</map>
+<map>
+ <Cell>
+  <entity1 rdf:resource='http://cmt#Statement'/>
+  <entity2 rdf:resource='http://confOf#Statement'/>
+  <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>0.7</measure>
+  <relation>=</relation>
+ </Cell>
+</map>
+<map>
+ <Cell>
+  <entity1 rdf:resource='http://cmt#Person'/>
+  <entity2 rdf:resource='http://confOf#Person'/>
+  <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>0.7</measure>
+  <relation>=</relation>
+ </Cell>
+</map>
+<map>
+ <Cell>
+  <entity1 rdf:resource='http://cmt#Conference'/>
+  <entity2 rdf:resource='http://confOf#Conference'/>
+  <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>0.7</measure>
+  <relation>=</relation>
+ </Cell>
+</map>
+<map>
+ <Cell>
+  <entity1 rdf:resource='http://cmt#Review'/>
+  <entity2 rdf:resource='http://confOf#Reviewing_event'/>
+  <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>0.8799999952316284</measure>
+  <relation>=</relation>
+ </Cell>
+</map>
+<map>
+ <Cell>
+  <entity1 rdf:resource='http://cmt#Property'/>
+  <entity2 rdf:resource='http://confOf#Property'/>
+  <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>0.7</measure>
+  <relation>=</relation>
+ </Cell>
+</map>
+<map>
+ <Cell>
+  <entity1 rdf:resource='http://cmt#Rejection'/>
+  <entity2 rdf:resource='http://confOf#Reception'/>
+  <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>0.9074074029922485</measure>
+  <relation>=</relation>
+ </Cell>
+</map>
+<map>
+ <Cell>
+  <entity1 rdf:resource='http://cmt#boolean'/>
+  <entity2 rdf:resource='http://confOf#boolean'/>
+  <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>0.7</measure>
+  <relation>=</relation>
+ </Cell>
+</map>
+<map>
+ <Cell>
+  <entity1 rdf:resource='http://cmt#DatatypeProperty'/>
+  <entity2 rdf:resource='http://confOf#DatatypeProperty'/>
+  <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>1.0</measure>
+  <relation>=</relation>
+ </Cell>
+</map>
+<map>
+ <Cell>
+  <entity1 rdf:resource='http://cmt#int'/>
+  <entity2 rdf:resource='http://confOf#City'/>
+  <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>0.7222222685813904</measure>
+  <relation>=</relation>
+ </Cell>
+</map>
+<map>
+ <Cell>
+  <entity1 rdf:resource='http://cmt#predicate'/>
+  <entity2 rdf:resource='http://confOf#predicate'/>
+  <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>0.7</measure>
+  <relation>=</relation>
+ </Cell>
+</map>
+<map>
+ <Cell>
+  <entity1 rdf:resource='http://cmt#Paper'/>
+  <entity2 rdf:resource='http://confOf#Paper'/>
+  <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>0.7</measure>
+  <relation>=</relation>
+ </Cell>
+</map>
+<map>
+ <Cell>
+  <entity1 rdf:resource='http://cmt#Resource'/>
+  <entity2 rdf:resource='http://confOf#Resource'/>
+  <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>1.0</measure>
+  <relation>=</relation>
+ </Cell>
+</map>
+<map>
+ <Cell>
+  <entity1 rdf:resource='http://cmt#rest'/>
+  <entity2 rdf:resource='http://confOf#rest'/>
+  <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>0.7</measure>
+  <relation>=</relation>
+ </Cell>
+</map>
+<map>
+ <Cell>
+  <entity1 rdf:resource='http://cmt#Author'/>
+  <entity2 rdf:resource='http://confOf#Author'/>
+  <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>0.7</measure>
+  <relation>=</relation>
+ </Cell>
+</map>
+<map>
+ <Cell>
+  <entity1 rdf:resource='http://cmt#Class'/>
+  <entity2 rdf:resource='http://confOf#Class'/>
+  <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>0.7</measure>
+  <relation>=</relation>
+ </Cell>
+</map>
+<map>
+ <Cell>
+  <entity1 rdf:resource='http://cmt#anyURI'/>
+  <entity2 rdf:resource='http://confOf#Banquet'/>
+  <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>0.6428571343421936</measure>
+  <relation>=</relation>
+ </Cell>
+</map>
+<map>
+ <Cell>
+  <entity1 rdf:resource='http://cmt#Restriction'/>
+  <entity2 rdf:resource='http://confOf#Restriction'/>
+  <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>0.7</measure>
+  <relation>=</relation>
+ </Cell>
+</map>
+<map>
+ <Cell>
+  <entity1 rdf:resource='http://cmt#ProgramCommitteeChair'/>
+  <entity2 rdf:resource='http://confOf#positiveInteger'/>
+  <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>0.64000004529953</measure>
+  <relation>=</relation>
+ </Cell>
+</map>
+<map>
+ <Cell>
+  <entity1 rdf:resource='http://cmt#string'/>
+  <entity2 rdf:resource='http://confOf#string'/>
+  <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>0.7</measure>
+  <relation>=</relation>
+ </Cell>
+</map>
+<map>
+ <Cell>
+  <entity1 rdf:resource='http://cmt#subject'/>
+  <entity2 rdf:resource='http://confOf#subject'/>
+  <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>0.7</measure>
+  <relation>=</relation>
+ </Cell>
+</map>
+<map>
+ <Cell>
+  <entity1 rdf:resource='http://cmt#SubjectArea'/>
+  <entity2 rdf:resource='http://confOf#Submission_event'/>
+  <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>0.7123106122016907</measure>
+  <relation>=</relation>
+ </Cell>
+</map>
+<map>
+ <Cell>
+  <entity1 rdf:resource='http://cmt#Reviewer'/>
+  <entity2 rdf:resource='http://confOf#Reviewing_results_event'/>
+  <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>0.844565212726593</measure>
+  <relation>=</relation>
+ </Cell>
+</map>
+<map>
+ <Cell>
+  <entity1 rdf:resource='http://cmt#Container'/>
+  <entity2 rdf:resource='http://confOf#Container'/>
+  <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>0.7</measure>
+  <relation>=</relation>
+ </Cell>
+</map>
+<map>
+ <Cell>
+  <entity1 rdf:resource='http://cmt#paperID'/>
+  <entity2 rdf:resource='http://confOf#parallel_with'/>
+  <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>0.7063736319541931</measure>
+  <relation>=</relation>
+ </Cell>
+</map>
+<map>
+ <Cell>
+  <entity1 rdf:resource='http://cmt#InverseFunctionalProperty'/>
+  <entity2 rdf:resource='http://confOf#TransitiveProperty'/>
+  <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>0.7179629802703857</measure>
+  <relation>=</relation>
+ </Cell>
+</map>
+<map>
+ <Cell>
+  <entity1 rdf:resource='http://cmt#writtenBy'/>
+  <entity2 rdf:resource='http://confOf#writtenBy'/>
+  <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>1.0</measure>
+  <relation>=</relation>
+ </Cell>
+</map>
+<map>
+ <Cell>
+  <entity1 rdf:resource='http://cmt#maxPapers'/>
+  <entity2 rdf:resource='http://confOf#maxChoice'/>
+  <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>0.7407407164573669</measure>
+  <relation>=</relation>
+ </Cell>
+</map>
+<map>
+ <Cell>
+  <entity1 rdf:resource='http://cmt#hasProgramCommitteeMember'/>
+  <entity2 rdf:resource='http://confOf#hasPostalCode'/>
+  <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>0.8104615211486816</measure>
+  <relation>=</relation>
+ </Cell>
+</map>
+<map>
+ <Cell>
+  <entity1 rdf:resource='http://cmt#hasBid'/>
+  <entity2 rdf:resource='http://confOf#hasCity'/>
+  <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>0.8222222328186035</measure>
+  <relation>=</relation>
+ </Cell>
+</map>
+<map>
+ <Cell>
+  <entity1 rdf:resource='http://cmt#hasBid'/>
+  <entity2 rdf:resource='http://confOf#hasCity'/>
+  <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>0.8222222328186035</measure>
+  <relation>=</relation>
+ </Cell>
+</map>
+<map>
+ <Cell>
+  <entity1 rdf:resource='http://cmt#Rejection'/>
+  <entity2 rdf:resource='http://confOf#Reception'/>
+  <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>0.9074074029922485</measure>
+  <relation>=</relation>
+ </Cell>
+</map>
+<map>
+ <Cell>
+  <entity1 rdf:resource='http://cmt#reviewsPerPaper'/>
+  <entity2 rdf:resource='http://confOf#reviewes'/>
+  <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>0.8816666603088379</measure>
+  <relation>=</relation>
+ </Cell>
+</map>
+<map>
+ <Cell>
+  <entity1 rdf:resource='http://cmt#endReview'/>
+  <entity2 rdf:resource='http://confOf#ends_on'/>
+  <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>0.7111111283302307</measure>
+  <relation>=</relation>
+ </Cell>
+</map>
+<map>
+ <Cell>
+  <entity1 rdf:resource='http://cmt#Document'/>
+  <entity2 rdf:resource='http://confOf#Social_event'/>
+  <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>0.6805555820465088</measure>
+  <relation>=</relation>
+ </Cell>
+</map>
+<map>
+ <Cell>
+  <entity1 rdf:resource='http://cmt#ContainerMembershipProperty'/>
+  <entity2 rdf:resource='http://confOf#ContainerMembershipProperty'/>
+  <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>1.0</measure>
+  <relation>=</relation>
+ </Cell>
+</map>
+<map>
+ <Cell>
+  <entity1 rdf:resource='http://cmt#hasBeenAssigned'/>
+  <entity2 rdf:resource='http://confOf#hasHomePage'/>
+  <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>0.7907070517539978</measure>
+  <relation>=</relation>
+ </Cell>
+</map>
+<map>
+ <Cell>
+  <entity1 rdf:resource='http://cmt#isDefinedBy'/>
+  <entity2 rdf:resource='http://confOf#isDefinedBy'/>
+  <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>1.0</measure>
+  <relation>=</relation>
+ </Cell>
+</map>
+<map>
+ <Cell>
+  <entity1 rdf:resource='http://cmt#ConferenceChair'/>
+  <entity2 rdf:resource='http://confOf#Container'/>
+  <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>0.7433333396911621</measure>
+  <relation>=</relation>
+ </Cell>
+</map>
+<map>
+ <Cell>
+  <entity1 rdf:resource='http://cmt#writtenBy'/>
+  <entity2 rdf:resource='http://confOf#writtenBy'/>
+  <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>1.0</measure>
+  <relation>=</relation>
+ </Cell>
+</map>
+<map>
+ <Cell>
+  <entity1 rdf:resource='http://cmt#email'/>
+  <entity2 rdf:resource='http://confOf#hasEmail'/>
+  <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>0.8083333373069763</measure>
+  <relation>=</relation>
+ </Cell>
+</map>
+<map>
+ <Cell>
+  <entity1 rdf:resource='http://cmt#AssociatedChair'/>
+  <entity2 rdf:resource='http://confOf#Assistant'/>
+  <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>0.7433333396911621</measure>
+  <relation>=</relation>
+ </Cell>
+</map>
+<map>
+ <Cell>
+  <entity1 rdf:resource='http://cmt#ConferenceChair'/>
+  <entity2 rdf:resource='http://confOf#Contribution'/>
+  <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>0.7044444680213928</measure>
+  <relation>=</relation>
+ </Cell>
+</map>
+<map>
+ <Cell>
+  <entity1 rdf:resource='http://cmt#Chairman'/>
+  <entity2 rdf:resource='http://confOf#Chair_PC'/>
+  <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>0.8500000238418579</measure>
+  <relation>=</relation>
+ </Cell>
+</map>
+<map>
+ <Cell>
+  <entity1 rdf:resource='http://cmt#hasCo-author'/>
+  <entity2 rdf:resource='http://confOf#hasCountry'/>
+  <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>0.8933333158493042</measure>
+  <relation>=</relation>
+ </Cell>
+</map>
+<map>
+ <Cell>
+  <entity1 rdf:resource='http://cmt#Decision'/>
+  <entity2 rdf:resource='http://confOf#Registration_of_participants_event'/>
+  <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>0.6421568989753723</measure>
+  <relation>=</relation>
+ </Cell>
+</map>
+<map>
+ <Cell>
+  <entity1 rdf:resource='http://cmt#hasAuthor'/>
+  <entity2 rdf:resource='http://confOf#hasVAT'/>
+  <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>0.8574073910713196</measure>
+  <relation>=</relation>
+ </Cell>
+</map>
+<map>
+ <Cell>
+  <entity1 rdf:resource='http://cmt#comment'/>
+  <entity2 rdf:resource='http://confOf#comment'/>
+  <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>0.7</measure>
+  <relation>=</relation>
+ </Cell>
+</map>
+<map>
+ <Cell>
+  <entity1 rdf:resource='http://cmt#hasSubjectArea'/>
+  <entity2 rdf:resource='http://confOf#hasStreet'/>
+  <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>0.8190476298332214</measure>
+  <relation>=</relation>
+ </Cell>
+</map>
+<map>
+ <Cell>
+  <entity1 rdf:resource='http://cmt#email'/>
+  <entity2 rdf:resource='http://confOf#employedBy'/>
+  <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>0.7066667079925537</measure>
+  <relation>=</relation>
+ </Cell>
+</map>
+<map>
+ <Cell>
+  <entity1 rdf:resource='http://cmt#detailsEnteredBy'/>
+  <entity2 rdf:resource='http://confOf#dealsWith'/>
+  <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>0.7526454925537109</measure>
+  <relation>=</relation>
+ </Cell>
+</map>
+<map>
+ <Cell>
+  <entity1 rdf:resource='http://cmt#hasConferenceMember'/>
+  <entity2 rdf:resource='http://confOf#hasPhone'/>
+  <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>0.7820175290107727</measure>
+  <relation>=</relation>
+ </Cell>
+</map>
+<map>
+ <Cell>
+  <entity1 rdf:resource='http://cmt#hasAuthor'/>
+  <entity2 rdf:resource='http://confOf#hasVAT'/>
+  <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>0.8574073910713196</measure>
+  <relation>=</relation>
+ </Cell>
+</map>
+<map>
+ <Cell>
+  <entity1 rdf:resource='http://cmt#readByReviewer'/>
+  <entity2 rdf:resource='http://confOf#remark'/>
+  <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>0.7206348776817322</measure>
+  <relation>=</relation>
+ </Cell>
+</map>
+<map>
+ <Cell>
+  <entity1 rdf:resource='http://cmt#Thing'/>
+  <entity2 rdf:resource='http://confOf#Thing'/>
+  <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>0.7</measure>
+  <relation>=</relation>
+ </Cell>
+</map>
+<map>
+ <Cell>
+  <entity1 rdf:resource='http://cmt#Preference'/>
+  <entity2 rdf:resource='http://confOf#Camera_Ready_event'/>
+  <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>0.6486772894859314</measure>
+  <relation>=</relation>
+ </Cell>
+</map>
+<map>
+ <Cell>
+  <entity1 rdf:resource='http://cmt#domain'/>
+  <entity2 rdf:resource='http://confOf#domain'/>
+  <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>0.7</measure>
+  <relation>=</relation>
+ </Cell>
+</map>
+<map>
+ <Cell>
+  <entity1 rdf:resource='http://cmt#startReviewerBidding'/>
+  <entity2 rdf:resource='http://confOf#starts_on'/>
+  <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>0.7611111402511597</measure>
+  <relation>=</relation>
+ </Cell>
+</map>
+<map>
+ <Cell>
+  <entity1 rdf:resource='http://cmt#startReviewerBidding'/>
+  <entity2 rdf:resource='http://confOf#starts_on'/>
+  <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>0.7611111402511597</measure>
+  <relation>=</relation>
+ </Cell>
+</map>
+<map>
+ <Cell>
+  <entity1 rdf:resource='http://cmt#rejectPaper'/>
+  <entity2 rdf:resource='http://confOf#reviewes'/>
+  <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>0.6969696879386902</measure>
+  <relation>=</relation>
+ </Cell>
+</map>
+<map>
+ <Cell>
+  <entity1 rdf:resource='http://cmt#range'/>
+  <entity2 rdf:resource='http://confOf#range'/>
+  <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>1.0</measure>
+  <relation>=</relation>
+ </Cell>
+</map>
+<map>
+ <Cell>
+  <entity1 rdf:resource='http://cmt#title'/>
+  <entity2 rdf:resource='http://confOf#hasTitle'/>
+  <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>0.875</measure>
+  <relation>=</relation>
+ </Cell>
+</map>
+<map>
+ <Cell>
+  <entity1 rdf:resource='http://cmt#siteURL'/>
+  <entity2 rdf:resource='http://confOf#studyAt'/>
+  <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>0.6571428775787354</measure>
+  <relation>=</relation>
+ </Cell>
+</map>
+<map>
+ <Cell>
+  <entity1 rdf:resource='http://cmt#Meta-Review'/>
+  <entity2 rdf:resource='http://confOf#Member'/>
+  <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>0.6747474670410156</measure>
+  <relation>=</relation>
+ </Cell>
+</map>
+<map>
+ <Cell>
+  <entity1 rdf:resource='http://cmt#enableVirtualMeeting'/>
+  <entity2 rdf:resource='http://confOf#earlyRegistration'/>
+  <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>0.7045722007751465</measure>
+  <relation>=</relation>
+ </Cell>
+</map>
+<map>
+ <Cell>
+  <entity1 rdf:resource='http://cmt#Meta-Review'/>
+  <entity2 rdf:resource='http://confOf#Member_PC'/>
+  <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>0.6154881715774536</measure>
+  <relation>=</relation>
+ </Cell>
+</map>
+<map>
+ <Cell>
+  <entity1 rdf:resource='http://cmt#FunctionalProperty'/>
+  <entity2 rdf:resource='http://confOf#FunctionalProperty'/>
+  <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>1.0</measure>
+  <relation>=</relation>
+ </Cell>
+</map>
+<map>
+ <Cell>
+  <entity1 rdf:resource='http://cmt#subPropertyOf'/>
+  <entity2 rdf:resource='http://confOf#subPropertyOf'/>
+  <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>1.0</measure>
+  <relation>=</relation>
+ </Cell>
+</map>
+<map>
+ <Cell>
+  <entity1 rdf:resource='http://cmt#writePaper'/>
+  <entity2 rdf:resource='http://confOf#writes'/>
+  <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>0.8666666150093079</measure>
+  <relation>=</relation>
+ </Cell>
+</map>
+<map>
+ <Cell>
+  <entity1 rdf:resource='http://cmt#hasDecision'/>
+  <entity2 rdf:resource='http://confOf#hasFirstName'/>
+  <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>0.7772727012634277</measure>
+  <relation>=</relation>
+ </Cell>
+</map>
+<map>
+ <Cell>
+  <entity1 rdf:resource='http://cmt#hasSubjectArea'/>
+  <entity2 rdf:resource='http://confOf#hasStreet'/>
+  <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>0.8190476298332214</measure>
+  <relation>=</relation>
+ </Cell>
+</map>
+<map>
+ <Cell>
+  <entity1 rdf:resource='http://cmt#hasSubjectArea'/>
+  <entity2 rdf:resource='http://confOf#hasTitle'/>
+  <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>0.7166666388511658</measure>
+  <relation>=</relation>
+ </Cell>
+</map>
+<map>
+ <Cell>
+  <entity1 rdf:resource='http://cmt#hasConflictOfInterest'/>
+  <entity2 rdf:resource='http://confOf#hasTopic'/>
+  <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>0.7749999761581421</measure>
+  <relation>=</relation>
+ </Cell>
+</map>
+<map>
+ <Cell>
+  <entity1 rdf:resource='http://cmt#hasDecision'/>
+  <entity2 rdf:resource='http://confOf#hasFirstName'/>
+  <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>0.7772727012634277</measure>
+  <relation>=</relation>
+ </Cell>
+</map>
+<map>
+ <Cell>
+  <entity1 rdf:resource='http://cmt#hasConflictOfInterest'/>
+  <entity2 rdf:resource='http://confOf#hasAdministrativeEvent'/>
+  <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>0.7707070112228394</measure>
+  <relation>=</relation>
+ </Cell>
+</map>
+<map>
+ <Cell>
+  <entity1 rdf:resource='http://cmt#ObjectProperty'/>
+  <entity2 rdf:resource='http://confOf#ObjectProperty'/>
+  <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>1.0</measure>
+  <relation>=</relation>
+ </Cell>
+</map>
+<map>
+ <Cell>
+  <entity1 rdf:resource='http://cmt#hasConflictOfInterest'/>
+  <entity2 rdf:resource='http://confOf#hasTopic'/>
+  <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>0.7749999761581421</measure>
+  <relation>=</relation>
+ </Cell>
+</map>
+<map>
+ <Cell>
+  <entity1 rdf:resource='http://cmt#seeAlso'/>
+  <entity2 rdf:resource='http://confOf#seeAlso'/>
+  <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>1.0</measure>
+  <relation>=</relation>
+ </Cell>
+</map>
+<map>
+ <Cell>
+  <entity1 rdf:resource='http://cmt#Acceptance'/>
+  <entity2 rdf:resource='http://confOf#Company'/>
+  <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>0.6571428775787354</measure>
+  <relation>=</relation>
+ </Cell>
+</map>
+<map>
+ <Cell>
+  <entity1 rdf:resource='http://cmt#enterConferenceDetails'/>
+  <entity2 rdf:resource='http://confOf#expertOn'/>
+  <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>0.656818151473999</measure>
+  <relation>=</relation>
+ </Cell>
+</map>
+<map>
+ <Cell>
+  <entity1 rdf:resource='http://cmt#hasDecision'/>
+  <entity2 rdf:resource='http://confOf#has_title'/>
+  <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>0.7218855619430542</measure>
+  <relation>=</relation>
+ </Cell>
+</map>
+<map>
+ <Cell>
+  <entity1 rdf:resource='http://cmt#hasConflictOfInterest'/>
+  <entity2 rdf:resource='http://confOf#hasFax'/>
+  <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>0.6833333373069763</measure>
+  <relation>=</relation>
+ </Cell>
+</map>
+<map>
+ <Cell>
+  <entity1 rdf:resource='http://cmt#assignedTo'/>
+  <entity2 rdf:resource='http://confOf#hasSurname'/>
+  <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>0.6666666865348816</measure>
+  <relation>=</relation>
+ </Cell>
+</map>
+<map>
+ <Cell>
+  <entity1 rdf:resource='http://cmt#label'/>
+  <entity2 rdf:resource='http://confOf#label'/>
+  <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>0.7</measure>
+  <relation>=</relation>
+ </Cell>
+</map>
+<map>
+ <Cell>
+  <entity1 rdf:resource='http://cmt#subClassOf'/>
+  <entity2 rdf:resource='http://confOf#subClassOf'/>
+  <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>1.0</measure>
+  <relation>=</relation>
+ </Cell>
+</map>
+<map>
+ <Cell>
+  <entity1 rdf:resource='http://cmt#date'/>
+  <entity2 rdf:resource='http://confOf#defaultChoice'/>
+  <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>0.7173076868057251</measure>
+  <relation>=</relation>
+ </Cell>
+</map>
+<map>
+ <Cell>
+  <entity1 rdf:resource='http://cmt#domain'/>
+  <entity2 rdf:resource='http://confOf#minChoice'/>
+  <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>0.6111111044883728</measure>
+  <relation>=</relation>
+ </Cell>
+</map>
+<map>
+ <Cell>
+  <entity1 rdf:resource='http://cmt#Datatype'/>
+  <entity2 rdf:resource='http://confOf#Datatype'/>
+  <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>1.0</measure>
+  <relation>=</relation>
+ </Cell>
+</map>
+<map>
+ <Cell>
+  <entity1 rdf:resource='http://cmt#Seq'/>
+  <entity2 rdf:resource='http://confOf#Seq'/>
+  <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>1.0</measure>
+  <relation>=</relation>
+ </Cell>
+</map>
+<map>
+ <Cell>
+  <entity1 rdf:resource='http://cmt#Alt'/>
+  <entity2 rdf:resource='http://confOf#Alt'/>
+  <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>0.7</measure>
+  <relation>=</relation>
+ </Cell>
+</map>
+<map>
+ <Cell>
+  <entity1 rdf:resource='http://cmt#type'/>
+  <entity2 rdf:resource='http://confOf#type'/>
+  <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>0.7</measure>
+  <relation>=</relation>
+ </Cell>
+</map>
+<map>
+ <Cell>
+  <entity1 rdf:resource='http://cmt#adjustBid'/>
+  <entity2 rdf:resource='http://confOf#abstract'/>
+  <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>0.612500011920929</measure>
+  <relation>=</relation>
+ </Cell>
+</map>
+<map>
+ <Cell>
+  <entity1 rdf:resource='http://cmt#co-writePaper'/>
+  <entity2 rdf:resource='http://confOf#contactEmail'/>
+  <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>0.6786324977874756</measure>
+  <relation>=</relation>
+ </Cell>
+</map>
+<map>
+ <Cell>
+  <entity1 rdf:resource='http://cmt#logoURL'/>
+  <entity2 rdf:resource='http://confOf#location'/>
+  <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>0.6809524297714233</measure>
+  <relation>=</relation>
+ </Cell>
+</map>
+<map>
+ <Cell>
+  <entity1 rdf:resource='http://cmt#hardcopyMailingManifestsPrintedBy'/>
+  <entity2 rdf:resource='http://confOf#has_short_title'/>
+  <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>0.6095815300941467</measure>
+  <relation>=</relation>
+ </Cell>
+</map>
+<map>
+ <Cell>
+  <entity1 rdf:resource='http://cmt#date'/>
+  <entity2 rdf:resource='http://confOf#defaultChoice'/>
+  <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>0.7173076868057251</measure>
+  <relation>=</relation>
+ </Cell>
+</map>
+<map>
+ <Cell>
+  <entity1 rdf:resource='http://cmt#InverseFunctionalProperty'/>
+  <entity2 rdf:resource='http://confOf#University'/>
+  <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>0.6123809814453125</measure>
+  <relation>=</relation>
+ </Cell>
+</map>
+<map>
+ <Cell>
+  <entity1 rdf:resource='http://cmt#Ontology'/>
+  <entity2 rdf:resource='http://confOf#Ontology'/>
+  <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>0.7</measure>
+  <relation>=</relation>
+ </Cell>
+</map>
+<map>
+ <Cell>
+  <entity1 rdf:resource='http://cmt#XMLLiteral'/>
+  <entity2 rdf:resource='http://confOf#XMLLiteral'/>
+  <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>1.0</measure>
+  <relation>=</relation>
+ </Cell>
+</map>
+</Alignment>
+</rdf:RDF>

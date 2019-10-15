@@ -1,0 +1,18 @@
+select ?c where { 
+	?a ?b "Phishing"@en.
+    ?a dbo:wikiPageWikiLinkText ?c
+} limit 100 
+
+
+
+
+
+
+DBPedia:
+
+
+Select ?a ?c ?d WHERE{
+
+?a ?b "Phishing"@en.
+?a <http://purl.org/dc/terms/subject> ?d.
+}

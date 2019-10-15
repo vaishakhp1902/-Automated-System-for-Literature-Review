@@ -1,0 +1,16 @@
+fr.inrialpes.exmo.ontosim
+fr.inrialpes.exmo.ontosim.aggregation
+fr.inrialpes.exmo.ontosim.align
+fr.inrialpes.exmo.ontosim.entity
+fr.inrialpes.exmo.ontosim.entity.model
+fr.inrialpes.exmo.ontosim.entity.triplebased
+fr.inrialpes.exmo.ontosim.extractor
+fr.inrialpes.exmo.ontosim.extractor.matching
+fr.inrialpes.exmo.ontosim.set
+fr.inrialpes.exmo.ontosim.string
+fr.inrialpes.exmo.ontosim.util
+fr.inrialpes.exmo.ontosim.util.matrix
+fr.inrialpes.exmo.ontosim.util.measures
+fr.inrialpes.exmo.ontosim.vector
+fr.inrialpes.exmo.ontosim.vector.model
+org.ivml.alimo

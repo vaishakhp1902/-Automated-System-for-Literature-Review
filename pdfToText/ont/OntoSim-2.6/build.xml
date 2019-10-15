@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project default="compile" name="OntoSim">
+
+  <path id="OntoSim.classpath">
+    <pathelement location="bin" />
+    <fileset dir="lib">
+      <include name="**/*.jar" />
+      <exclude name="ontosim.jar" />
+      <exclude name="testng/testng.jar" />
+    </fileset>
+  </path>
+
+  <pathconvert property="ontosim.manifest.classpath" pathsep=" ">
+    <path refid="OntoSim.classpath"/>
+    <map from="${basedir}/lib" to=".."/>
+    <map from="${basedir}/bin" to=""/>
+  </pathconvert>
+	
+  <target name="init">
+    <property name="version" value="2.6" />
+    <property name="date" value="${TODAY}" />
+    <property name="debug" value="off"/>
+
+    <mkdir dir="bin" />
+    <mkdir dir="test/classes" />
+    <mkdir dir="test/html" />
+    <mkdir dir="test/output" />
+    
+    <copy includeemptydirs="false" todir="bin">
+      <fileset dir="src" excludes="**/*.launch, **/*.java" />
+    </copy>
+
+  </target>
+
+  <target name="clean">
+    <delete dir="bin" />
+    <delete dir="javadoc" />
+    <delete file="lib/ontosim.jar" />
+    <antcall target="cleantest" />
+  </target>
+  
+  <target name="cleantest">
+    <echo message="Cleaning tests..." />
+    <delete dir="test/classes" />
+    <delete dir="test/output" />
+    <delete dir="test/html" />
+  </target>
+
+  <target name="upgrade">
+    <copy file="../alignapi/lib/align.pom" todir="lib/alignapi" filtering="false" />
+    <copy file="../alignapi/lib/procalign.pom" todir="lib/alignapi" filtering="false" />
+    <copy file="../alignapi/lib/ontowrap.pom" todir="lib/alignapi" filtering="false" />
+    <copy file="../alignapi/lib/align.jar" todir="lib/alignapi" filtering="false" />
+    <copy file="../alignapi/lib/procalign.jar" todir="lib/alignapi" filtering="false" />
+    <copy file="../alignapi/lib/ontowrap.jar" todir="lib/alignapi" filtering="false" />
+  </target>
+
+  <target name="compile" depends="init">
+    <echo message="Compile  ${ant.project.name}: ${ant.file}" />
+    <!-- debug="true" debuglevel="${debuglevel}" -->
+    <javac debug="true" includeantruntime="false" destdir="bin" encoding="iso8859-15">
+      <!--compilerarg value="-Xlint:deprecation" /-->
+      <!--compilerarg value="-Xlint:unchecked"-->
+      <src path="src" />
+      <classpath refid="OntoSim.classpath" />
+    </javac>
+  </target>
+
+  <target name="compileall" depends="clean,jar" />
+
+  <target name="jar" depends="compile">
+    <delete file="lib/ontosim.jar" />
+    <jar jarfile="lib/ontosim.jar">
+      <manifest>
+	<attribute name="Built-Date" value="${TODAY}" />
+	<attribute name="Specification-Title" value="OntoSim" />
+	<attribute name="Specification-Version" value="${version}" />
+	<attribute name="Class-Path" value="${ontosim.manifest.classpath}"/>
+      </manifest>
+      <fileset dir="bin" includes="**/*.class" />
+      <fileset dir="." includes="COPYING" />
+      <fileset dir="." includes="COPYING.LESSER" />
+    </jar>
+  </target>
+  
+  <target name="test" depends="compile">
+    <echo message="Testing..." />
+    <taskdef name="testng" classpath="lib/testng/testng.jar" classname="org.testng.TestNGAntTask" />
+    <javac srcdir="test/src" includeantruntime="false" destdir="test/classes" debug="on"
+	   classpath="lib/testng/testng.jar" encoding="iso8859-15">
+      <classpath refid="OntoSim.classpath" />
+    </javac>
+    <!-- possible groups: ling, noling, full -->
+    <!-- ling requires WordNet and takes ages initialising it -->
+    <testng groups="noling" outputDir="test/html" verbose="1" haltOnFailure="false" failureProperty="failed">
+      <classpath>
+	<path refid="OntoSim.classpath" />
+	<pathelement location="test/classes" />
+      </classpath>
+      <!--xmlfileset dir="${test14.dir}" includes="testng.xml"/-->
+      <classfileset dir="test" includes="classes/**/*.class" />
+    </testng>
+    <fail if="failed" message="For results: open test/html/index.html" />
+  </target>
+
+  <target name="javadoc" depends="init">
+    <echo message="Javadocing..." />
+    <javadoc destdir="javadoc" author="true" version="true" Use="true" Splitindex="true" private="true" Windowtitle="OntoSim" doctitle="OntoSim ${version}" header="OntoSim ${version}" encoding="iso8859-15" bottom="(C) INRIA, Univ. Grenoble Alpes &amp; friends, 2008-2017">
+      <classpath refid="OntoSim.classpath" />
+      <packageset dir="src" defaultexcludes="yes">
+	<include name="fr/inrialpes/**" />
+	<include name="org/ivml/alimo/**" />
+      </packageset>
+      <link href="http://java.sun.com/j2se/1.5.0/docs/api" />
+    </javadoc>
+  </target>
+  
+  <target name="zip" depends="clean, init, jar, test, cleantest, javadoc">
+    <echo message="Ziping..." />
+    <zip zipfile="OntoSim-${version}.zip">
+      <fileset dir=".">
+	<include name="build.xml" />
+	<include name="COPYING" />
+	<include name="COPYING.LESSER" />
+	<include name="bin/**/*" />
+	<include name="javadoc/**/*" />
+	<include name="lib/**/*" />
+	<include name="src/**/*" />
+	<include name="test/**/*" />
+	<exclude name="lib/slf4j/logback*.*" />
+	<exclude name="**/.svn" />
+	<exclude name="**/.DS_Store" />
+      </fileset>
+    </zip>
+  </target>
+  
+  <target name="release" depends="zip">
+    <echo message="Releasing version ${version}" />
+    <echo message="Please upload the released file to Gforge" />
+    <echo message="svn copy svn+ssh://jdavid@scm.gforge.inria.fr/svn/ontosim/trunk/OntoSim svn+ssh://jdavid@scm.gforge.inria.fr/svn/ontosim/tags/version-${version} -m 'release ${version}'"/>
+    <delete file="LICENSE.TXT"/>
+  </target>
+</project>

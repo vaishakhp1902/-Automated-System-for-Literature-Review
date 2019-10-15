@@ -1,0 +1,1 @@
+ In this paper. we present a novel approach that not only overcomes many of the difﬁculties in detecting phishing websites but also identiﬁes the phishing target that is being mimicked. We have proposed an anti—phishing technique that groups the domains from hyperlinks having direct or indirect association with the given suspicious webpage.
